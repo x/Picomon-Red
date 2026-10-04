@@ -1,0 +1,3714 @@
+{
+"files": {
+"gfx/blocksets/cavern.bst": {
+"fmt": "bin",
+"len": 2048,
+"off": 446656
+},
+"gfx/blocksets/cemetery.bst": {
+"fmt": "bin",
+"len": 1760,
+"off": 443840
+},
+"gfx/blocksets/club.bst": {
+"fmt": "bin",
+"len": 576,
+"off": 457504
+},
+"gfx/blocksets/facility.bst": {
+"fmt": "bin",
+"len": 2048,
+"off": 440319
+},
+"gfx/blocksets/forest.bst": {
+"fmt": "bin",
+"len": 2048,
+"off": 436735
+},
+"gfx/blocksets/gate.bst": {
+"fmt": "bin",
+"len": 2048,
+"off": 433151
+},
+"gfx/blocksets/gym.bst": {
+"fmt": "bin",
+"len": 1856,
+"off": 427647
+},
+"gfx/blocksets/house.bst": {
+"fmt": "bin",
+"len": 560,
+"off": 416128
+},
+"gfx/blocksets/interior.bst": {
+"fmt": "bin",
+"len": 928,
+"off": 422736
+},
+"gfx/blocksets/lab.bst": {
+"fmt": "bin",
+"len": 928,
+"off": 455376
+},
+"gfx/blocksets/lobby.bst": {
+"fmt": "bin",
+"len": 1264,
+"off": 450208
+},
+"gfx/blocksets/mansion.bst": {
+"fmt": "bin",
+"len": 1152,
+"off": 418192
+},
+"gfx/blocksets/overworld.bst": {
+"fmt": "bin",
+"len": 2048,
+"off": 411104
+},
+"gfx/blocksets/plateau.bst": {
+"fmt": "bin",
+"len": 1168,
+"off": 424784
+},
+"gfx/blocksets/pokecenter.bst": {
+"fmt": "bin",
+"len": 592,
+"off": 431039
+},
+"gfx/blocksets/reds_house.bst": {
+"fmt": "bin",
+"len": 304,
+"off": 414320
+},
+"gfx/blocksets/ship.bst": {
+"fmt": "bin",
+"len": 992,
+"off": 452912
+},
+"gfx/blocksets/ship_port.bst": {
+"fmt": "bin",
+"len": 368,
+"off": 420848
+},
+"gfx/blocksets/underground.bst": {
+"fmt": "bin",
+"len": 272,
+"off": 458480
+},
+"gfx/emotes/happy.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 97597,
+"w": 16
+},
+"gfx/emotes/question.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 97533,
+"w": 16
+},
+"gfx/emotes/shock.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 97469,
+"w": 16
+},
+"gfx/font/AB.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 32,
+"off": 73344,
+"w": 8
+},
+"gfx/font/ED.png": {
+"fmt": "1bpp",
+"h": 8,
+"len": 8,
+"off": 26471,
+"w": 8
+},
+"gfx/font/P.png": {
+"fmt": "1bpp",
+"h": 8,
+"len": 8,
+"off": 76508,
+"w": 8
+},
+"gfx/font/font.png": {
+"fmt": "1bpp",
+"h": 64,
+"len": 1024,
+"off": 72320,
+"w": 128
+},
+"gfx/font/font_battle_extra.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 480,
+"off": 73376,
+"w": 120
+},
+"gfx/font/font_extra.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 512,
+"off": 74376,
+"w": 128
+},
+"gfx/player/red.png": {
+"fmt": "pic",
+"off": 77534
+},
+"gfx/player/redb.png": {
+"fmt": "pic",
+"off": 212490
+},
+"gfx/player/shrink1.png": {
+"fmt": "pic",
+"off": 77800
+},
+"gfx/player/shrink2.png": {
+"fmt": "pic",
+"off": 77890
+},
+"gfx/pokemon/back/abrab.png": {
+"fmt": "pic",
+"off": 210127
+},
+"gfx/pokemon/back/aerodactylb.png": {
+"fmt": "pic",
+"off": 219884
+},
+"gfx/pokemon/back/alakazamb.png": {
+"fmt": "pic",
+"off": 210809
+},
+"gfx/pokemon/back/arbokb.png": {
+"fmt": "pic",
+"off": 170257
+},
+"gfx/pokemon/back/arcanineb.png": {
+"fmt": "pic",
+"off": 158013
+},
+"gfx/pokemon/back/articunob.png": {
+"fmt": "pic",
+"off": 180792
+},
+"gfx/pokemon/back/beedrillb.png": {
+"fmt": "pic",
+"off": 194944
+},
+"gfx/pokemon/back/bellsproutb.png": {
+"fmt": "pic",
+"off": 224698
+},
+"gfx/pokemon/back/blastoiseb.png": {
+"fmt": "pic",
+"off": 161873
+},
+"gfx/pokemon/back/bulbasaurb.png": {
+"fmt": "pic",
+"off": 213221
+},
+"gfx/pokemon/back/butterfreeb.png": {
+"fmt": "pic",
+"off": 200206
+},
+"gfx/pokemon/back/caterpieb.png": {
+"fmt": "pic",
+"off": 199393
+},
+"gfx/pokemon/back/chanseyb.png": {
+"fmt": "pic",
+"off": 167457
+},
+"gfx/pokemon/back/charizardb.png": {
+"fmt": "pic",
+"off": 222357
+},
+"gfx/pokemon/back/charmanderb.png": {
+"fmt": "pic",
+"off": 220508
+},
+"gfx/pokemon/back/charmeleonb.png": {
+"fmt": "pic",
+"off": 221256
+},
+"gfx/pokemon/back/clefableb.png": {
+"fmt": "pic",
+"off": 207288
+},
+"gfx/pokemon/back/clefairyb.png": {
+"fmt": "pic",
+"off": 149381
+},
+"gfx/pokemon/back/cloysterb.png": {
+"fmt": "pic",
+"off": 206507
+},
+"gfx/pokemon/back/cuboneb.png": {
+"fmt": "pic",
+"off": 156054
+},
+"gfx/pokemon/back/dewgongb.png": {
+"fmt": "pic",
+"off": 199138
+},
+"gfx/pokemon/back/diglettb.png": {
+"fmt": "pic",
+"off": 175632
+},
+"gfx/pokemon/back/dittob.png": {
+"fmt": "pic",
+"off": 181693
+},
+"gfx/pokemon/back/dodriob.png": {
+"fmt": "pic",
+"off": 197026
+},
+"gfx/pokemon/back/doduob.png": {
+"fmt": "pic",
+"off": 178189
+},
+"gfx/pokemon/back/dragonairb.png": {
+"fmt": "pic",
+"off": 185305
+},
+"gfx/pokemon/back/dragoniteb.png": {
+"fmt": "pic",
+"off": 177791
+},
+"gfx/pokemon/back/dratinib.png": {
+"fmt": "pic",
+"off": 184884
+},
+"gfx/pokemon/back/drowzeeb.png": {
+"fmt": "pic",
+"off": 171781
+},
+"gfx/pokemon/back/dugtriob.png": {
+"fmt": "pic",
+"off": 198186
+},
+"gfx/pokemon/back/eeveeb.png": {
+"fmt": "pic",
+"off": 189989
+},
+"gfx/pokemon/back/ekansb.png": {
+"fmt": "pic",
+"off": 192621
+},
+"gfx/pokemon/back/electabuzzb.png": {
+"fmt": "pic",
+"off": 173295
+},
+"gfx/pokemon/back/electrodeb.png": {
+"fmt": "pic",
+"off": 206887
+},
+"gfx/pokemon/back/exeggcuteb.png": {
+"fmt": "pic",
+"off": 153840
+},
+"gfx/pokemon/back/exeggutorb.png": {
+"fmt": "pic",
+"off": 152568
+},
+"gfx/pokemon/back/farfetchdb.png": {
+"fmt": "pic",
+"off": 176838
+},
+"gfx/pokemon/back/fearowb.png": {
+"fmt": "pic",
+"off": 165161
+},
+"gfx/pokemon/back/flareonb.png": {
+"fmt": "pic",
+"off": 190470
+},
+"gfx/pokemon/back/gastlyb.png": {
+"fmt": "pic",
+"off": 160144
+},
+"gfx/pokemon/back/gengarb.png": {
+"fmt": "pic",
+"off": 154822
+},
+"gfx/pokemon/back/geodudeb.png": {
+"fmt": "pic",
+"off": 218921
+},
+"gfx/pokemon/back/gloomb.png": {
+"fmt": "pic",
+"off": 223864
+},
+"gfx/pokemon/back/golbatb.png": {
+"fmt": "pic",
+"off": 202762
+},
+"gfx/pokemon/back/goldeenb.png": {
+"fmt": "pic",
+"off": 214934
+},
+"gfx/pokemon/back/golduckb.png": {
+"fmt": "pic",
+"off": 201410
+},
+"gfx/pokemon/back/golemb.png": {
+"fmt": "pic",
+"off": 172274
+},
+"gfx/pokemon/back/gravelerb.png": {
+"fmt": "pic",
+"off": 166912
+},
+"gfx/pokemon/back/grimerb.png": {
+"fmt": "pic",
+"off": 154288
+},
+"gfx/pokemon/back/growlitheb.png": {
+"fmt": "pic",
+"off": 164097
+},
+"gfx/pokemon/back/gyaradosb.png": {
+"fmt": "pic",
+"off": 158757
+},
+"gfx/pokemon/back/haunterb.png": {
+"fmt": "pic",
+"off": 209733
+},
+"gfx/pokemon/back/hitmonchanb.png": {
+"fmt": "pic",
+"off": 169539
+},
+"gfx/pokemon/back/hitmonleeb.png": {
+"fmt": "pic",
+"off": 169054
+},
+"gfx/pokemon/back/horseab.png": {
+"fmt": "pic",
+"off": 186483
+},
+"gfx/pokemon/back/hypnob.png": {
+"fmt": "pic",
+"off": 202066
+},
+"gfx/pokemon/back/ivysaurb.png": {
+"fmt": "pic",
+"off": 151895
+},
+"gfx/pokemon/back/jigglypuffb.png": {
+"fmt": "pic",
+"off": 189199
+},
+"gfx/pokemon/back/jolteonb.png": {
+"fmt": "pic",
+"off": 190986
+},
+"gfx/pokemon/back/jynxb.png": {
+"fmt": "pic",
+"off": 179010
+},
+"gfx/pokemon/back/kabutob.png": {
+"fmt": "pic",
+"off": 185641
+},
+"gfx/pokemon/back/kabutopsb.png": {
+"fmt": "pic",
+"off": 186172
+},
+"gfx/pokemon/back/kadabrab.png": {
+"fmt": "pic",
+"off": 166329
+},
+"gfx/pokemon/back/kakunab.png": {
+"fmt": "pic",
+"off": 194358
+},
+"gfx/pokemon/back/kangaskhanb.png": {
+"fmt": "pic",
+"off": 148646
+},
+"gfx/pokemon/back/kinglerb.png": {
+"fmt": "pic",
+"off": 205790
+},
+"gfx/pokemon/back/koffingb.png": {
+"fmt": "pic",
+"off": 174452
+},
+"gfx/pokemon/back/krabbyb.png": {
+"fmt": "pic",
+"off": 182448
+},
+"gfx/pokemon/back/laprasb.png": {
+"fmt": "pic",
+"off": 157308
+},
+"gfx/pokemon/back/lickitungb.png": {
+"fmt": "pic",
+"off": 153150
+},
+"gfx/pokemon/back/machampb.png": {
+"fmt": "pic",
+"off": 200844
+},
+"gfx/pokemon/back/machokeb.png": {
+"fmt": "pic",
+"off": 168035
+},
+"gfx/pokemon/back/machopb.png": {
+"fmt": "pic",
+"off": 191906
+},
+"gfx/pokemon/back/magikarpb.png": {
+"fmt": "pic",
+"off": 204483
+},
+"gfx/pokemon/back/magmarb.png": {
+"fmt": "pic",
+"off": 172735
+},
+"gfx/pokemon/back/magnemiteb.png": {
+"fmt": "pic",
+"off": 220173
+},
+"gfx/pokemon/back/magnetonb.png": {
+"fmt": "pic",
+"off": 173859
+},
+"gfx/pokemon/back/mankeyb.png": {
+"fmt": "pic",
+"off": 174870
+},
+"gfx/pokemon/back/marowakb.png": {
+"fmt": "pic",
+"off": 209153
+},
+"gfx/pokemon/back/meowthb.png": {
+"fmt": "pic",
+"off": 182047
+},
+"gfx/pokemon/back/metapodb.png": {
+"fmt": "pic",
+"off": 199624
+},
+"gfx/pokemon/back/mewb.png": {
+"fmt": "pic",
+"off": 16901
+},
+"gfx/pokemon/back/mewtwob.png": {
+"fmt": "pic",
+"off": 203397
+},
+"gfx/pokemon/back/moltresb.png": {
+"fmt": "pic",
+"off": 179714
+},
+"gfx/pokemon/back/mr.mimeb.png": {
+"fmt": "pic",
+"off": 168519
+},
+"gfx/pokemon/back/mukb.png": {
+"fmt": "pic",
+"off": 205151
+},
+"gfx/pokemon/back/nidokingb.png": {
+"fmt": "pic",
+"off": 150624
+},
+"gfx/pokemon/back/nidoqueenb.png": {
+"fmt": "pic",
+"off": 155631
+},
+"gfx/pokemon/back/nidoranfb.png": {
+"fmt": "pic",
+"off": 155074
+},
+"gfx/pokemon/back/nidoranmb.png": {
+"fmt": "pic",
+"off": 149027
+},
+"gfx/pokemon/back/nidorinab.png": {
+"fmt": "pic",
+"off": 218568
+},
+"gfx/pokemon/back/nidorinob.png": {
+"fmt": "pic",
+"off": 218096
+},
+"gfx/pokemon/back/ninetalesb.png": {
+"fmt": "pic",
+"off": 183547
+},
+"gfx/pokemon/back/oddishb.png": {
+"fmt": "pic",
+"off": 223401
+},
+"gfx/pokemon/back/omanyteb.png": {
+"fmt": "pic",
+"off": 188278
+},
+"gfx/pokemon/back/omastarb.png": {
+"fmt": "pic",
+"off": 188811
+},
+"gfx/pokemon/back/onixb.png": {
+"fmt": "pic",
+"off": 164608
+},
+"gfx/pokemon/back/parasb.png": {
+"fmt": "pic",
+"off": 192887
+},
+"gfx/pokemon/back/parasectb.png": {
+"fmt": "pic",
+"off": 170892
+},
+"gfx/pokemon/back/persianb.png": {
+"fmt": "pic",
+"off": 208644
+},
+"gfx/pokemon/back/pidgeotb.png": {
+"fmt": "pic",
+"off": 211833
+},
+"gfx/pokemon/back/pidgeottob.png": {
+"fmt": "pic",
+"off": 211291
+},
+"gfx/pokemon/back/pidgeyb.png": {
+"fmt": "pic",
+"off": 165467
+},
+"gfx/pokemon/back/pikachub.png": {
+"fmt": "pic",
+"off": 183947
+},
+"gfx/pokemon/back/pinsirb.png": {
+"fmt": "pic",
+"off": 162474
+},
+"gfx/pokemon/back/poliwagb.png": {
+"fmt": "pic",
+"off": 178503
+},
+"gfx/pokemon/back/poliwhirlb.png": {
+"fmt": "pic",
+"off": 193374
+},
+"gfx/pokemon/back/poliwrathb.png": {
+"fmt": "pic",
+"off": 193836
+},
+"gfx/pokemon/back/ponytab.png": {
+"fmt": "pic",
+"off": 216626
+},
+"gfx/pokemon/back/porygonb.png": {
+"fmt": "pic",
+"off": 219345
+},
+"gfx/pokemon/back/primeapeb.png": {
+"fmt": "pic",
+"off": 197640
+},
+"gfx/pokemon/back/psyduckb.png": {
+"fmt": "pic",
+"off": 171326
+},
+"gfx/pokemon/back/raichub.png": {
+"fmt": "pic",
+"off": 184515
+},
+"gfx/pokemon/back/rapidashb.png": {
+"fmt": "pic",
+"off": 216762
+},
+"gfx/pokemon/back/raticateb.png": {
+"fmt": "pic",
+"off": 217613
+},
+"gfx/pokemon/back/rattatab.png": {
+"fmt": "pic",
+"off": 217153
+},
+"gfx/pokemon/back/rhydonb.png": {
+"fmt": "pic",
+"off": 147970
+},
+"gfx/pokemon/back/rhyhornb.png": {
+"fmt": "pic",
+"off": 156687
+},
+"gfx/pokemon/back/sandshrewb.png": {
+"fmt": "pic",
+"off": 187367
+},
+"gfx/pokemon/back/sandslashb.png": {
+"fmt": "pic",
+"off": 187908
+},
+"gfx/pokemon/back/scytherb.png": {
+"fmt": "pic",
+"off": 160828
+},
+"gfx/pokemon/back/seadrab.png": {
+"fmt": "pic",
+"off": 186923
+},
+"gfx/pokemon/back/seakingb.png": {
+"fmt": "pic",
+"off": 215555
+},
+"gfx/pokemon/back/seelb.png": {
+"fmt": "pic",
+"off": 175336
+},
+"gfx/pokemon/back/shellderb.png": {
+"fmt": "pic",
+"off": 159171
+},
+"gfx/pokemon/back/slowbrob.png": {
+"fmt": "pic",
+"off": 151431
+},
+"gfx/pokemon/back/slowpokeb.png": {
+"fmt": "pic",
+"off": 165826
+},
+"gfx/pokemon/back/snorlaxb.png": {
+"fmt": "pic",
+"off": 204005
+},
+"gfx/pokemon/back/spearowb.png": {
+"fmt": "pic",
+"off": 149698
+},
+"gfx/pokemon/back/squirtleb.png": {
+"fmt": "pic",
+"off": 220815
+},
+"gfx/pokemon/back/starmieb.png": {
+"fmt": "pic",
+"off": 212396
+},
+"gfx/pokemon/back/staryub.png": {
+"fmt": "pic",
+"off": 161260
+},
+"gfx/pokemon/back/tangelab.png": {
+"fmt": "pic",
+"off": 163047
+},
+"gfx/pokemon/back/taurosb.png": {
+"fmt": "pic",
+"off": 176212
+},
+"gfx/pokemon/back/tentacoolb.png": {
+"fmt": "pic",
+"off": 159516
+},
+"gfx/pokemon/back/tentacruelb.png": {
+"fmt": "pic",
+"off": 214467
+},
+"gfx/pokemon/back/vaporeonb.png": {
+"fmt": "pic",
+"off": 191490
+},
+"gfx/pokemon/back/venomothb.png": {
+"fmt": "pic",
+"off": 198721
+},
+"gfx/pokemon/back/venonatb.png": {
+"fmt": "pic",
+"off": 177244
+},
+"gfx/pokemon/back/venusaurb.png": {
+"fmt": "pic",
+"off": 213911
+},
+"gfx/pokemon/back/victreebelb.png": {
+"fmt": "pic",
+"off": 225714
+},
+"gfx/pokemon/back/vileplumeb.png": {
+"fmt": "pic",
+"off": 224386
+},
+"gfx/pokemon/back/voltorbb.png": {
+"fmt": "pic",
+"off": 149914
+},
+"gfx/pokemon/back/vulpixb.png": {
+"fmt": "pic",
+"off": 182938
+},
+"gfx/pokemon/back/wartortleb.png": {
+"fmt": "pic",
+"off": 221681
+},
+"gfx/pokemon/back/weedleb.png": {
+"fmt": "pic",
+"off": 194084
+},
+"gfx/pokemon/back/weepinbellb.png": {
+"fmt": "pic",
+"off": 225135
+},
+"gfx/pokemon/back/weezingb.png": {
+"fmt": "pic",
+"off": 207990
+},
+"gfx/pokemon/back/wigglytuffb.png": {
+"fmt": "pic",
+"off": 189631
+},
+"gfx/pokemon/back/zapdosb.png": {
+"fmt": "pic",
+"off": 181380
+},
+"gfx/pokemon/back/zubatb.png": {
+"fmt": "pic",
+"off": 192279
+},
+"gfx/pokemon/front/abra.png": {
+"fmt": "pic",
+"off": 209868
+},
+"gfx/pokemon/front/aerodactyl.png": {
+"fmt": "pic",
+"off": 219441
+},
+"gfx/pokemon/front/alakazam.png": {
+"fmt": "pic",
+"off": 210266
+},
+"gfx/pokemon/front/arbok.png": {
+"fmt": "pic",
+"off": 169652
+},
+"gfx/pokemon/front/arcanine.png": {
+"fmt": "pic",
+"off": 157439
+},
+"gfx/pokemon/front/articuno.png": {
+"fmt": "pic",
+"off": 180224
+},
+"gfx/pokemon/front/beedrill.png": {
+"fmt": "pic",
+"off": 194440
+},
+"gfx/pokemon/front/bellsprout.png": {
+"fmt": "pic",
+"off": 224512
+},
+"gfx/pokemon/front/blastoise.png": {
+"fmt": "pic",
+"off": 161335
+},
+"gfx/pokemon/front/bulbasaur.png": {
+"fmt": "pic",
+"off": 212992
+},
+"gfx/pokemon/front/butterfree.png": {
+"fmt": "pic",
+"off": 199735
+},
+"gfx/pokemon/front/caterpie.png": {
+"fmt": "pic",
+"off": 199241
+},
+"gfx/pokemon/front/chansey.png": {
+"fmt": "pic",
+"off": 167086
+},
+"gfx/pokemon/front/charizard.png": {
+"fmt": "pic",
+"off": 221830
+},
+"gfx/pokemon/front/charmander.png": {
+"fmt": "pic",
+"off": 220252
+},
+"gfx/pokemon/front/charmeleon.png": {
+"fmt": "pic",
+"off": 220940
+},
+"gfx/pokemon/front/clefable.png": {
+"fmt": "pic",
+"off": 206988
+},
+"gfx/pokemon/front/clefairy.png": {
+"fmt": "pic",
+"off": 149122
+},
+"gfx/pokemon/front/cloyster.png": {
+"fmt": "pic",
+"off": 205951
+},
+"gfx/pokemon/front/cubone.png": {
+"fmt": "pic",
+"off": 155816
+},
+"gfx/pokemon/front/dewgong.png": {
+"fmt": "pic",
+"off": 198809
+},
+"gfx/pokemon/front/diglett.png": {
+"fmt": "pic",
+"off": 175411
+},
+"gfx/pokemon/front/ditto.png": {
+"fmt": "pic",
+"off": 181524
+},
+"gfx/pokemon/front/dodrio.png": {
+"fmt": "pic",
+"off": 196608
+},
+"gfx/pokemon/front/doduo.png": {
+"fmt": "pic",
+"off": 177964
+},
+"gfx/pokemon/front/dragonair.png": {
+"fmt": "pic",
+"off": 184983
+},
+"gfx/pokemon/front/dragonite.png": {
+"fmt": "pic",
+"off": 177322
+},
+"gfx/pokemon/front/dratini.png": {
+"fmt": "pic",
+"off": 184657
+},
+"gfx/pokemon/front/drowzee.png": {
+"fmt": "pic",
+"off": 171433
+},
+"gfx/pokemon/front/dugtrio.png": {
+"fmt": "pic",
+"off": 197760
+},
+"gfx/pokemon/front/eevee.png": {
+"fmt": "pic",
+"off": 189745
+},
+"gfx/pokemon/front/ekans.png": {
+"fmt": "pic",
+"off": 192363
+},
+"gfx/pokemon/front/electabuzz.png": {
+"fmt": "pic",
+"off": 172903
+},
+"gfx/pokemon/front/electrode.png": {
+"fmt": "pic",
+"off": 206688
+},
+"gfx/pokemon/front/exeggcute.png": {
+"fmt": "pic",
+"off": 153303
+},
+"gfx/pokemon/front/exeggutor.png": {
+"fmt": "pic",
+"off": 152022
+},
+"gfx/pokemon/front/farfetchd.png": {
+"fmt": "pic",
+"off": 176361
+},
+"gfx/pokemon/front/fearow.png": {
+"fmt": "pic",
+"off": 164739
+},
+"gfx/pokemon/front/flareon.png": {
+"fmt": "pic",
+"off": 190093
+},
+"gfx/pokemon/front/fossilaerodactyl.png": {
+"fmt": "pic",
+"off": 222518
+},
+"gfx/pokemon/front/fossilkabutops.png": {
+"fmt": "pic",
+"off": 195048
+},
+"gfx/pokemon/front/gastly.png": {
+"fmt": "pic",
+"off": 159607
+},
+"gfx/pokemon/front/gengar.png": {
+"fmt": "pic",
+"off": 154486
+},
+"gfx/pokemon/front/geodude.png": {
+"fmt": "pic",
+"off": 218703
+},
+"gfx/pokemon/front/gloom.png": {
+"fmt": "pic",
+"off": 223553
+},
+"gfx/pokemon/front/golbat.png": {
+"fmt": "pic",
+"off": 202208
+},
+"gfx/pokemon/front/goldeen.png": {
+"fmt": "pic",
+"off": 214639
+},
+"gfx/pokemon/front/golduck.png": {
+"fmt": "pic",
+"off": 200968
+},
+"gfx/pokemon/front/golem.png": {
+"fmt": "pic",
+"off": 171892
+},
+"gfx/pokemon/front/graveler.png": {
+"fmt": "pic",
+"off": 166476
+},
+"gfx/pokemon/front/grimer.png": {
+"fmt": "pic",
+"off": 153971
+},
+"gfx/pokemon/front/growlithe.png": {
+"fmt": "pic",
+"off": 163840
+},
+"gfx/pokemon/front/gyarados.png": {
+"fmt": "pic",
+"off": 158164
+},
+"gfx/pokemon/front/haunter.png": {
+"fmt": "pic",
+"off": 209290
+},
+"gfx/pokemon/front/hitmonchan.png": {
+"fmt": "pic",
+"off": 169148
+},
+"gfx/pokemon/front/hitmonlee.png": {
+"fmt": "pic",
+"off": 168639
+},
+"gfx/pokemon/front/horsea.png": {
+"fmt": "pic",
+"off": 186305
+},
+"gfx/pokemon/front/hypno.png": {
+"fmt": "pic",
+"off": 201565
+},
+"gfx/pokemon/front/ivysaur.png": {
+"fmt": "pic",
+"off": 151595
+},
+"gfx/pokemon/front/jigglypuff.png": {
+"fmt": "pic",
+"off": 188975
+},
+"gfx/pokemon/front/jolteon.png": {
+"fmt": "pic",
+"off": 190607
+},
+"gfx/pokemon/front/jynx.png": {
+"fmt": "pic",
+"off": 178574
+},
+"gfx/pokemon/front/kabuto.png": {
+"fmt": "pic",
+"off": 185444
+},
+"gfx/pokemon/front/kabutops.png": {
+"fmt": "pic",
+"off": 185731
+},
+"gfx/pokemon/front/kadabra.png": {
+"fmt": "pic",
+"off": 165936
+},
+"gfx/pokemon/front/kakuna.png": {
+"fmt": "pic",
+"off": 194167
+},
+"gfx/pokemon/front/kangaskhan.png": {
+"fmt": "pic",
+"off": 148122
+},
+"gfx/pokemon/front/kingler.png": {
+"fmt": "pic",
+"off": 205292
+},
+"gfx/pokemon/front/koffing.png": {
+"fmt": "pic",
+"off": 173990
+},
+"gfx/pokemon/front/krabby.png": {
+"fmt": "pic",
+"off": 182135
+},
+"gfx/pokemon/front/lapras.png": {
+"fmt": "pic",
+"off": 156865
+},
+"gfx/pokemon/front/lickitung.png": {
+"fmt": "pic",
+"off": 152743
+},
+"gfx/pokemon/front/machamp.png": {
+"fmt": "pic",
+"off": 200339
+},
+"gfx/pokemon/front/machoke.png": {
+"fmt": "pic",
+"off": 167557
+},
+"gfx/pokemon/front/machop.png": {
+"fmt": "pic",
+"off": 191647
+},
+"gfx/pokemon/front/magikarp.png": {
+"fmt": "pic",
+"off": 204081
+},
+"gfx/pokemon/front/magmar.png": {
+"fmt": "pic",
+"off": 172385
+},
+"gfx/pokemon/front/magnemite.png": {
+"fmt": "pic",
+"off": 220039
+},
+"gfx/pokemon/front/magneton.png": {
+"fmt": "pic",
+"off": 173448
+},
+"gfx/pokemon/front/mankey.png": {
+"fmt": "pic",
+"off": 174609
+},
+"gfx/pokemon/front/marowak.png": {
+"fmt": "pic",
+"off": 208783
+},
+"gfx/pokemon/front/meowth.png": {
+"fmt": "pic",
+"off": 181769
+},
+"gfx/pokemon/front/metapod.png": {
+"fmt": "pic",
+"off": 199482
+},
+"gfx/pokemon/front/mew.png": {
+"fmt": "pic",
+"off": 16658
+},
+"gfx/pokemon/front/mewtwo.png": {
+"fmt": "pic",
+"off": 202879
+},
+"gfx/pokemon/front/moltres.png": {
+"fmt": "pic",
+"off": 179116
+},
+"gfx/pokemon/front/mr.mime.png": {
+"fmt": "pic",
+"off": 168179
+},
+"gfx/pokemon/front/muk.png": {
+"fmt": "pic",
+"off": 204630
+},
+"gfx/pokemon/front/nidoking.png": {
+"fmt": "pic",
+"off": 150008
+},
+"gfx/pokemon/front/nidoqueen.png": {
+"fmt": "pic",
+"off": 155145
+},
+"gfx/pokemon/front/nidoranf.png": {
+"fmt": "pic",
+"off": 154920
+},
+"gfx/pokemon/front/nidoranm.png": {
+"fmt": "pic",
+"off": 148796
+},
+"gfx/pokemon/front/nidorina.png": {
+"fmt": "pic",
+"off": 218251
+},
+"gfx/pokemon/front/nidorino.png": {
+"fmt": "pic",
+"off": 217730
+},
+"gfx/pokemon/front/ninetales.png": {
+"fmt": "pic",
+"off": 183039
+},
+"gfx/pokemon/front/oddish.png": {
+"fmt": "pic",
+"off": 223243
+},
+"gfx/pokemon/front/omanyte.png": {
+"fmt": "pic",
+"off": 188061
+},
+"gfx/pokemon/front/omastar.png": {
+"fmt": "pic",
+"off": 188371
+},
+"gfx/pokemon/front/onix.png": {
+"fmt": "pic",
+"off": 164196
+},
+"gfx/pokemon/front/paras.png": {
+"fmt": "pic",
+"off": 192692
+},
+"gfx/pokemon/front/parasect.png": {
+"fmt": "pic",
+"off": 170408
+},
+"gfx/pokemon/front/persian.png": {
+"fmt": "pic",
+"off": 208158
+},
+"gfx/pokemon/front/pidgeot.png": {
+"fmt": "pic",
+"off": 211394
+},
+"gfx/pokemon/front/pidgeotto.png": {
+"fmt": "pic",
+"off": 210954
+},
+"gfx/pokemon/front/pidgey.png": {
+"fmt": "pic",
+"off": 165287
+},
+"gfx/pokemon/front/pikachu.png": {
+"fmt": "pic",
+"off": 183677
+},
+"gfx/pokemon/front/pinsir.png": {
+"fmt": "pic",
+"off": 162010
+},
+"gfx/pokemon/front/poliwag.png": {
+"fmt": "pic",
+"off": 178293
+},
+"gfx/pokemon/front/poliwhirl.png": {
+"fmt": "pic",
+"off": 193005
+},
+"gfx/pokemon/front/poliwrath.png": {
+"fmt": "pic",
+"off": 193473
+},
+"gfx/pokemon/front/ponyta.png": {
+"fmt": "pic",
+"off": 215729
+},
+"gfx/pokemon/front/porygon.png": {
+"fmt": "pic",
+"off": 219012
+},
+"gfx/pokemon/front/primeape.png": {
+"fmt": "pic",
+"off": 197191
+},
+"gfx/pokemon/front/psyduck.png": {
+"fmt": "pic",
+"off": 171018
+},
+"gfx/pokemon/front/raichu.png": {
+"fmt": "pic",
+"off": 184067
+},
+"gfx/pokemon/front/rapidash.png": {
+"fmt": "pic",
+"off": 216080
+},
+"gfx/pokemon/front/raticate.png": {
+"fmt": "pic",
+"off": 217210
+},
+"gfx/pokemon/front/rattata.png": {
+"fmt": "pic",
+"off": 216938
+},
+"gfx/pokemon/front/rhydon.png": {
+"fmt": "pic",
+"off": 147456
+},
+"gfx/pokemon/front/rhyhorn.png": {
+"fmt": "pic",
+"off": 156168
+},
+"gfx/pokemon/front/sandshrew.png": {
+"fmt": "pic",
+"off": 187081
+},
+"gfx/pokemon/front/sandslash.png": {
+"fmt": "pic",
+"off": 187499
+},
+"gfx/pokemon/front/scyther.png": {
+"fmt": "pic",
+"off": 160284
+},
+"gfx/pokemon/front/seadra.png": {
+"fmt": "pic",
+"off": 186564
+},
+"gfx/pokemon/front/seaking.png": {
+"fmt": "pic",
+"off": 215043
+},
+"gfx/pokemon/front/seel.png": {
+"fmt": "pic",
+"off": 174980
+},
+"gfx/pokemon/front/shellder.png": {
+"fmt": "pic",
+"off": 158902
+},
+"gfx/pokemon/front/slowbro.png": {
+"fmt": "pic",
+"off": 150794
+},
+"gfx/pokemon/front/slowpoke.png": {
+"fmt": "pic",
+"off": 165536
+},
+"gfx/pokemon/front/snorlax.png": {
+"fmt": "pic",
+"off": 203545
+},
+"gfx/pokemon/front/spearow.png": {
+"fmt": "pic",
+"off": 149471
+},
+"gfx/pokemon/front/squirtle.png": {
+"fmt": "pic",
+"off": 220600
+},
+"gfx/pokemon/front/starmie.png": {
+"fmt": "pic",
+"off": 211996
+},
+"gfx/pokemon/front/staryu.png": {
+"fmt": "pic",
+"off": 160992
+},
+"gfx/pokemon/front/tangela.png": {
+"fmt": "pic",
+"off": 162617
+},
+"gfx/pokemon/front/tauros.png": {
+"fmt": "pic",
+"off": 175742
+},
+"gfx/pokemon/front/tentacool.png": {
+"fmt": "pic",
+"off": 159274
+},
+"gfx/pokemon/front/tentacruel.png": {
+"fmt": "pic",
+"off": 214101
+},
+"gfx/pokemon/front/vaporeon.png": {
+"fmt": "pic",
+"off": 191150
+},
+"gfx/pokemon/front/venomoth.png": {
+"fmt": "pic",
+"off": 198313
+},
+"gfx/pokemon/front/venonat.png": {
+"fmt": "pic",
+"off": 176983
+},
+"gfx/pokemon/front/venusaur.png": {
+"fmt": "pic",
+"off": 213346
+},
+"gfx/pokemon/front/victreebel.png": {
+"fmt": "pic",
+"off": 225258
+},
+"gfx/pokemon/front/vileplume.png": {
+"fmt": "pic",
+"off": 224033
+},
+"gfx/pokemon/front/voltorb.png": {
+"fmt": "pic",
+"off": 149777
+},
+"gfx/pokemon/front/vulpix.png": {
+"fmt": "pic",
+"off": 182564
+},
+"gfx/pokemon/front/wartortle.png": {
+"fmt": "pic",
+"off": 221361
+},
+"gfx/pokemon/front/weedle.png": {
+"fmt": "pic",
+"off": 193917
+},
+"gfx/pokemon/front/weepinbell.png": {
+"fmt": "pic",
+"off": 224816
+},
+"gfx/pokemon/front/weezing.png": {
+"fmt": "pic",
+"off": 207428
+},
+"gfx/pokemon/front/wigglytuff.png": {
+"fmt": "pic",
+"off": 189256
+},
+"gfx/pokemon/front/zapdos.png": {
+"fmt": "pic",
+"off": 180893
+},
+"gfx/pokemon/front/zubat.png": {
+"fmt": "pic",
+"off": 192012
+},
+"gfx/sprites/agatha.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 94784,
+"w": 16
+},
+"gfx/sprites/balding_guy.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 93824,
+"w": 16
+},
+"gfx/sprites/beauty.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 87680,
+"w": 16
+},
+"gfx/sprites/bike_shop_clerk.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 89984,
+"w": 16
+},
+"gfx/sprites/biker.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 88832,
+"w": 16
+},
+"gfx/sprites/bird.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 85376,
+"w": 16
+},
+"gfx/sprites/blue.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 82688,
+"w": 16
+},
+"gfx/sprites/boulder.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 70080,
+"w": 16
+},
+"gfx/sprites/brunette_girl.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 92864,
+"w": 16
+},
+"gfx/sprites/bruno.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 95168,
+"w": 16
+},
+"gfx/sprites/captain.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 68800,
+"w": 16
+},
+"gfx/sprites/channeler.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 91328,
+"w": 16
+},
+"gfx/sprites/clerk.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 67264,
+"w": 16
+},
+"gfx/sprites/clipboard.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 70272,
+"w": 16
+},
+"gfx/sprites/cook.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 89600,
+"w": 16
+},
+"gfx/sprites/cooltrainer_f.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 84224,
+"w": 16
+},
+"gfx/sprites/cooltrainer_m.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 84608,
+"w": 16
+},
+"gfx/sprites/daisy.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 88448,
+"w": 16
+},
+"gfx/sprites/fairy.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 94400,
+"w": 16
+},
+"gfx/sprites/fisher.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 68992,
+"w": 16
+},
+"gfx/sprites/fishing_guru.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 67456,
+"w": 16
+},
+"gfx/sprites/fossil.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 70016,
+"w": 16
+},
+"gfx/sprites/gambler.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 86144,
+"w": 16
+},
+"gfx/sprites/gambler_asleep.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 70464,
+"w": 16
+},
+"gfx/sprites/gameboy_kid.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 94208,
+"w": 16
+},
+"gfx/sprites/gentleman.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 88064,
+"w": 16
+},
+"gfx/sprites/giovanni.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 90560,
+"w": 16
+},
+"gfx/sprites/girl.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 86912,
+"w": 16
+},
+"gfx/sprites/gramps.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 67072,
+"w": 16
+},
+"gfx/sprites/granny.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 67648,
+"w": 16
+},
+"gfx/sprites/guard.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 69760,
+"w": 16
+},
+"gfx/sprites/gym_guide.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 66880,
+"w": 16
+},
+"gfx/sprites/hiker.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 87296,
+"w": 16
+},
+"gfx/sprites/koga.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 69376,
+"w": 16
+},
+"gfx/sprites/lance.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 93248,
+"w": 16
+},
+"gfx/sprites/link_receptionist.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 68032,
+"w": 16
+},
+"gfx/sprites/little_boy.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 94016,
+"w": 16
+},
+"gfx/sprites/little_girl.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 84992,
+"w": 16
+},
+"gfx/sprites/lorelei.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 95552,
+"w": 16
+},
+"gfx/sprites/middle_aged_man.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 85760,
+"w": 16
+},
+"gfx/sprites/middle_aged_woman.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 92480,
+"w": 16
+},
+"gfx/sprites/mom.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 93632,
+"w": 16
+},
+"gfx/sprites/monster.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 83840,
+"w": 16
+},
+"gfx/sprites/mr_fuji.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 90176,
+"w": 16
+},
+"gfx/sprites/nurse.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 67840,
+"w": 16
+},
+"gfx/sprites/oak.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 83072,
+"w": 16
+},
+"gfx/sprites/old_amber.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 70400,
+"w": 16
+},
+"gfx/sprites/paper.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 70144,
+"w": 16
+},
+"gfx/sprites/poke_ball.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 69952,
+"w": 16
+},
+"gfx/sprites/pokedex.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 70208,
+"w": 16
+},
+"gfx/sprites/red.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 82304,
+"w": 16
+},
+"gfx/sprites/red_bike.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 81920,
+"w": 16
+},
+"gfx/sprites/rocker.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 65920,
+"w": 16
+},
+"gfx/sprites/rocket.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 90944,
+"w": 16
+},
+"gfx/sprites/safari_zone_worker.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 66688,
+"w": 16
+},
+"gfx/sprites/sailor.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 89216,
+"w": 16
+},
+"gfx/sprites/scientist.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 65536,
+"w": 16
+},
+"gfx/sprites/seel.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 95936,
+"w": 16
+},
+"gfx/sprites/silph_president.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 68224,
+"w": 16
+},
+"gfx/sprites/silph_worker_f.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 92096,
+"w": 16
+},
+"gfx/sprites/silph_worker_m.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 68416,
+"w": 16
+},
+"gfx/sprites/snorlax.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 64,
+"off": 70336,
+"w": 16
+},
+"gfx/sprites/super_nerd.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 86528,
+"w": 16
+},
+"gfx/sprites/swimmer.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 66304,
+"w": 16
+},
+"gfx/sprites/waiter.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 91712,
+"w": 16
+},
+"gfx/sprites/warden.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 192,
+"off": 68608,
+"w": 16
+},
+"gfx/sprites/youngster.png": {
+"fmt": "2bpp",
+"h": 96,
+"len": 384,
+"off": 83456,
+"w": 16
+},
+"gfx/tilesets/cavern.png": {
+"fmt": "2bpp",
+"h": 40,
+"len": 1056,
+"off": 445600,
+"w": 128
+},
+"gfx/tilesets/cemetery.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1472,
+"off": 442368,
+"w": 128
+},
+"gfx/tilesets/club.png": {
+"fmt": "2bpp",
+"h": 40,
+"len": 1200,
+"off": 456304,
+"w": 128
+},
+"gfx/tilesets/facility.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1536,
+"off": 438783,
+"w": 128
+},
+"gfx/tilesets/forest.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1536,
+"off": 435199,
+"w": 128
+},
+"gfx/tilesets/gate.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1520,
+"off": 431631,
+"w": 128
+},
+"gfx/tilesets/gym.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1536,
+"off": 426111,
+"w": 128
+},
+"gfx/tilesets/house.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1504,
+"off": 414624,
+"w": 128
+},
+"gfx/tilesets/interior.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1520,
+"off": 421216,
+"w": 128
+},
+"gfx/tilesets/lab.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1472,
+"off": 453904,
+"w": 128
+},
+"gfx/tilesets/lobby.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1504,
+"off": 448704,
+"w": 128
+},
+"gfx/tilesets/mansion.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1504,
+"off": 416688,
+"w": 128
+},
+"gfx/tilesets/overworld.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1504,
+"off": 409600,
+"w": 128
+},
+"gfx/tilesets/plateau.png": {
+"fmt": "2bpp",
+"h": 40,
+"len": 1120,
+"off": 423664,
+"w": 128
+},
+"gfx/tilesets/pokecenter.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1536,
+"off": 429503,
+"w": 128
+},
+"gfx/tilesets/reds_house.png": {
+"fmt": "2bpp",
+"h": 40,
+"len": 1168,
+"off": 413152,
+"w": 128
+},
+"gfx/tilesets/ship.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1440,
+"off": 451472,
+"w": 128
+},
+"gfx/tilesets/ship_port.png": {
+"fmt": "2bpp",
+"h": 48,
+"len": 1504,
+"off": 419344,
+"w": 128
+},
+"gfx/tilesets/underground.png": {
+"fmt": "2bpp",
+"h": 16,
+"len": 400,
+"off": 458080,
+"w": 128
+},
+"gfx/title/gamefreak_inc.png": {
+"fmt": "2bpp",
+"h": 8,
+"len": 144,
+"off": 74232,
+"w": 72
+},
+"gfx/title/player.png": {
+"fmt": "2bpp",
+"h": 56,
+"len": 560,
+"off": 75432,
+"w": 40
+},
+"gfx/title/pokemon_logo.png": {
+"fmt": "2bpp",
+"h": 56,
+"len": 1792,
+"off": 70528,
+"w": 128
+},
+"gfx/title/red_version.png": {
+"fmt": "1bpp",
+"h": 8,
+"len": 80,
+"off": 426031,
+"w": 80
+},
+"gfx/trainers/agatha.png": {
+"fmt": "pic",
+"off": 326257
+},
+"gfx/trainers/beauty.png": {
+"fmt": "pic",
+"off": 316895
+},
+"gfx/trainers/biker.png": {
+"fmt": "pic",
+"off": 314046
+},
+"gfx/trainers/birdkeeper.png": {
+"fmt": "pic",
+"off": 318683
+},
+"gfx/trainers/blackbelt.png": {
+"fmt": "pic",
+"off": 319094
+},
+"gfx/trainers/blaine.png": {
+"fmt": "pic",
+"off": 323920
+},
+"gfx/trainers/brock.png": {
+"fmt": "pic",
+"off": 322366
+},
+"gfx/trainers/bruno.png": {
+"fmt": "pic",
+"off": 321859
+},
+"gfx/trainers/bugcatcher.png": {
+"fmt": "pic",
+"off": 311494
+},
+"gfx/trainers/burglar.png": {
+"fmt": "pic",
+"off": 314513
+},
+"gfx/trainers/channeler.png": {
+"fmt": "pic",
+"off": 325796
+},
+"gfx/trainers/cooltrainerf.png": {
+"fmt": "pic",
+"off": 321470
+},
+"gfx/trainers/cooltrainerm.png": {
+"fmt": "pic",
+"off": 321077
+},
+"gfx/trainers/cueball.png": {
+"fmt": "pic",
+"off": 315983
+},
+"gfx/trainers/engineer.png": {
+"fmt": "pic",
+"off": 314890
+},
+"gfx/trainers/erika.png": {
+"fmt": "pic",
+"off": 323253
+},
+"gfx/trainers/fisher.png": {
+"fmt": "pic",
+"off": 315271
+},
+"gfx/trainers/gambler.png": {
+"fmt": "pic",
+"off": 316449
+},
+"gfx/trainers/gentleman.png": {
+"fmt": "pic",
+"off": 324560
+},
+"gfx/trainers/giovanni.png": {
+"fmt": "pic",
+"off": 320446
+},
+"gfx/trainers/hiker.png": {
+"fmt": "pic",
+"off": 313575
+},
+"gfx/trainers/jr.trainerf.png": {
+"fmt": "pic",
+"off": 312712
+},
+"gfx/trainers/jr.trainerm.png": {
+"fmt": "pic",
+"off": 312400
+},
+"gfx/trainers/juggler.png": {
+"fmt": "pic",
+"off": 317821
+},
+"gfx/trainers/koga.png": {
+"fmt": "pic",
+"off": 323542
+},
+"gfx/trainers/lance.png": {
+"fmt": "pic",
+"off": 326562
+},
+"gfx/trainers/lass.png": {
+"fmt": "pic",
+"off": 311808
+},
+"gfx/trainers/lorelei.png": {
+"fmt": "pic",
+"off": 325497
+},
+"gfx/trainers/lt.surge.png": {
+"fmt": "pic",
+"off": 322864
+},
+"gfx/trainers/misty.png": {
+"fmt": "pic",
+"off": 322624
+},
+"gfx/trainers/pokemaniac.png": {
+"fmt": "pic",
+"off": 313033
+},
+"gfx/trainers/prof.oak.png": {
+"fmt": "pic",
+"off": 319839
+},
+"gfx/trainers/psychic.png": {
+"fmt": "pic",
+"off": 317224
+},
+"gfx/trainers/rival1.png": {
+"fmt": "pic",
+"off": 319561
+},
+"gfx/trainers/rival2.png": {
+"fmt": "pic",
+"off": 324815
+},
+"gfx/trainers/rival3.png": {
+"fmt": "pic",
+"off": 325155
+},
+"gfx/trainers/rocker.png": {
+"fmt": "pic",
+"off": 317507
+},
+"gfx/trainers/rocket.png": {
+"fmt": "pic",
+"off": 320671
+},
+"gfx/trainers/sabrina.png": {
+"fmt": "pic",
+"off": 324178
+},
+"gfx/trainers/sailor.png": {
+"fmt": "pic",
+"off": 312027
+},
+"gfx/trainers/scientist.png": {
+"fmt": "pic",
+"off": 320125
+},
+"gfx/trainers/supernerd.png": {
+"fmt": "pic",
+"off": 313329
+},
+"gfx/trainers/swimmer.png": {
+"fmt": "pic",
+"off": 315699
+},
+"gfx/trainers/tamer.png": {
+"fmt": "pic",
+"off": 318286
+},
+"gfx/trainers/youngster.png": {
+"fmt": "pic",
+"off": 311296
+},
+"maps/AgathasRoom.blk": {
+"fmt": "bin",
+"len": 30,
+"off": 484704
+},
+"maps/BikeShop.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 120972
+},
+"maps/BillsHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 125189
+},
+"maps/BluesHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/BrunosRoom.blk": {
+"fmt": "bin",
+"len": 30,
+"off": 484355
+},
+"maps/CeladonChiefHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 299597
+},
+"maps/CeladonCity.blk": {
+"fmt": "bin",
+"len": 450,
+"off": 98527
+},
+"maps/CeladonDiner.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 299502
+},
+"maps/CeladonGym.blk": {
+"fmt": "bin",
+"len": 45,
+"off": 297860
+},
+"maps/CeladonHotel.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 299687
+},
+"maps/CeladonMansion1F.blk": {
+"fmt": "bin",
+"len": 24,
+"off": 296726
+},
+"maps/CeladonMansion2F.blk": {
+"fmt": "bin",
+"len": 24,
+"off": 296812
+},
+"maps/CeladonMansion3F.blk": {
+"fmt": "bin",
+"len": 24,
+"off": 297031
+},
+"maps/CeladonMansionRoof.blk": {
+"fmt": "bin",
+"len": 24,
+"off": 297108
+},
+"maps/CeladonMansionRoofHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 115182
+},
+"maps/CeladonMart1F.blk": {
+"fmt": "bin",
+"len": 40,
+"off": 397278
+},
+"maps/CeladonMart2F.blk": {
+"fmt": "bin",
+"len": 40,
+"off": 352584
+},
+"maps/CeladonMart3F.blk": {
+"fmt": "bin",
+"len": 40,
+"off": 295714
+},
+"maps/CeladonMart4F.blk": {
+"fmt": "bin",
+"len": 40,
+"off": 295841
+},
+"maps/CeladonMart5F.blk": {
+"fmt": "bin",
+"len": 40,
+"off": 299196
+},
+"maps/CeladonMartElevator.blk": {
+"fmt": "bin",
+"len": 4,
+"off": 284763
+},
+"maps/CeladonMartRoof.blk": {
+"fmt": "bin",
+"len": 40,
+"off": 296396
+},
+"maps/CeladonPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/CeruleanBadgeHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 348735
+},
+"maps/CeruleanCave1F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 478582
+},
+"maps/CeruleanCave2F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 286301
+},
+"maps/CeruleanCaveB1F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 286552
+},
+"maps/CeruleanCity.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 100400
+},
+"maps/CeruleanGym.blk": {
+"fmt": "bin",
+"len": 35,
+"off": 378982
+},
+"maps/CeruleanMart.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 120112
+},
+"maps/CeruleanPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/CeruleanTradeHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/CeruleanTrashedHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 115198
+},
+"maps/ChampionsRoom.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 483679
+},
+"maps/CinnabarGym.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 482086
+},
+"maps/CinnabarIsland.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 114793
+},
+"maps/CinnabarLab.blk": {
+"fmt": "bin",
+"len": 36,
+"off": 482289
+},
+"maps/CinnabarLabFossilRoom.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 482832
+},
+"maps/CinnabarLabMetronomeRoom.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 482581
+},
+"maps/CinnabarLabTradeRoom.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 482411
+},
+"maps/CinnabarMart.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 120112
+},
+"maps/CinnabarPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/Colosseum.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 327057
+},
+"maps/CopycatsHouse1F.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 295433
+},
+"maps/CopycatsHouse2F.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 376848
+},
+"maps/Daycare.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/DiglettsCave.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 393816
+},
+"maps/DiglettsCaveRoute11.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 115214
+},
+"maps/DiglettsCaveRoute2.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 115214
+},
+"maps/FightingDojo.blk": {
+"fmt": "bin",
+"len": 30,
+"off": 380899
+},
+"maps/FuchsiaBillsGrandpasHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/FuchsiaCity.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 101510
+},
+"maps/FuchsiaGoodRodHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 348735
+},
+"maps/FuchsiaGym.blk": {
+"fmt": "bin",
+"len": 45,
+"off": 480938
+},
+"maps/FuchsiaMart.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 120112
+},
+"maps/FuchsiaMeetingRoom.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 481058
+},
+"maps/FuchsiaPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/GameCorner.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 299011
+},
+"maps/GameCornerPrizeRoom.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 299313
+},
+"maps/HallOfFame.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 370059
+},
+"maps/IndigoPlateau.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 330058
+},
+"maps/IndigoPlateauLobby.blk": {
+"fmt": "bin",
+"len": 48,
+"off": 105679
+},
+"maps/LancesRoom.blk": {
+"fmt": "bin",
+"len": 169,
+"off": 369641
+},
+"maps/LavenderCuboneHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/LavenderMart.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 120112
+},
+"maps/LavenderPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/LavenderTown.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 278661
+},
+"maps/LoreleisRoom.blk": {
+"fmt": "bin",
+"len": 30,
+"off": 484012
+},
+"maps/MrFujisHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/MrPsychicsHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/MtMoon1F.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 301975
+},
+"maps/MtMoonB1F.blk": {
+"fmt": "bin",
+"len": 196,
+"off": 334481
+},
+"maps/MtMoonB2F.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 303169
+},
+"maps/MtMoonPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/Museum1F.blk": {
+"fmt": "bin",
+"len": 40,
+"off": 376864
+},
+"maps/Museum2F.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 376904
+},
+"maps/NameRatersHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/OaksLab.blk": {
+"fmt": "bin",
+"len": 30,
+"off": 115136
+},
+"maps/PalletTown.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 99069
+},
+"maps/PewterCity.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 99814
+},
+"maps/PewterGym.blk": {
+"fmt": "bin",
+"len": 35,
+"off": 378200
+},
+"maps/PewterMart.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 120112
+},
+"maps/PewterNidoranHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/PewterPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/PewterSpeechHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/PokemonFanClub.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 367829
+},
+"maps/PokemonMansion1F.blk": {
+"fmt": "bin",
+"len": 210,
+"off": 279550
+},
+"maps/PokemonMansion2F.blk": {
+"fmt": "bin",
+"len": 210,
+"off": 336144
+},
+"maps/PokemonMansion3F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 336678
+},
+"maps/PokemonMansionB1F.blk": {
+"fmt": "bin",
+"len": 210,
+"off": 337117
+},
+"maps/PokemonTower1F.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 394380
+},
+"maps/PokemonTower2F.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 394854
+},
+"maps/PokemonTower3F.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 395152
+},
+"maps/PokemonTower4F.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 395468
+},
+"maps/PokemonTower5F.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 395913
+},
+"maps/PokemonTower6F.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 396437
+},
+"maps/PokemonTower7F.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 397088
+},
+"maps/PowerPlant.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 123974
+},
+"maps/RedsHouse1F.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 295433
+},
+"maps/RedsHouse2F.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 376848
+},
+"maps/RockTunnel1F.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 280181
+},
+"maps/RockTunnelB1F.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 287137
+},
+"maps/RockTunnelPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/RocketHideoutB1F.blk": {
+"fmt": "bin",
+"len": 210,
+"off": 281929
+},
+"maps/RocketHideoutB2F.blk": {
+"fmt": "bin",
+"len": 210,
+"off": 282951
+},
+"maps/RocketHideoutB3F.blk": {
+"fmt": "bin",
+"len": 210,
+"off": 283519
+},
+"maps/RocketHideoutB4F.blk": {
+"fmt": "bin",
+"len": 180,
+"off": 284240
+},
+"maps/RocketHideoutElevator.blk": {
+"fmt": "bin",
+"len": 12,
+"off": 284584
+},
+"maps/Route1.blk": {
+"fmt": "bin",
+"len": 180,
+"off": 114940
+},
+"maps/Route10.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 361302
+},
+"maps/Route11.blk": {
+"fmt": "bin",
+"len": 270,
+"off": 361823
+},
+"maps/Route11Gate1F.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 295111
+},
+"maps/Route11Gate2F.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 295131
+},
+"maps/Route12.blk": {
+"fmt": "bin",
+"len": 540,
+"off": 362256
+},
+"maps/Route12Gate1F.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 300352
+},
+"maps/Route12Gate2F.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 295131
+},
+"maps/Route12SuperRodHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/Route13.blk": {
+"fmt": "bin",
+"len": 270,
+"off": 346251
+},
+"maps/Route14.blk": {
+"fmt": "bin",
+"len": 270,
+"off": 346642
+},
+"maps/Route15.blk": {
+"fmt": "bin",
+"len": 270,
+"off": 362956
+},
+"maps/Route15Gate1F.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 295111
+},
+"maps/Route15Gate2F.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 295131
+},
+"maps/Route16.blk": {
+"fmt": "bin",
+"len": 180,
+"off": 363396
+},
+"maps/Route16FlyHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/Route16Gate1F.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 301027
+},
+"maps/Route16Gate2F.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 295131
+},
+"maps/Route17.blk": {
+"fmt": "bin",
+"len": 720,
+"off": 347048
+},
+"maps/Route18.blk": {
+"fmt": "bin",
+"len": 225,
+"off": 363676
+},
+"maps/Route18Gate1F.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 295111
+},
+"maps/Route18Gate2F.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 295131
+},
+"maps/Route19.blk": {
+"fmt": "bin",
+"len": 270,
+"off": 347889
+},
+"maps/Route2.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 344190
+},
+"maps/Route20.blk": {
+"fmt": "bin",
+"len": 450,
+"off": 328061
+},
+"maps/Route21.blk": {
+"fmt": "bin",
+"len": 450,
+"off": 348269
+},
+"maps/Route22.blk": {
+"fmt": "bin",
+"len": 180,
+"off": 327741
+},
+"maps/Route22Gate.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 124746
+},
+"maps/Route23.blk": {
+"fmt": "bin",
+"len": 720,
+"off": 328626
+},
+"maps/Route24.blk": {
+"fmt": "bin",
+"len": 180,
+"off": 329447
+},
+"maps/Route25.blk": {
+"fmt": "bin",
+"len": 270,
+"off": 329744
+},
+"maps/Route2Gate.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 376976
+},
+"maps/Route2TradeHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/Route3.blk": {
+"fmt": "bin",
+"len": 315,
+"off": 344661
+},
+"maps/Route4.blk": {
+"fmt": "bin",
+"len": 405,
+"off": 345068
+},
+"maps/Route5.blk": {
+"fmt": "bin",
+"len": 180,
+"off": 345554
+},
+"maps/Route5Gate.blk": {
+"fmt": "bin",
+"len": 12,
+"off": 122917
+},
+"maps/Route6.blk": {
+"fmt": "bin",
+"len": 180,
+"off": 360569
+},
+"maps/Route6Gate.blk": {
+"fmt": "bin",
+"len": 12,
+"off": 122917
+},
+"maps/Route7.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 294993
+},
+"maps/Route7Gate.blk": {
+"fmt": "bin",
+"len": 12,
+"off": 123311
+},
+"maps/Route8.blk": {
+"fmt": "bin",
+"len": 270,
+"off": 360902
+},
+"maps/Route8Gate.blk": {
+"fmt": "bin",
+"len": 12,
+"off": 123311
+},
+"maps/Route9.blk": {
+"fmt": "bin",
+"len": 270,
+"off": 345854
+},
+"maps/SSAnne1F.blk": {
+"fmt": "bin",
+"len": 180,
+"off": 398047
+},
+"maps/SSAnne1FRooms.blk": {
+"fmt": "bin",
+"len": 96,
+"off": 400095
+},
+"maps/SSAnne2F.blk": {
+"fmt": "bin",
+"len": 180,
+"off": 398702
+},
+"maps/SSAnne2FRooms.blk": {
+"fmt": "bin",
+"len": 96,
+"off": 394176
+},
+"maps/SSAnne3F.blk": {
+"fmt": "bin",
+"len": 30,
+"off": 280918
+},
+"maps/SSAnneB1F.blk": {
+"fmt": "bin",
+"len": 60,
+"off": 398950
+},
+"maps/SSAnneB1FRooms.blk": {
+"fmt": "bin",
+"len": 96,
+"off": 394176
+},
+"maps/SSAnneBow.blk": {
+"fmt": "bin",
+"len": 70,
+"off": 399201
+},
+"maps/SSAnneCaptainsRoom.blk": {
+"fmt": "bin",
+"len": 12,
+"off": 399710
+},
+"maps/SSAnneKitchen.blk": {
+"fmt": "bin",
+"len": 56,
+"off": 399441
+},
+"maps/SafariZoneCenter.blk": {
+"fmt": "bin",
+"len": 195,
+"off": 285726
+},
+"maps/SafariZoneCenterRestHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 278779
+},
+"maps/SafariZoneEast.blk": {
+"fmt": "bin",
+"len": 195,
+"off": 284892
+},
+"maps/SafariZoneEastRestHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 278779
+},
+"maps/SafariZoneGate.blk": {
+"fmt": "bin",
+"len": 12,
+"off": 122917
+},
+"maps/SafariZoneNorth.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 285246
+},
+"maps/SafariZoneNorthRestHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 278779
+},
+"maps/SafariZoneSecretHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 303999
+},
+"maps/SafariZoneWest.blk": {
+"fmt": "bin",
+"len": 195,
+"off": 303688
+},
+"maps/SafariZoneWestRestHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 278779
+},
+"maps/SaffronCity.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 330392
+},
+"maps/SaffronGym.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 381859
+},
+"maps/SaffronMart.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 120112
+},
+"maps/SaffronPidgeyHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/SaffronPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/SeafoamIslands1F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 280735
+},
+"maps/SeafoamIslandsB1F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 287678
+},
+"maps/SeafoamIslandsB2F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 287994
+},
+"maps/SeafoamIslandsB3F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 288518
+},
+"maps/SeafoamIslandsB4F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 289018
+},
+"maps/SilphCo10F.blk": {
+"fmt": "bin",
+"len": 72,
+"off": 369242
+},
+"maps/SilphCo11F.blk": {
+"fmt": "bin",
+"len": 81,
+"off": 402376
+},
+"maps/SilphCo1F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 382114
+},
+"maps/SilphCo2F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 368328
+},
+"maps/SilphCo3F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 368806
+},
+"maps/SilphCo4F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 106148
+},
+"maps/SilphCo5F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 106774
+},
+"maps/SilphCo6F.blk": {
+"fmt": "bin",
+"len": 117,
+"off": 107371
+},
+"maps/SilphCo7F.blk": {
+"fmt": "bin",
+"len": 117,
+"off": 335703
+},
+"maps/SilphCo8F.blk": {
+"fmt": "bin",
+"len": 117,
+"off": 353901
+},
+"maps/SilphCo9F.blk": {
+"fmt": "bin",
+"len": 117,
+"off": 383369
+},
+"maps/SilphCoElevator.blk": {
+"fmt": "bin",
+"len": 4,
+"off": 284763
+},
+"maps/TradeCenter.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 327005
+},
+"maps/UndergroundPathNorthSouth.blk": {
+"fmt": "bin",
+"len": 92,
+"off": 393624
+},
+"maps/UndergroundPathRoute5.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 115120
+},
+"maps/UndergroundPathRoute6.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 115120
+},
+"maps/UndergroundPathRoute7.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 115120
+},
+"maps/UndergroundPathRoute8.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 115120
+},
+"maps/UndergroundPathWestEast.blk": {
+"fmt": "bin",
+"len": 100,
+"off": 393716
+},
+"maps/UnusedDiglettsCaveCopy.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 393816
+},
+"maps/UnusedEmptyMap.blk": {
+"fmt": "bin",
+"len": 10,
+"off": 99516
+},
+"maps/UnusedPokecenterCopy.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/VermilionCity.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 100927
+},
+"maps/VermilionDock.blk": {
+"fmt": "bin",
+"len": 84,
+"off": 122074
+},
+"maps/VermilionGym.blk": {
+"fmt": "bin",
+"len": 45,
+"off": 379960
+},
+"maps/VermilionMart.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 120112
+},
+"maps/VermilionOldRodHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/VermilionPidgeyHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/VermilionPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/VermilionTradeHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/VictoryRoad1F.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 383748
+},
+"maps/VictoryRoad2F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 334255
+},
+"maps/VictoryRoad3F.blk": {
+"fmt": "bin",
+"len": 135,
+"off": 281399
+},
+"maps/ViridianCity.blk": {
+"fmt": "bin",
+"len": 360,
+"off": 99308
+},
+"maps/ViridianForest.blk": {
+"fmt": "bin",
+"len": 408,
+"off": 393216
+},
+"maps/ViridianForestNorthGate.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 376976
+},
+"maps/ViridianForestSouthGate.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 376976
+},
+"maps/ViridianGym.blk": {
+"fmt": "bin",
+"len": 90,
+"off": 478279
+},
+"maps/ViridianMart.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 120112
+},
+"maps/ViridianNicknameHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 105462
+},
+"maps/ViridianPokecenter.blk": {
+"fmt": "bin",
+"len": 28,
+"off": 278751
+},
+"maps/ViridianSchoolHouse.blk": {
+"fmt": "bin",
+"len": 16,
+"off": 115182
+},
+"maps/WardensHouse.blk": {
+"fmt": "bin",
+"len": 20,
+"off": 479661
+}
+},
+"music": {
+"bikeriding": {
+"ch": {
+"1": 515003,
+"2": 515180,
+"3": 515348,
+"4": 515688
+},
+"label": "Music_BikeRiding"
+},
+"celadon": {
+"ch": {
+"1": 46791,
+"2": 46906,
+"3": 47029
+},
+"label": "Music_Celadon"
+},
+"cinnabar": {
+"ch": {
+"1": 47213,
+"2": 47316,
+"3": 47421
+},
+"label": "Music_Cinnabar"
+},
+"cinnabarmansion": {
+"ch": {
+"1": 519439,
+"2": 519488,
+"3": 519550,
+"4": 519600
+},
+"label": "Music_CinnabarMansion"
+},
+"cities1": {
+"ch": {
+"1": 43638,
+"2": 43922,
+"3": 44082,
+"4": 44271
+},
+"label": "Music_Cities1"
+},
+"cities2": {
+"ch": {
+"1": 46340,
+"2": 46441,
+"3": 46656
+},
+"label": "Music_Cities2"
+},
+"credits": {
+"ch": {
+"1": 523295,
+"2": 523615,
+"3": 523970
+},
+"label": "Music_Credits"
+},
+"defeatedgymleader": {
+"ch": {
+"1": 146605,
+"2": 146797,
+"3": 147026
+},
+"label": "Music_DefeatedGymLeader"
+},
+"defeatedtrainer": {
+"ch": {
+"1": 146003,
+"2": 146113,
+"3": 146197
+},
+"label": "Music_DefeatedTrainer"
+},
+"defeatedwildmon": {
+"ch": {
+"1": 146292,
+"2": 146369,
+"3": 146446
+},
+"label": "Music_DefeatedWildMon"
+},
+"dungeon1": {
+"ch": {
+"1": 515793,
+"2": 516062,
+"3": 516316,
+"4": 516490
+},
+"label": "Music_Dungeon1"
+},
+"dungeon2": {
+"ch": {
+"1": 518279,
+"2": 518360,
+"3": 518459,
+"4": 518620
+},
+"label": "Music_Dungeon2"
+},
+"dungeon3": {
+"ch": {
+"1": 518641,
+"2": 519016,
+"3": 519290,
+"4": 519396
+},
+"label": "Music_Dungeon3"
+},
+"finalbattle": {
+"ch": {
+"1": 144294,
+"2": 144746,
+"3": 145180
+},
+"label": "Music_FinalBattle"
+},
+"gamecorner": {
+"ch": {
+"1": 516619,
+"2": 516831,
+"3": 517003
+},
+"label": "Music_GameCorner"
+},
+"gym": {
+"ch": {
+"1": 48315,
+"2": 48491,
+"3": 48634
+},
+"label": "Music_Gym"
+},
+"gymleaderbattle": {
+"ch": {
+"1": 140144,
+"2": 140705,
+"3": 141039
+},
+"label": "Music_GymLeaderBattle"
+},
+"halloffame": {
+"ch": {
+"1": 523183,
+"2": 523226,
+"3": 523260
+},
+"label": "Music_HallOfFame"
+},
+"indigoplateau": {
+"ch": {
+"1": 42480,
+"2": 42596,
+"3": 42682,
+"4": 42767
+},
+"label": "Music_IndigoPlateau"
+},
+"introbattle": {
+"ch": {
+"1": 522308,
+"2": 522428,
+"3": 522525,
+"4": 522587
+},
+"label": "Music_IntroBattle"
+},
+"jigglypuffsong": {
+"ch": {
+"1": 523133,
+"2": 523162
+},
+"label": "Music_JigglypuffSong"
+},
+"lavender": {
+"ch": {
+"1": 47960,
+"2": 48030,
+"3": 48046,
+"4": 48161
+},
+"label": "Music_Lavender"
+},
+"meeteviltrainer": {
+"ch": {
+"1": 521885,
+"2": 521914,
+"3": 521958
+},
+"label": "Music_MeetEvilTrainer"
+},
+"meetfemaletrainer": {
+"ch": {
+"1": 521977,
+"2": 522012,
+"3": 522059
+},
+"label": "Music_MeetFemaleTrainer"
+},
+"meetmaletrainer": {
+"ch": {
+"1": 522107,
+"2": 522146,
+"3": 522194
+},
+"label": "Music_MeetMaleTrainer"
+},
+"meetprofoak": {
+"ch": {
+"1": 44889,
+"2": 44969,
+"3": 45117
+},
+"label": "Music_MeetProfOak"
+},
+"meetrival": {
+"ch": {
+"1": 45344,
+"2": 45499,
+"3": 45619
+},
+"label": "Music_MeetRival"
+},
+"museumguy": {
+"ch": {
+"1": 44462,
+"2": 44529,
+"3": 44654,
+"4": 44753
+},
+"label": "Music_MuseumGuy"
+},
+"oakslab": {
+"ch": {
+"1": 519865,
+"2": 519941,
+"3": 520018
+},
+"label": "Music_OaksLab"
+},
+"pallettown": {
+"ch": {
+"1": 42949,
+"2": 43103,
+"3": 43230
+},
+"label": "Music_PalletTown"
+},
+"pkmnhealed": {
+"ch": {
+"1": 39843,
+"2": 39876,
+"3": 39890
+},
+"label": "Music_PkmnHealed"
+},
+"pokecenter": {
+"ch": {
+"1": 48726,
+"2": 48889,
+"3": 49008
+},
+"label": "Music_Pokecenter"
+},
+"pokemontower": {
+"ch": {
+"1": 520266,
+"2": 520419,
+"3": 520602
+},
+"label": "Music_PokemonTower"
+},
+"routes1": {
+"ch": {
+"1": 39902,
+"2": 40017,
+"3": 40152,
+"4": 40228
+},
+"label": "Music_Routes1"
+},
+"routes2": {
+"ch": {
+"1": 40377,
+"2": 40527,
+"3": 40603,
+"4": 40712
+},
+"label": "Music_Routes2"
+},
+"routes3": {
+"ch": {
+"1": 40877,
+"2": 40969,
+"3": 41087,
+"4": 41265
+},
+"label": "Music_Routes3"
+},
+"routes4": {
+"ch": {
+"1": 41578,
+"2": 41732,
+"3": 41924,
+"4": 42141
+},
+"label": "Music_Routes4"
+},
+"safarizone": {
+"ch": {
+"1": 48174,
+"2": 48234,
+"3": 48276
+},
+"label": "Music_SafariZone"
+},
+"silphco": {
+"ch": {
+"1": 520771,
+"2": 521225,
+"3": 521662
+},
+"label": "Music_SilphCo"
+},
+"ssanne": {
+"ch": {
+"1": 45991,
+"2": 46105,
+"3": 46283
+},
+"label": "Music_SSAnne"
+},
+"surfing": {
+"ch": {
+"1": 522777,
+"2": 522908,
+"3": 523002
+},
+"label": "Music_Surfing"
+},
+"titlescreen": {
+"ch": {
+"1": 517312,
+"2": 517496,
+"3": 517699,
+"4": 517867
+},
+"label": "Music_TitleScreen"
+},
+"trainerbattle": {
+"ch": {
+"1": 141593,
+"2": 142254,
+"3": 142608
+},
+"label": "Music_TrainerBattle"
+},
+"unusedsong": {
+"ch": {
+"1": 43283,
+"2": 43471
+},
+"label": "Music_UnusedSong"
+},
+"vermilion": {
+"ch": {
+"1": 47595,
+"2": 47713,
+"3": 47782,
+"4": 47885
+},
+"label": "Music_Vermilion"
+},
+"wildbattle": {
+"ch": {
+"1": 143513,
+"2": 143832,
+"3": 144016
+},
+"label": "Music_WildBattle"
+}
+},
+"sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a"
+}

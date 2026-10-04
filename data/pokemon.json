@@ -1,0 +1,412 @@
+{
+ "ABRA": {
+  "bexp": 73,
+  "catch": 200,
+  "dex": 63,
+  "growth": 3,
+  "name": "ABRA",
+  "pal": "PAL_YELLOWMON",
+  "stats": [25, 20, 15, 90, 105],
+  "types": ["PSYCHIC", "PSYCHIC"]
+ },
+ "ALAKAZAM": {
+  "bexp": 186,
+  "catch": 50,
+  "dex": 65,
+  "growth": 3,
+  "name": "ALAKAZAM",
+  "pal": "PAL_YELLOWMON",
+  "stats": [55, 50, 45, 120, 135],
+  "types": ["PSYCHIC", "PSYCHIC"]
+ },
+ "ARCANINE": {
+  "bexp": 213,
+  "catch": 75,
+  "dex": 59,
+  "growth": 5,
+  "name": "ARCANINE",
+  "pal": "PAL_REDMON",
+  "stats": [90, 110, 80, 95, 80],
+  "types": ["FIRE", "FIRE"]
+ },
+ "BLASTOISE": {
+  "bexp": 210,
+  "catch": 45,
+  "dex": 9,
+  "growth": 3,
+  "name": "BLASTOISE",
+  "pal": "PAL_CYANMON",
+  "stats": [79, 83, 100, 78, 85],
+  "types": ["WATER", "WATER"]
+ },
+ "BULBASAUR": {
+  "bexp": 64,
+  "catch": 45,
+  "dex": 1,
+  "growth": 3,
+  "name": "BULBASAUR",
+  "pal": "PAL_GREENMON",
+  "stats": [45, 49, 49, 45, 65],
+  "types": ["GRASS", "POISON"]
+ },
+ "BUTTERFREE": {
+  "bexp": 160,
+  "catch": 45,
+  "dex": 12,
+  "growth": 0,
+  "name": "BUTTERFREE",
+  "pal": "PAL_CYANMON",
+  "stats": [60, 45, 50, 70, 90],
+  "types": ["BUG", "FLYING"]
+ },
+ "CATERPIE": {
+  "bexp": 53,
+  "catch": 255,
+  "dex": 10,
+  "growth": 0,
+  "name": "CATERPIE",
+  "pal": "PAL_GREENMON",
+  "stats": [45, 30, 35, 45, 20],
+  "types": ["BUG", "BUG"]
+ },
+ "CHARIZARD": {
+  "bexp": 209,
+  "catch": 45,
+  "dex": 6,
+  "growth": 3,
+  "name": "CHARIZARD",
+  "pal": "PAL_REDMON",
+  "stats": [78, 84, 78, 100, 85],
+  "types": ["FIRE", "FLYING"]
+ },
+ "CHARMANDER": {
+  "bexp": 65,
+  "catch": 45,
+  "dex": 4,
+  "growth": 3,
+  "name": "CHARMANDER",
+  "pal": "PAL_REDMON",
+  "stats": [39, 52, 43, 65, 50],
+  "types": ["FIRE", "FIRE"]
+ },
+ "CHARMELEON": {
+  "bexp": 142,
+  "catch": 45,
+  "dex": 5,
+  "growth": 3,
+  "name": "CHARMELEON",
+  "pal": "PAL_REDMON",
+  "stats": [58, 64, 58, 80, 65],
+  "types": ["FIRE", "FIRE"]
+ },
+ "DRAGONITE": {
+  "bexp": 218,
+  "catch": 45,
+  "dex": 149,
+  "growth": 5,
+  "name": "DRAGONITE",
+  "pal": "PAL_BROWNMON",
+  "stats": [91, 134, 95, 80, 100],
+  "types": ["DRAGON", "FLYING"]
+ },
+ "GENGAR": {
+  "bexp": 190,
+  "catch": 45,
+  "dex": 94,
+  "growth": 3,
+  "name": "GENGAR",
+  "pal": "PAL_PURPLEMON",
+  "stats": [60, 65, 60, 110, 130],
+  "types": ["GHOST", "POISON"]
+ },
+ "GEODUDE": {
+  "bexp": 86,
+  "catch": 255,
+  "dex": 74,
+  "growth": 3,
+  "name": "GEODUDE",
+  "pal": "PAL_GRAYMON",
+  "stats": [40, 80, 100, 20, 30],
+  "types": ["ROCK", "GROUND"]
+ },
+ "GLOOM": {
+  "bexp": 132,
+  "catch": 120,
+  "dex": 44,
+  "growth": 3,
+  "name": "GLOOM",
+  "pal": "PAL_REDMON",
+  "stats": [60, 65, 70, 40, 85],
+  "types": ["GRASS", "POISON"]
+ },
+ "GRAVELER": {
+  "bexp": 134,
+  "catch": 120,
+  "dex": 75,
+  "growth": 3,
+  "name": "GRAVELER",
+  "pal": "PAL_GRAYMON",
+  "stats": [55, 95, 115, 35, 45],
+  "types": ["ROCK", "GROUND"]
+ },
+ "GROWLITHE": {
+  "bexp": 91,
+  "catch": 190,
+  "dex": 58,
+  "growth": 5,
+  "name": "GROWLITHE",
+  "pal": "PAL_BROWNMON",
+  "stats": [55, 70, 45, 60, 50],
+  "types": ["FIRE", "FIRE"]
+ },
+ "GYARADOS": {
+  "bexp": 214,
+  "catch": 45,
+  "dex": 130,
+  "growth": 5,
+  "name": "GYARADOS",
+  "pal": "PAL_BLUEMON",
+  "stats": [95, 125, 79, 81, 100],
+  "types": ["WATER", "FLYING"]
+ },
+ "IVYSAUR": {
+  "bexp": 141,
+  "catch": 45,
+  "dex": 2,
+  "growth": 3,
+  "name": "IVYSAUR",
+  "pal": "PAL_GREENMON",
+  "stats": [60, 62, 63, 60, 80],
+  "types": ["GRASS", "POISON"]
+ },
+ "KADABRA": {
+  "bexp": 145,
+  "catch": 100,
+  "dex": 64,
+  "growth": 3,
+  "name": "KADABRA",
+  "pal": "PAL_YELLOWMON",
+  "stats": [40, 35, 30, 105, 120],
+  "types": ["PSYCHIC", "PSYCHIC"]
+ },
+ "METAPOD": {
+  "bexp": 72,
+  "catch": 120,
+  "dex": 11,
+  "growth": 0,
+  "name": "METAPOD",
+  "pal": "PAL_GREENMON",
+  "stats": [50, 20, 55, 30, 25],
+  "types": ["BUG", "BUG"]
+ },
+ "NIDOKING": {
+  "bexp": 195,
+  "catch": 45,
+  "dex": 34,
+  "growth": 3,
+  "name": "NIDOKING",
+  "pal": "PAL_PURPLEMON",
+  "stats": [81, 102, 77, 85, 75],
+  "types": ["POISON", "GROUND"]
+ },
+ "NIDORAN_M": {
+  "bexp": 60,
+  "catch": 235,
+  "dex": 32,
+  "growth": 3,
+  "name": "NIDORAN\u2642",
+  "pal": "PAL_PURPLEMON",
+  "stats": [46, 57, 40, 50, 40],
+  "types": ["POISON", "POISON"]
+ },
+ "NIDORINO": {
+  "bexp": 118,
+  "catch": 120,
+  "dex": 33,
+  "growth": 3,
+  "name": "NIDORINO",
+  "pal": "PAL_PURPLEMON",
+  "stats": [61, 72, 57, 65, 55],
+  "types": ["POISON", "POISON"]
+ },
+ "ODDISH": {
+  "bexp": 78,
+  "catch": 255,
+  "dex": 43,
+  "growth": 3,
+  "name": "ODDISH",
+  "pal": "PAL_GREENMON",
+  "stats": [45, 50, 55, 30, 75],
+  "types": ["GRASS", "POISON"]
+ },
+ "ONIX": {
+  "bexp": 108,
+  "catch": 45,
+  "dex": 95,
+  "growth": 0,
+  "name": "ONIX",
+  "pal": "PAL_GRAYMON",
+  "stats": [35, 45, 160, 70, 30],
+  "types": ["ROCK", "GROUND"]
+ },
+ "PIDGEOT": {
+  "bexp": 172,
+  "catch": 45,
+  "dex": 18,
+  "growth": 3,
+  "name": "PIDGEOT",
+  "pal": "PAL_BROWNMON",
+  "stats": [83, 80, 75, 101, 70],
+  "types": ["NORMAL", "FLYING"]
+ },
+ "PIDGEOTTO": {
+  "bexp": 113,
+  "catch": 120,
+  "dex": 17,
+  "growth": 3,
+  "name": "PIDGEOTTO",
+  "pal": "PAL_BROWNMON",
+  "stats": [63, 60, 55, 71, 50],
+  "types": ["NORMAL", "FLYING"]
+ },
+ "PIDGEY": {
+  "bexp": 55,
+  "catch": 255,
+  "dex": 16,
+  "growth": 3,
+  "name": "PIDGEY",
+  "pal": "PAL_BROWNMON",
+  "stats": [40, 45, 40, 56, 35],
+  "types": ["NORMAL", "FLYING"]
+ },
+ "PIKACHU": {
+  "bexp": 82,
+  "catch": 190,
+  "dex": 25,
+  "growth": 0,
+  "name": "PIKACHU",
+  "pal": "PAL_YELLOWMON",
+  "stats": [35, 55, 40, 90, 50],
+  "types": ["ELECTRIC", "ELECTRIC"]
+ },
+ "PRIMEAPE": {
+  "bexp": 149,
+  "catch": 75,
+  "dex": 57,
+  "growth": 0,
+  "name": "PRIMEAPE",
+  "pal": "PAL_BROWNMON",
+  "stats": [65, 105, 60, 95, 60],
+  "types": ["FIGHTING", "FIGHTING"]
+ },
+ "RAICHU": {
+  "bexp": 122,
+  "catch": 75,
+  "dex": 26,
+  "growth": 0,
+  "name": "RAICHU",
+  "pal": "PAL_YELLOWMON",
+  "stats": [60, 90, 55, 110, 90],
+  "types": ["ELECTRIC", "ELECTRIC"]
+ },
+ "RAPIDASH": {
+  "bexp": 192,
+  "catch": 60,
+  "dex": 78,
+  "growth": 0,
+  "name": "RAPIDASH",
+  "pal": "PAL_REDMON",
+  "stats": [65, 100, 70, 105, 80],
+  "types": ["FIRE", "FIRE"]
+ },
+ "RATICATE": {
+  "bexp": 116,
+  "catch": 90,
+  "dex": 20,
+  "growth": 0,
+  "name": "RATICATE",
+  "pal": "PAL_GRAYMON",
+  "stats": [55, 81, 60, 97, 50],
+  "types": ["NORMAL", "NORMAL"]
+ },
+ "RATTATA": {
+  "bexp": 57,
+  "catch": 255,
+  "dex": 19,
+  "growth": 0,
+  "name": "RATTATA",
+  "pal": "PAL_GRAYMON",
+  "stats": [30, 56, 35, 72, 25],
+  "types": ["NORMAL", "NORMAL"]
+ },
+ "RHYDON": {
+  "bexp": 204,
+  "catch": 60,
+  "dex": 112,
+  "growth": 5,
+  "name": "RHYDON",
+  "pal": "PAL_GRAYMON",
+  "stats": [105, 130, 120, 40, 45],
+  "types": ["GROUND", "ROCK"]
+ },
+ "SQUIRTLE": {
+  "bexp": 66,
+  "catch": 45,
+  "dex": 7,
+  "growth": 3,
+  "name": "SQUIRTLE",
+  "pal": "PAL_CYANMON",
+  "stats": [44, 48, 65, 43, 50],
+  "types": ["WATER", "WATER"]
+ },
+ "STARMIE": {
+  "bexp": 207,
+  "catch": 60,
+  "dex": 121,
+  "growth": 5,
+  "name": "STARMIE",
+  "pal": "PAL_GRAYMON",
+  "stats": [60, 75, 85, 115, 100],
+  "types": ["WATER", "PSYCHIC"]
+ },
+ "VENUSAUR": {
+  "bexp": 208,
+  "catch": 45,
+  "dex": 3,
+  "growth": 3,
+  "name": "VENUSAUR",
+  "pal": "PAL_GREENMON",
+  "stats": [80, 82, 83, 80, 100],
+  "types": ["GRASS", "POISON"]
+ },
+ "VILEPLUME": {
+  "bexp": 184,
+  "catch": 45,
+  "dex": 45,
+  "growth": 3,
+  "name": "VILEPLUME",
+  "pal": "PAL_REDMON",
+  "stats": [75, 80, 85, 50, 110],
+  "types": ["GRASS", "POISON"]
+ },
+ "WARTORTLE": {
+  "bexp": 143,
+  "catch": 45,
+  "dex": 8,
+  "growth": 3,
+  "name": "WARTORTLE",
+  "pal": "PAL_CYANMON",
+  "stats": [59, 63, 80, 58, 65],
+  "types": ["WATER", "WATER"]
+ },
+ "WEEZING": {
+  "bexp": 173,
+  "catch": 60,
+  "dex": 110,
+  "growth": 0,
+  "name": "WEEZING",
+  "pal": "PAL_PURPLEMON",
+  "stats": [65, 90, 120, 60, 85],
+  "types": ["POISON", "POISON"]
+ }
+}

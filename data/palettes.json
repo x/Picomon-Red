@@ -1,0 +1,22 @@
+{
+ "PAL_BLUEMON": [7, 12, 140, 0],
+ "PAL_BROWNMON": [7, 143, 4, 0],
+ "PAL_CELADON": [7, 6, 12, 0],
+ "PAL_CERULEAN": [7, 6, 12, 0],
+ "PAL_CINNABAR": [7, 4, 12, 0],
+ "PAL_CYANMON": [7, 12, 140, 0],
+ "PAL_FUCHSIA": [7, 14, 12, 0],
+ "PAL_GRAYMON": [7, 6, 13, 0],
+ "PAL_GREENMON": [7, 138, 139, 0],
+ "PAL_LAVENDER": [7, 6, 12, 0],
+ "PAL_MEWMON": [7, 143, 13, 0],
+ "PAL_PALLET": [7, 6, 12, 0],
+ "PAL_PEWTER": [7, 135, 12, 0],
+ "PAL_PURPLEMON": [7, 14, 2, 0],
+ "PAL_REDMON": [7, 143, 137, 0],
+ "PAL_ROUTE": [7, 138, 12, 0],
+ "PAL_SAFFRON": [7, 10, 12, 0],
+ "PAL_VERMILION": [7, 9, 12, 0],
+ "PAL_VIRIDIAN": [7, 11, 12, 0],
+ "PAL_YELLOWMON": [7, 10, 9, 0]
+}

@@ -1,0 +1,592 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Overworld Editor</title>
+<style>
+body{margin:0;display:flex;height:100vh;font:12px sans-serif;background:#222;color:#ddd;overflow:hidden}
+#side{width:300px;display:flex;flex-direction:column;border-right:1px solid #444;padding:6px;box-sizing:border-box;gap:6px;overflow:auto}
+#main{flex:1;position:relative}
+#cv{display:block;width:100%;height:100%;cursor:crosshair}
+#pal,#sqpal,#blkpal,#bsqpal{display:flex;flex-wrap:wrap;gap:2px}
+.b{width:32px;height:32px;background:url(blocks.png);image-rendering:pixelated;outline:1px solid #555;cursor:pointer;position:relative}
+.b.sel,.sq.sel,.fr.sel{outline:3px solid #f80;z-index:1}
+.sq{width:24px;height:24px;image-rendering:pixelated;outline:1px solid #555;cursor:pointer}
+.bk{width:36px;height:36px;image-rendering:pixelated;outline:1px solid #555;cursor:pointer}
+.bk.sel{outline:3px solid #f80;z-index:1}
+.sq.chg,.fr.chg,.bk.chg{box-shadow:0 0 0 2px #fc4}
+#info:empty{display:none}
+#info{position:absolute;left:6px;bottom:6px;background:#000a;padding:4px 6px;pointer-events:none}
+button,select{font-size:12px}
+.row{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+#maps div{display:flex;justify-content:space-between;padding:1px 0}
+#maps span{cursor:pointer}
+.chg{color:#fc4}
+.help{color:#999;line-height:1.4}
+#tabs button.on{background:#f80;color:#000}
+.grid{cursor:crosshair;image-rendering:pixelated;align-self:flex-start}
+.shade{width:28px;height:22px;border:1px solid #888;cursor:pointer}
+.shade.on{outline:3px solid #f80}
+#sprview{position:absolute;inset:0;background:#222;box-sizing:border-box;overflow:auto;padding:10px;display:none}
+#sprview h4{margin:8px 0 4px}
+.fr{width:48px;height:48px;image-rendering:pixelated;margin-right:6px;cursor:pointer;
+  background:repeating-conic-gradient(#e9c 0 25%,#b7a 0 50%) 0 0/12px 12px}
+.checker{background:repeating-conic-gradient(#e9c 0 25%,#b7a 0 50%) 0 0/20px 20px}
+</style></head><body>
+<div id="side">
+  <div class="row" id="tabs"><button data-t="map">Map</button><button data-t="sq">Squares</button><button data-t="blk">Blocks</button><button data-t="spr">Sprites</button></div>
+  <div id="t-map" class="row" style="flex-direction:column;align-items:stretch;gap:6px">
+    <div class="row">Tool:
+      <label><input type="radio" name="tool" value="paint" checked> Paint (B)</label>
+      <label><input type="radio" name="tool" value="select"> Select (S)</label></div>
+    <div class="row">Delete fills with:
+      <select id="fill"><option value="border">map border block</option><option value="cur">selected block</option></select></div>
+    <div class="row"><button id="undo">Undo</button><button id="redo">Redo</button>
+      <button id="save">Save world_edits.json</button>
+      <label><button onclick="this.nextElementSibling.click()">Load…</button><input type="file" id="load" accept=".json" hidden></label></div>
+    <div class="row"><label><input type="checkbox" id="v12"> 12x12 look (as the game draws it)</label></div>
+    <div class="row">Block: <b id="curid">0</b> <label><input type="checkbox" id="all"> show all blocks</label></div>
+    <div id="pal"></div>
+    <div id="maps"></div>
+    <div class="help">Drag: paint / select · Alt-click: pick block · Wheel: zoom · Middle-drag or Space+drag: pan<br>
+      Ctrl+C / Ctrl+V: copy / paste at cursor · Del: fill selection · Esc: clear · Ctrl+Z / Ctrl+Shift+Z: undo / redo<br>
+      Yellow = saved in world_edits.json (changed, or already in the build's world_edits.json). Reset = original pokered blocks.</div>
+  </div>
+  <div id="t-ts" class="row">Tileset: <select id="tsel"></select></div>
+  <div id="t-gfx" class="row" style="flex-direction:column;align-items:stretch;gap:6px">
+    <div class="row">Shade (keys 0-3): <span id="shades" class="row"></span></div>
+    <div class="row"><b id="gname"></b></div>
+    <canvas id="grid" class="grid" width="240" height="240"></canvas>
+    <div class="row"><button id="gundo">Undo (Ctrl+Z)</button><button id="grevert">Revert this one</button></div>
+    <div id="t-sq" class="row" style="flex-direction:column;align-items:stretch;gap:6px">
+      <div class="row"><button id="sqnew">New square</button><button id="sqdup">Duplicate selected</button></div>
+      <div class="row" id="sqflags"></div>
+      <div id="sqhelp"></div>
+      <div id="sqpal"></div>
+    </div>
+    <div class="help">Drag on the grid: paint · Right/Alt-click: pick shade · Yellow = edited.<br>
+      Sprites: shade 0 is transparent.</div>
+  </div>
+  <div id="t-blk" class="row" style="flex-direction:column;align-items:stretch;gap:6px">
+    <div class="row"><button id="blknew">New block</button><button id="blkrevert">Revert block</button><button id="bundo">Undo (Ctrl+Z)</button></div>
+    <div class="row" style="align-items:flex-start"><canvas id="bbig" class="grid" width="240" height="240" style="width:144px;height:144px"></canvas><div id="binfo"></div></div>
+    <div class="help">Click a quadrant, then a square below to put it there. Overworld: click the world to pick a block; new blocks show up in the Map tab's palette.</div>
+    <b>Blocks</b><div id="blkpal"></div>
+    <b>Squares</b><div id="bsqpal"></div>
+  </div>
+  <div id="t-gsave" class="row"><button id="gsave">Save gfx_edits.json</button>
+    <label><button onclick="this.nextElementSibling.click()">Load…</button><input type="file" id="gload" accept=".json" hidden></label></div>
+</div>
+<div id="main"><canvas id="cv"></canvas><div id="sprview"></div><div id="info"></div></div>
+<script src="data.js"></script>
+<script>
+const S = DATA.block, M = DATA.maps, NAMES = Object.keys(M), SPR = DATA.sprites, OW = DATA.tileset, TSD = DATA.tilesets;
+const GRAY = [255, 170, 85, 0], CSS = GRAY.map(g => `rgb(${g},${g},${g})`);
+const atlas = new Image(); atlas.src = 'blocks.png'; atlas.onload = () => draw();
+const LS = 'pkm_world_edits_v2', LSG = 'pkm_gfx_edits_v1';
+const $ = id => document.getElementById(id);
+const cur = {}, user = new Set(NAMES.filter(n => M[n].user));  // user: maps that always go into the saved file
+for (const n of NAMES) cur[n] = M[n].blocks.slice();
+try { const s = JSON.parse(localStorage.getItem(LS) || '{}'); applyEdits(s).forEach(n => user.add(n)); } catch (e) { console.warn(e); }
+
+function applyEdits(maps, old) {  // maps: {name:{w,h,blocks}}; old = original-coordinate file. returns names applied
+  const ok = [];
+  for (const [n, e] of Object.entries(maps || {})) {
+    const m = M[n];
+    if (!m || !Array.isArray(e.blocks) || e.h !== m.h || e.blocks.length !== e.w * e.h) { console.warn('skip', n); continue; }
+    if (e.w === m.w) cur[n] = e.blocks.map(v => v & 255);
+    else if (old && e.w === m.origw)  // widened map: keep the built extra east column(s)
+      cur[n] = Array.from({ length: m.w * m.h }, (_, i) => { const x = i % m.w, y = i / m.w | 0; return x < e.w ? e.blocks[y * e.w + x] & 255 : m.blocks[i]; });
+    else { console.warn('skip', n); continue; }
+    ok.push(n);
+  }
+  return ok;
+}
+const changed = n => cur[n].some((v, i) => v !== M[n].blocks[i]);
+const edited = n => user.has(n) || changed(n);
+function edits() {
+  const out = {};
+  for (const n of NAMES) if (edited(n)) out[n] = { w: M[n].w, h: M[n].h, blocks: cur[n].slice() };
+  return out;
+}
+function persist() { try { localStorage.setItem(LS, JSON.stringify(edits())); } catch (e) { alert('localStorage save failed: ' + e); } listMaps(); }
+function download(name, obj) {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(obj)], { type: 'application/json' }));
+  a.download = name; a.click(); URL.revokeObjectURL(a.href);
+}
+
+// ---------- undo: each op = list of [map, before, after]
+const undoS = [], redoS = [];
+let pending = null;
+function begin() { pending = {}; }
+function set(n, i, b) {
+  if (cur[n][i] === b) return;
+  if (pending && !pending[n]) pending[n] = cur[n].slice();
+  cur[n][i] = b;
+}
+function end() {
+  if (!pending) return;
+  const op = Object.entries(pending).map(([n, before]) => [n, before, cur[n].slice()]);
+  pending = null;
+  if (op.length) { undoS.push(op); redoS.length = 0; persist(); }
+}
+function undo(from, to, idx) {
+  const op = from.pop(); if (!op) return;
+  for (const e of op) cur[e[0]] = e[idx].slice();
+  to.push(op); persist(); draw();
+}
+
+// ---------- world/cell helpers
+function mapAt(cx, cy) {
+  for (const n of NAMES) { const m = M[n]; if (cx >= m.x && cy >= m.y && cx < m.x + m.w && cy < m.y + m.h) return n; }
+  return null;
+}
+function setCell(cx, cy, b) { const n = mapAt(cx, cy); if (n) set(n, (cy - M[n].y) * M[n].w + cx - M[n].x, b); }
+function getCell(cx, cy) { const n = mapAt(cx, cy); return n == null ? null : cur[n][(cy - M[n].y) * M[n].w + cx - M[n].x]; }
+
+// ---------- gfx edits (gfx_edits.json), only entries != original:
+// squares:{png:{key:[144]}}, flags:{png:{key:int}}, blocks:{png:{id:[4 keys]}}, sprites:{CONST:{frame:[144]}}
+// square key = "tl,tr,bl,br" tile ids, or "new:<name>" (drawn here, pixels always saved)
+let gfx = { squares: {}, flags: {}, blocks: {}, sprites: {} };
+const gfxOK = a => Array.isArray(a) && a.length === 144 && a.every(v => v === 0 || v === 1 || v === 2 || v === 3);
+const isNew = k => k.startsWith('new:');
+function tset(tbl, p, k, v, same) {
+  const t = gfx[tbl][p] ??= {};
+  if (same) delete t[k]; else t[k] = v;
+  if (!Object.keys(t).length) delete gfx[tbl][p];
+}
+function setGfx(j) {  // returns number of entries kept
+  gfx = { squares: {}, flags: {}, blocks: {}, sprites: {} }; let k = 0;
+  for (const p in TSD) {
+    for (const [key, a] of Object.entries(j?.squares?.[p] || {})) if ((TSD[p].squares[key] || isNew(key)) && gfxOK(a)) tset('squares', p, key, a), k++;
+    const known = key => !!(TSD[p].squares[key] || gfx.squares[p]?.[key]);
+    for (const [key, v] of Object.entries(j?.flags?.[p] || {})) if (known(key) && Number.isInteger(v) && v >= 0 && v < 256) tset('flags', p, key, v), k++;
+    for (const [b, q] of Object.entries(j?.blocks?.[p] || {}))
+      if (/^\d+$/.test(b) && +b < 256 && Array.isArray(q) && q.length === 4 && q.every(known)) tset('blocks', p, String(+b), q.slice()), k++;
+  }
+  for (const [c, fr] of Object.entries(j?.sprites || {})) for (const [f, a] of Object.entries(fr || {}))
+    if (SPR[c] && SPR[c][f] && gfxOK(a)) (gfx.sprites[c] ??= {})[f] = a, k++;
+  return k;
+}
+try { const s = localStorage.getItem(LSG); setGfx(s ? JSON.parse(s) : DATA.gfxfile); } catch (e) { console.warn(e); }
+function persistG() { try { localStorage.setItem(LSG, JSON.stringify(gfx)); } catch (e) { alert('localStorage save failed: ' + e); } }
+const BLANK = Array(144).fill(0);
+const sqKeys = p => [...Object.keys(TSD[p].squares), ...Object.keys(gfx.squares[p] || {}).filter(isNew)];
+const sqPx = (p, k) => gfx.squares[p]?.[k] || TSD[p].squares[k]?.px || BLANK;
+const sqFl = (p, k) => gfx.flags[p]?.[k] ?? TSD[p].squares[k]?.fl ?? 1;
+const nBlk = p => Math.max(TSD[p].blocks.length, ...Object.keys(gfx.blocks[p] || {}).map(b => +b + 1));
+const blkSq = (p, b) => gfx.blocks[p]?.[b] || TSD[p].blocks[b];  // undefined for an id nobody defined
+const sprPx = (c, f) => gfx.sprites[c]?.[f] || SPR[c][f];
+
+function pxCanvas(px, transparent, cv) {
+  cv ??= document.createElement('canvas'); cv.width = cv.height = 12;
+  const c = cv.getContext('2d'), d = c.createImageData(12, 12);
+  px.forEach((v, i) => { d.data.set([GRAY[v], GRAY[v], GRAY[v], transparent && !v ? 0 : 255], i * 4); });
+  c.putImageData(d, 0, 0); return cv;
+}
+function blkCanvas(p, b, cv, cache = {}) {  // a block as 24x24 (2x2 squares)
+  cv ??= document.createElement('canvas'); cv.width = cv.height = 24;
+  const c = cv.getContext('2d');
+  (blkSq(p, b) || []).forEach((k, i) => c.drawImage(cache[k] ??= pxCanvas(sqPx(p, k)), i % 2 * 12, (i >> 1) * 12));
+  return cv;
+}
+// 12x12 look: overworld block atlas built from the (edited) squares, 24x24 per block
+const atlas12 = document.createElement('canvas');
+function buildAtlas12() {
+  const n = nBlk(OW), cache = {};
+  atlas12.width = 16 * 24; atlas12.height = Math.ceil(n / 16) * 24;
+  const c = atlas12.getContext('2d');
+  for (let b = 0; b < n; b++) c.drawImage(blkCanvas(OW, b, null, cache), b % 16 * 24, (b >> 4) * 24);
+}
+buildAtlas12();
+
+// ---------- view
+const cv = $('cv'), ctx = cv.getContext('2d'), info = $('info');
+let zoom = 0.5, ox = 0, oy = 0;  // screen = world*zoom + o
+let hover = null, hsub = null, sel = null, clip = null, block = 0, tool = 'paint', tab = 'map';
+let painting = false, panning = null, selStart = null, space = false;
+const view12 = () => tab === 'sq' || tab === 'blk' || $('v12').checked;
+const from12 = b => b >= DATA.nblocks || !!gfx.blocks[OW]?.[b];  // not in blocks.png: draw from squares
+function drawBlock(b, x, y) {
+  if (view12() || from12(b)) ctx.drawImage(atlas12, b % 16 * 24, (b >> 4) * 24, 24, 24, x, y, S, S);
+  else if (atlas.complete) ctx.drawImage(atlas, b % 16 * S, (b >> 4) * S, S, S, x, y, S, S);
+}
+function resize() { cv.width = cv.clientWidth; cv.height = cv.clientHeight; draw(); }
+function worldOf(e) { const r = cv.getBoundingClientRect(); return [(e.clientX - r.left - ox) / zoom / S, (e.clientY - r.top - oy) / zoom / S]; }
+function cellOf(e) { return worldOf(e).map(Math.floor); }
+let raf = 0;
+function draw() { if (!raf) raf = requestAnimationFrame(render); }
+function render() {
+  raf = 0;
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.fillStyle = '#28385a'; ctx.fillRect(0, 0, cv.width, cv.height);
+  ctx.imageSmoothingEnabled = false;
+  ctx.setTransform(zoom, 0, 0, zoom, ox, oy);
+  const lw = 1 / zoom;
+  for (const n of NAMES) {
+    const m = M[n], c = cur[n];
+    for (let i = 0; i < c.length; i++) drawBlock(c[i], (m.x + i % m.w) * S, (m.y + (i / m.w | 0)) * S);
+    if (tab === 'sq' && gsel.kind === 'sq' && gsel.p === OW) {  // where the selected square is used
+      ctx.strokeStyle = '#f80'; ctx.lineWidth = 2 * lw;
+      for (let i = 0; i < c.length; i++) (blkSq(OW, c[i]) || []).forEach((s, k) => {
+        if (s === gsel.k) ctx.strokeRect((m.x + i % m.w + k % 2 / 2) * S, (m.y + (i / m.w | 0) + (k >> 1) / 2) * S, S / 2, S / 2);
+      });
+    }
+    if (tab === 'blk' && bsel.p === OW) {  // where the selected block is used
+      ctx.strokeStyle = '#f80'; ctx.lineWidth = 2 * lw;
+      for (let i = 0; i < c.length; i++) if (c[i] === bsel.b) ctx.strokeRect((m.x + i % m.w) * S, (m.y + (i / m.w | 0)) * S, S, S);
+    }
+    if (zoom >= 0.4 && tab === 'map') {
+      ctx.strokeStyle = '#0003'; ctx.lineWidth = lw; ctx.beginPath();
+      for (let x = 1; x < m.w; x++) { ctx.moveTo((m.x + x) * S, m.y * S); ctx.lineTo((m.x + x) * S, (m.y + m.h) * S); }
+      for (let y = 1; y < m.h; y++) { ctx.moveTo(m.x * S, (m.y + y) * S); ctx.lineTo((m.x + m.w) * S, (m.y + y) * S); }
+      ctx.stroke();
+    }
+    ctx.strokeStyle = edited(n) ? '#fc4' : '#f44'; ctx.lineWidth = 2 * lw;
+    ctx.strokeRect(m.x * S, m.y * S, m.w * S, m.h * S);
+    ctx.font = `${14 * lw}px sans-serif`; ctx.fillStyle = '#000a';
+    const tw = ctx.measureText(n).width;
+    ctx.fillRect(m.x * S, m.y * S, tw + 8 * lw, 18 * lw);
+    ctx.fillStyle = '#fff'; ctx.fillText(n, m.x * S + 4 * lw, m.y * S + 14 * lw);
+  }
+  if (tab === 'blk') return;
+  if (tab === 'sq') {
+    if (hover && hsub && mapAt(...hover)) { ctx.strokeStyle = '#fff'; ctx.lineWidth = 2 * lw; ctx.strokeRect((hover[0] + hsub[0] / 2) * S, (hover[1] + hsub[1] / 2) * S, S / 2, S / 2); }
+    return;
+  }
+  if (sel) {
+    ctx.strokeStyle = '#0ff'; ctx.lineWidth = 2 * lw; ctx.setLineDash([6 * lw, 4 * lw]);
+    ctx.strokeRect(sel.x0 * S, sel.y0 * S, (sel.x1 - sel.x0 + 1) * S, (sel.y1 - sel.y0 + 1) * S);
+    ctx.setLineDash([]);
+  }
+  if (hover) {
+    if (clip && tool === 'select' && !selStart) {  // paste ghost
+      ctx.globalAlpha = 0.6;
+      for (let y = 0; y < clip.h; y++) for (let x = 0; x < clip.w; x++) drawBlock(clip.d[y * clip.w + x], (hover[0] + x) * S, (hover[1] + y) * S);
+      ctx.globalAlpha = 1;
+      ctx.strokeStyle = '#0f0'; ctx.strokeRect(hover[0] * S, hover[1] * S, clip.w * S, clip.h * S);
+    } else if (tool === 'paint' && mapAt(...hover)) {
+      ctx.globalAlpha = 0.6; drawBlock(block, hover[0] * S, hover[1] * S); ctx.globalAlpha = 1;
+    }
+    ctx.strokeStyle = '#fff'; ctx.lineWidth = 2 * lw; ctx.strokeRect(hover[0] * S, hover[1] * S, S, S);
+  }
+}
+const sqAt = (c, s) => { const b = getCell(...c); return b == null ? null : blkSq(OW, b)?.[s[1] * 2 + s[0]] ?? null; };
+function showInfo() {
+  if (!hover) { info.textContent = ''; return; }
+  const n = mapAt(...hover);
+  if (!n) { info.textContent = `world ${hover[0]},${hover[1]} (no map)`; return; }
+  const b = getCell(...hover);
+  info.textContent = `${n}  x=${hover[0] - M[n].x} y=${hover[1] - M[n].y}  block=${b} ($${b.toString(16).padStart(2, '0')})${b >= DATA.nblocks ? ' new' : b >= DATA.nbase ? ' custom' : ''}`;
+  if (tab === 'sq') info.textContent += `  square ${sqAt(hover, hsub)}`;
+  else if (sel) info.textContent += `  | sel ${sel.map} ${sel.x1 - sel.x0 + 1}x${sel.y1 - sel.y0 + 1}`;
+}
+
+// ---------- selection: clamped to one map
+function makeSel(a, b) {
+  const n = mapAt(...a); if (!n) return null;
+  const m = M[n], cl = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+  const bx = cl(b[0], m.x, m.x + m.w - 1), by = cl(b[1], m.y, m.y + m.h - 1);
+  return { map: n, x0: Math.min(a[0], bx), y0: Math.min(a[1], by), x1: Math.max(a[0], bx), y1: Math.max(a[1], by) };
+}
+
+// ---------- mouse
+cv.addEventListener('mousedown', e => {
+  const c = cellOf(e);
+  if (e.button === 1 || space) { panning = [e.clientX - ox, e.clientY - oy]; e.preventDefault(); return; }
+  if (e.button !== 0) return;
+  if (tab === 'sq') { const w = worldOf(e), s = sqAt(c, [w[0] - c[0] < .5 ? 0 : 1, w[1] - c[1] < .5 ? 0 : 1]); if (s != null) setTs(OW), selectGfx({ kind: 'sq', p: OW, k: s }); return; }
+  if (tab === 'blk') { const b = getCell(...c); if (b != null) setTs(OW), selectBlk(b); return; }
+  if (e.altKey) { const b = getCell(...c); if (b != null) pick(b); return; }
+  if (tool === 'paint') { if (mapAt(...c)) { painting = true; begin(); setCell(...c, block); draw(); } }
+  else { selStart = c; sel = makeSel(c, c); draw(); }
+});
+window.addEventListener('mousemove', e => {
+  if (panning) { ox = e.clientX - panning[0]; oy = e.clientY - panning[1]; draw(); return; }
+  const c = cellOf(e), w = worldOf(e);
+  hover = e.target === cv ? c : null;
+  hsub = [w[0] - c[0] < .5 ? 0 : 1, w[1] - c[1] < .5 ? 0 : 1];
+  if (painting) setCell(...c, block);
+  if (selStart) sel = makeSel(selStart, c);
+  if (e.target === cv || painting || selStart) { showInfo(); draw(); }
+});
+window.addEventListener('mouseup', () => {
+  panning = null; selStart = null; gstroke = false;
+  if (painting) { painting = false; end(); }
+  draw();
+});
+cv.addEventListener('mouseleave', () => { hover = null; showInfo(); draw(); });
+cv.addEventListener('wheel', e => {
+  e.preventDefault();
+  const r = cv.getBoundingClientRect(), mx = e.clientX - r.left, my = e.clientY - r.top;
+  const nz = Math.max(0.05, Math.min(8, zoom * (e.deltaY < 0 ? 1.15 : 1 / 1.15)));
+  ox = mx - (mx - ox) * nz / zoom; oy = my - (my - oy) * nz / zoom; zoom = nz; draw();
+}, { passive: false });
+
+// ---------- keys
+window.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' && e.target.type !== 'radio' && e.target.type !== 'checkbox') return;
+  const mod = e.ctrlKey || e.metaKey, k = e.key.toLowerCase();
+  if (k === ' ') { space = true; e.preventDefault(); return; }
+  if (tab !== 'map') {
+    if (mod && k === 'z') { e.preventDefault(); gundo(); }
+    else if (!mod && '0123'.includes(k) && k.length === 1) setShade(+k);
+    return;
+  }
+  if (mod && k === 'z') { e.preventDefault(); e.shiftKey ? undo(redoS, undoS, 2) : undo(undoS, redoS, 1); }
+  else if (mod && k === 'y') { e.preventDefault(); undo(redoS, undoS, 2); }
+  else if (mod && k === 'c' && sel) {
+    const w = sel.x1 - sel.x0 + 1, h = sel.y1 - sel.y0 + 1, d = [];
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) d.push(getCell(sel.x0 + x, sel.y0 + y));
+    clip = { w, h, d }; setTool('select');
+  } else if (mod && k === 'v' && clip && hover) {
+    e.preventDefault(); begin();
+    for (let y = 0; y < clip.h; y++) for (let x = 0; x < clip.w; x++) setCell(hover[0] + x, hover[1] + y, clip.d[y * clip.w + x]);
+    end(); draw();
+  } else if ((k === 'delete' || k === 'backspace') && sel) {
+    e.preventDefault();
+    const b = $('fill').value === 'border' ? M[sel.map].border : block;
+    begin();
+    for (let y = sel.y0; y <= sel.y1; y++) for (let x = sel.x0; x <= sel.x1; x++) setCell(x, y, b);
+    end(); draw();
+  } else if (k === 'escape') { sel = null; clip = null; draw(); }
+  else if (!mod && k === 'b') setTool('paint');
+  else if (!mod && k === 's') setTool('select');
+  showInfo();
+});
+window.addEventListener('keyup', e => { if (e.key === ' ') space = false; });
+
+// ---------- map side panel
+function setTool(t) { tool = t; document.querySelector(`input[value=${t}]`).checked = true; draw(); }
+document.querySelectorAll('input[name=tool]').forEach(r => r.onchange = () => setTool(r.value));
+const pal = $('pal');
+function buildPal() {
+  pal.innerHTML = '';
+  const n = nBlk(OW), ids = $('all').checked ? [...Array(n).keys()] : [...DATA.used, ...Array.from({ length: n - DATA.nblocks }, (_, i) => DATA.nblocks + i)];
+  for (const k of ids) {
+    if (!blkSq(OW, k)) continue;
+    const d = from12(k) ? blkCanvas(OW, k) : document.createElement('div');
+    d.className = 'b' + (k === block ? ' sel' : ''); d.title = `block ${k} ($${k.toString(16)})${k >= DATA.nblocks ? ' new' : k >= DATA.nbase ? ' custom' : ''}`;
+    if (!from12(k)) d.style.backgroundPosition = `-${k % 16 * S}px -${(k >> 4) * S}px`;
+    d.onclick = () => pick(k);
+    d.dataset.k = k; pal.appendChild(d);
+  }
+}
+function pick(k) {
+  block = k; $('curid').textContent = `${k} ($${k.toString(16)})`;
+  if (!pal.querySelector(`[data-k="${k}"]`)) $('all').checked = true, buildPal();
+  pal.querySelectorAll('.b').forEach(d => d.classList.toggle('sel', +d.dataset.k === k));
+  if (tool === 'select' && !clip) setTool('paint');
+}
+$('all').onchange = buildPal;
+$('v12').onchange = draw;
+function listMaps() {
+  const el = $('maps'); el.innerHTML = '<b>Maps</b> (click name to jump)';
+  for (const n of NAMES) {
+    const d = document.createElement('div'), s = document.createElement('span'), b = document.createElement('button');
+    s.textContent = n + (M[n].w !== M[n].origw ? ` (w ${M[n].origw}→${M[n].w})` : ''); s.className = edited(n) ? 'chg' : '';
+    s.onclick = () => { const m = M[n]; zoom = 1.5; ox = cv.width / 2 - (m.x + m.w / 2) * S * zoom; oy = cv.height / 2 - (m.y + m.h / 2) * S * zoom; draw(); };
+    b.textContent = 'Reset map'; b.disabled = cur[n].every((v, i) => v === M[n].orig[i]);
+    b.onclick = () => { if (!confirm(`Reset ${n} to the original pokered blocks?`)) return; begin(); M[n].orig.forEach((v, i) => set(n, i, v)); end(); draw(); };
+    d.append(s, b); el.appendChild(d);
+  }
+}
+$('undo').onclick = () => undo(undoS, redoS, 1);
+$('redo').onclick = () => undo(redoS, undoS, 2);
+$('save').onclick = () => download('world_edits.json', { version: 1, coords: 'final', maps: edits() });
+$('load').onchange = async e => {
+  const f = e.target.files[0]; e.target.value = ''; if (!f) return;
+  try {
+    const j = JSON.parse(await f.text());
+    if (j.version !== 1 || typeof j.maps !== 'object') throw new Error('not a version 1 world_edits.json');
+    const old = j.coords !== 'final';
+    const before = {}; for (const n of NAMES) before[n] = cur[n].slice();
+    for (const n of NAMES) cur[n] = M[n].blocks.slice();  // file replaces all edits (undoable)
+    const ok = applyEdits(j.maps, old);
+    user.clear(); ok.forEach(n => user.add(n));
+    const op = NAMES.filter(n => cur[n].some((v, i) => v !== before[n][i])).map(n => [n, before[n], cur[n].slice()]);
+    if (op.length) { undoS.push(op); redoS.length = 0; }
+    persist(); draw();
+    alert(`Loaded ${ok.length} edited map(s).` + (old ? '\nOld original-coordinate file: those maps now show without the build\'s seals/cuts; saving writes them as final.' : ''));
+  } catch (err) { alert('Load failed: ' + err.message); }
+};
+
+// ---------- gfx editor (squares + sprites share the grid; blocks tab composes squares)
+let curTs = OW, gsel = { kind: 'sq', p: OW, k: Object.keys(TSD[OW].squares)[0] }, bsel = { p: OW, b: 0, q: 0 }, shade = 3, gstroke = false;
+const gundoS = [];  // snapshots of gfx
+const snap = () => gundoS.push(JSON.stringify(gfx));
+function gchanged() { persistG(); buildAtlas12(); buildPal(); refreshGfx(); draw(); }
+function gundo() { const u = gundoS.pop(); if (u) { gfx = JSON.parse(u); gchanged(); } }
+const gorig = s => s.kind === 'sq' ? TSD[s.p].squares[s.k]?.px : SPR[s.c][s.f];
+const gcur = s => s.kind === 'sq' ? sqPx(s.p, s.k) : sprPx(s.c, s.f);
+function gput(s, a) {  // a = 144 shades or null (= original)
+  const o = gorig(s);
+  if (!o && !a) return;  // new square: nothing to revert to
+  const same = !a || (o && a.every((v, i) => v === o[i]));
+  if (s.kind === 'sq') tset('squares', s.p, s.k, a, same);
+  else { const tbl = gfx.sprites[s.c] ??= {}; if (same) delete tbl[s.f]; else tbl[s.f] = a; if (!Object.keys(tbl).length) delete gfx.sprites[s.c]; }
+  gchanged();
+}
+const grid = $('grid'), gctx = grid.getContext('2d');
+function drawGrid() {
+  const px = gcur(gsel), spr = gsel.kind === 'spr';
+  grid.classList.toggle('checker', spr);
+  gctx.clearRect(0, 0, 240, 240);
+  px.forEach((v, i) => { if (spr && !v) return; gctx.fillStyle = CSS[v]; gctx.fillRect(i % 12 * 20, (i / 12 | 0) * 20, 20, 20); });
+  gctx.strokeStyle = '#8886'; gctx.beginPath();
+  for (let k = 1; k < 12; k++) { gctx.moveTo(k * 20, 0); gctx.lineTo(k * 20, 240); gctx.moveTo(0, k * 20); gctx.lineTo(240, k * 20); }
+  gctx.stroke();
+  $('gname').textContent = gsel.kind === 'sq' ? `${gsel.p} square ${gsel.k}` : `${gsel.c} frame ${gsel.f}`;
+}
+function gridPaint(e) {
+  const r = grid.getBoundingClientRect(), x = (e.clientX - r.left) / 20 | 0, y = (e.clientY - r.top) / 20 | 0;
+  if (x < 0 || y < 0 || x > 11 || y > 11) return;
+  const a = gcur(gsel).slice();
+  if (e.button === 2 || e.altKey) { setShade(a[y * 12 + x]); return; }
+  if (a[y * 12 + x] === shade) return;
+  a[y * 12 + x] = shade; gput(gsel, a);
+}
+grid.addEventListener('contextmenu', e => e.preventDefault());
+grid.addEventListener('mousedown', e => {
+  if (!(e.button === 2 || e.altKey)) { snap(); gstroke = true; }
+  gridPaint(e);
+});
+grid.addEventListener('mousemove', e => { if (gstroke) gridPaint(e); });
+function setShade(v) { shade = v; document.querySelectorAll('.shade').forEach((d, i) => d.classList.toggle('on', i === v)); }
+GRAY.forEach((g, i) => { const d = document.createElement('div'); d.className = 'shade'; d.style.background = CSS[i]; d.title = i ? `shade ${i}` : 'shade 0 (white; transparent in sprites)'; d.onclick = () => setShade(i); $('shades').appendChild(d); });
+setShade(3);
+$('gundo').onclick = $('bundo').onclick = gundo;
+$('grevert').onclick = () => { if (gsel.kind === 'sq' && !gorig(gsel)) return; snap(); gput(gsel, null); };
+$('gsave').onclick = () => download('gfx_edits.json', { version: 1, squares: gfx.squares, flags: gfx.flags, blocks: gfx.blocks, sprites: gfx.sprites });
+$('gload').onchange = async e => {
+  const f = e.target.files[0]; e.target.value = ''; if (!f) return;
+  try {
+    const j = JSON.parse(await f.text());
+    if (j.version !== 1) throw new Error('not a version 1 gfx_edits.json');
+    snap(); const k = setGfx(j); gchanged();
+    alert(`Loaded ${k} edited square(s)/flag(s)/block(s)/frame(s).`);
+  } catch (err) { alert('Load failed: ' + err.message); }
+};
+
+// tileset selector (Squares + Blocks tabs)
+for (const p in TSD) $('tsel').add(new Option(`${p} (${TSD[p].ts})`, p));
+$('tsel').value = OW;
+function setTs(p) {
+  if (p === curTs) return;
+  curTs = $('tsel').value = p;
+  lastSq = { kind: 'sq', p, k: sqPal(p)[0] }; bsel = { p, b: 0, q: 0 };
+  if (tab === 'sq') selectGfx(lastSq); else { refreshGfx(); draw(); }
+}
+$('tsel').onchange = () => setTs($('tsel').value);
+// overworld: squares of the blocks the maps use (+ new ones); other tilesets: all
+const sqPal = p => p === OW ? sqKeys(p).filter(k => isNew(k) || usedOW.has(k)) : sqKeys(p);
+const usedOW = new Set(DATA.used.flatMap(b => TSD[OW].blocks[b] || []));
+const sqChg = (p, k) => !!gfx.squares[p]?.[k] || gfx.flags[p]?.[k] !== undefined;
+function fillPal(el, p, items, make, onclick, update) {  // (re)build only when the item list changes
+  const sig = p + '|' + items.join(';');
+  if (el.dataset.sig !== sig) {
+    el.innerHTML = ''; el.dataset.sig = sig;
+    for (const it of items) { const c = make(it); c.dataset.it = it; c.onclick = () => onclick(it); el.appendChild(c); }
+  }
+  for (const c of el.children) update(c, c.dataset.it);
+}
+const mkSq = k => { const c = document.createElement('canvas'); c.className = 'sq'; c.title = k; return c; };
+const updSq = (p, sel) => (c, k) => { pxCanvas(sqPx(p, k), false, c); c.classList.toggle('sel', k === sel); c.classList.toggle('chg', sqChg(p, k)); };
+const FLAGS = [[1, 'walkable'], [2, 'tall grass'], [8, 'door'], [4, 'warp'], [128, 'counter'], [16, 'ledge down'], [32, 'ledge left'], [64, 'ledge right']];
+for (const [bit, name] of FLAGS) {
+  const l = document.createElement('label'), cb = document.createElement('input');
+  cb.type = 'checkbox'; cb.dataset.bit = bit;
+  cb.onchange = () => {
+    const { p, k } = gsel, v = sqFl(p, k) ^ bit;
+    snap(); tset('flags', p, k, v, !isNew(k) && v === TSD[p].squares[k].fl); gchanged();
+  };
+  l.append(cb, ' ' + name); $('sqflags').appendChild(l);
+}
+function newSquare(dup) {
+  const p = curTs; let i = 1;
+  while (gfx.squares[p]?.['new:sq' + i]) i++;
+  const name = prompt('Short name for the new square:', 'sq' + i);
+  if (name == null) return;
+  const k = 'new:' + (name.trim().replace(/[^\w-]/g, '_') || 'sq' + i);
+  if (sqKeys(p).includes(k)) { alert(k + ' already exists'); return; }
+  snap();
+  tset('squares', p, k, dup && gsel.kind === 'sq' ? sqPx(p, gsel.k).slice() : BLANK.slice());
+  tset('flags', p, k, dup && gsel.kind === 'sq' ? sqFl(p, gsel.k) : 1);
+  gsel = lastSq = { kind: 'sq', p, k }; gchanged();
+}
+$('sqnew').onclick = () => newSquare(false);
+$('sqdup').onclick = () => newSquare(true);
+
+// blocks tab
+const bbig = $('bbig'), bctx = bbig.getContext('2d');
+function selectBlk(b) { bsel = { p: curTs, b, q: bsel.q }; refreshGfx(); draw(); }
+function setBlk(q) {  // replace the selected block's squares (q = 4 keys)
+  const { p, b } = bsel, o = TSD[p].blocks[b];
+  snap(); tset('blocks', p, String(b), q, !!o && q.every((v, i) => v === o[i])); gchanged();
+}
+bbig.onclick = e => { const r = bbig.getBoundingClientRect(); bsel.q = ((e.clientY - r.top) * 2 / r.height | 0) * 2 + ((e.clientX - r.left) * 2 / r.width | 0); refreshGfx(); };
+$('blknew').onclick = () => {
+  const p = curTs, b = nBlk(p);
+  if (b > 255) { alert('no free block id (max 255)'); return; }
+  snap(); tset('blocks', p, String(b), (blkSq(p, bsel.b) || TSD[p].blocks[0]).slice()); bsel = { p, b, q: 0 }; gchanged();
+};
+$('blkrevert').onclick = () => { const { p, b } = bsel; if (TSD[p].blocks[b] && gfx.blocks[p]?.[b]) setBlk(TSD[p].blocks[b].slice()); };
+function drawBlk() {
+  const { p, b, q } = bsel, keys = blkSq(p, b) || [];
+  bctx.imageSmoothingEnabled = false; bctx.clearRect(0, 0, 240, 240);
+  keys.forEach((k, i) => bctx.drawImage(pxCanvas(sqPx(p, k)), i % 2 * 120, (i >> 1) * 120, 120, 120));
+  bctx.strokeStyle = '#f80'; bctx.lineWidth = 8; bctx.strokeRect(q % 2 * 120 + 4, (q >> 1) * 120 + 4, 112, 112);
+  $('binfo').innerHTML = `block ${b} ($${b.toString(16)})${b >= TSD[p].blocks.length ? ' <b>new</b>' : b >= TSD[p].nbase ? ' custom' : ''}${gfx.blocks[p]?.[b] ? ' <span class="chg">edited</span>' : ''}<br>`
+    + keys.map((k, i) => `${['tl', 'tr', 'bl', 'br'][i]}: ${k}`).join('<br>');
+}
+
+// sprite sheet (main area of the Sprites tab)
+const sprEls = [];
+for (const [c, frames] of Object.entries(SPR)) {
+  const h = document.createElement('h4'); h.textContent = c; $('sprview').appendChild(h);
+  frames.forEach((_, f) => { const cv_ = pxCanvas(SPR[c][f], true); cv_.className = 'fr'; cv_.title = `${c} frame ${f}`; cv_.onclick = () => selectGfx({ kind: 'spr', c, f }); $('sprview').appendChild(cv_); sprEls.push([c, f, cv_]); });
+}
+function refreshGfx() {
+  if (gsel.kind === 'sq' && !sqKeys(gsel.p).includes(gsel.k)) gsel = lastSq = { kind: 'sq', p: curTs, k: sqPal(curTs)[0] };  // undone new square
+  if (tab === 'sq') {
+    const keys = sqPal(curTs);
+    $('sqhelp').textContent = curTs === OW ? `Squares used by the maps (${keys.length}). Click one, or click the world to pick the square there.` : `All ${keys.length} squares of ${curTs}.`;
+    fillPal($('sqpal'), curTs, keys, mkSq, k => selectGfx({ kind: 'sq', p: curTs, k }), updSq(curTs, gsel.k));
+    const f = sqFl(gsel.p, gsel.k);
+    $('sqflags').querySelectorAll('input').forEach(cb => cb.checked = !!(f & cb.dataset.bit));
+  }
+  if (tab === 'blk') {
+    const p = curTs, cache = {};
+    if (!blkSq(p, bsel.b)) bsel = { p, b: 0, q: 0 };
+    fillPal($('blkpal'), p, [...Array(nBlk(p)).keys()].filter(b => blkSq(p, b)), b => { const c = document.createElement('canvas'); c.className = 'bk'; c.title = `block ${b}`; return c; },
+      b => selectBlk(+b), (c, b) => { blkCanvas(p, +b, c, cache); c.classList.toggle('sel', +b === bsel.b); c.classList.toggle('chg', !!gfx.blocks[p]?.[b]); });
+    fillPal($('bsqpal'), p, sqKeys(p), mkSq, k => { const q = (blkSq(p, bsel.b) || []).slice(); if (q.length !== 4) return; q[bsel.q] = k; setBlk(q); },
+      updSq(p, (blkSq(p, bsel.b) || [])[bsel.q]));
+    drawBlk();
+  }
+  for (const [c, f, el] of sprEls) { pxCanvas(sprPx(c, f), true, el); el.classList.toggle('sel', gsel.kind === 'spr' && gsel.c === c && gsel.f === f); el.classList.toggle('chg', !!gfx.sprites[c]?.[f]); }
+  drawGrid();
+}
+let lastSq = { ...gsel }, lastSpr = { kind: 'spr', c: Object.keys(SPR)[0], f: 0 };
+function selectGfx(s) { gsel = s; if (s.kind === 'sq') lastSq = s; else lastSpr = s; refreshGfx(); draw(); }
+
+// ---------- tabs
+function setTab(t) {
+  tab = t;
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.t === t));
+  $('t-map').style.display = t === 'map' ? '' : 'none';
+  $('t-gfx').style.display = t === 'sq' || t === 'spr' ? '' : 'none';
+  $('t-sq').style.display = t === 'sq' ? '' : 'none';
+  $('t-blk').style.display = t === 'blk' ? '' : 'none';
+  $('t-ts').style.display = t === 'sq' || t === 'blk' ? '' : 'none';
+  $('t-gsave').style.display = t === 'map' ? 'none' : '';
+  $('sprview').style.display = t === 'spr' ? 'block' : 'none';
+  if (t === 'sq' || t === 'spr') selectGfx(t === 'sq' ? lastSq : lastSpr); else refreshGfx();
+  sel = t === 'map' ? sel : null; painting = false; resize();
+}
+document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => setTab(b.dataset.t));
+
+buildPal(); pick(0); listMaps(); refreshGfx();
+window.addEventListener('resize', resize); setTab('map');
+{ const mx = Math.max(...NAMES.map(n => M[n].x + M[n].w)), my = Math.max(...NAMES.map(n => M[n].y + M[n].h));
+  zoom = Math.min(cv.width / (mx * S), cv.height / (my * S)) * 0.95; ox = oy = 10; draw(); }
+</script>
+</body></html>

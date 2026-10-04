@@ -1,0 +1,1563 @@
+{
+ "consts": {
+  "BIKE_SHOP": "BikeShop",
+  "BLUES_HOUSE": "BluesHouse",
+  "CELADON_CHIEF_HOUSE": "CeladonChiefHouse",
+  "CELADON_CITY": "CeladonCity",
+  "CELADON_DINER": "CeladonDiner",
+  "CELADON_GYM": "CeladonGym",
+  "CELADON_HOTEL": "CeladonHotel",
+  "CELADON_MANSION_1F": "CeladonMansion1F",
+  "CELADON_MART_1F": "CeladonMart1F",
+  "CELADON_MART_5F": "CeladonMart5F",
+  "CELADON_POKECENTER": "CeladonPokecenter",
+  "CERULEAN_BADGE_HOUSE": "CeruleanBadgeHouse",
+  "CERULEAN_CAVE_1F": "CeruleanCave1F",
+  "CERULEAN_CITY": "CeruleanCity",
+  "CERULEAN_GYM": "CeruleanGym",
+  "CERULEAN_MART": "CeruleanMart",
+  "CERULEAN_POKECENTER": "CeruleanPokecenter",
+  "CERULEAN_TRADE_HOUSE": "CeruleanTradeHouse",
+  "CERULEAN_TRASHED_HOUSE": "CeruleanTrashedHouse",
+  "CINNABAR_GYM": "CinnabarGym",
+  "CINNABAR_LAB": "CinnabarLab",
+  "CINNABAR_MART": "CinnabarMart",
+  "CINNABAR_POKECENTER": "CinnabarPokecenter",
+  "COPYCATS_HOUSE_1F": "CopycatsHouse1F",
+  "DAYCARE": "Daycare",
+  "DIGLETTS_CAVE_ROUTE_2": "DiglettsCaveRoute2",
+  "FIGHTING_DOJO": "FightingDojo",
+  "FUCHSIA_BILLS_GRANDPAS_HOUSE": "FuchsiaBillsGrandpasHouse",
+  "FUCHSIA_CITY": "FuchsiaCity",
+  "FUCHSIA_GOOD_ROD_HOUSE": "FuchsiaGoodRodHouse",
+  "FUCHSIA_GYM": "FuchsiaGym",
+  "FUCHSIA_MART": "FuchsiaMart",
+  "FUCHSIA_MEETING_ROOM": "FuchsiaMeetingRoom",
+  "FUCHSIA_POKECENTER": "FuchsiaPokecenter",
+  "GAME_CORNER": "GameCorner",
+  "GAME_CORNER_PRIZE_ROOM": "GameCornerPrizeRoom",
+  "LAVENDER_CUBONE_HOUSE": "LavenderCuboneHouse",
+  "LAVENDER_MART": "LavenderMart",
+  "LAVENDER_POKECENTER": "LavenderPokecenter",
+  "LAVENDER_TOWN": "LavenderTown",
+  "MR_FUJIS_HOUSE": "MrFujisHouse",
+  "MR_PSYCHICS_HOUSE": "MrPsychicsHouse",
+  "MT_MOON_1F": "MtMoon1F",
+  "MT_MOON_B1F": "MtMoonB1F",
+  "MT_MOON_POKECENTER": "MtMoonPokecenter",
+  "MUSEUM_1F": "Museum1F",
+  "NAME_RATERS_HOUSE": "NameRatersHouse",
+  "OAKS_LAB": "OaksLab",
+  "PALLET_TOWN": "PalletTown",
+  "PEWTER_CITY": "PewterCity",
+  "PEWTER_GYM": "PewterGym",
+  "PEWTER_MART": "PewterMart",
+  "PEWTER_NIDORAN_HOUSE": "PewterNidoranHouse",
+  "PEWTER_POKECENTER": "PewterPokecenter",
+  "PEWTER_SPEECH_HOUSE": "PewterSpeechHouse",
+  "POKEMON_FAN_CLUB": "PokemonFanClub",
+  "POKEMON_MANSION_1F": "PokemonMansion1F",
+  "POKEMON_TOWER_1F": "PokemonTower1F",
+  "POWER_PLANT": "PowerPlant",
+  "REDS_HOUSE_1F": "RedsHouse1F",
+  "ROCK_TUNNEL_1F": "RockTunnel1F",
+  "ROCK_TUNNEL_POKECENTER": "RockTunnelPokecenter",
+  "ROUTE_1": "Route1",
+  "ROUTE_10": "Route10",
+  "ROUTE_11": "Route11",
+  "ROUTE_12": "Route12",
+  "ROUTE_15": "Route15",
+  "ROUTE_16": "Route16",
+  "ROUTE_16_FLY_HOUSE": "Route16FlyHouse",
+  "ROUTE_16_GATE_1F": "Route16Gate1F",
+  "ROUTE_17": "Route17",
+  "ROUTE_18": "Route18",
+  "ROUTE_18_GATE_1F": "Route18Gate1F",
+  "ROUTE_19": "Route19",
+  "ROUTE_2": "Route2",
+  "ROUTE_20": "Route20",
+  "ROUTE_21": "Route21",
+  "ROUTE_22": "Route22",
+  "ROUTE_22_GATE": "Route22Gate",
+  "ROUTE_23": "Route23",
+  "ROUTE_24": "Route24",
+  "ROUTE_2_GATE": "Route2Gate",
+  "ROUTE_2_TRADE_HOUSE": "Route2TradeHouse",
+  "ROUTE_3": "Route3",
+  "ROUTE_4": "Route4",
+  "ROUTE_5": "Route5",
+  "ROUTE_5_GATE": "Route5Gate",
+  "ROUTE_6": "Route6",
+  "ROUTE_6_GATE": "Route6Gate",
+  "ROUTE_7": "Route7",
+  "ROUTE_7_GATE": "Route7Gate",
+  "ROUTE_8": "Route8",
+  "ROUTE_8_GATE": "Route8Gate",
+  "ROUTE_9": "Route9",
+  "SAFARI_ZONE_GATE": "SafariZoneGate",
+  "SAFFRON_CITY": "SaffronCity",
+  "SAFFRON_GYM": "SaffronGym",
+  "SAFFRON_MART": "SaffronMart",
+  "SAFFRON_PIDGEY_HOUSE": "SaffronPidgeyHouse",
+  "SAFFRON_POKECENTER": "SaffronPokecenter",
+  "SILPH_CO_1F": "SilphCo1F",
+  "UNDERGROUND_PATH_ROUTE_5": "UndergroundPathRoute5",
+  "UNDERGROUND_PATH_ROUTE_6": "UndergroundPathRoute6",
+  "UNDERGROUND_PATH_ROUTE_7": "UndergroundPathRoute7Copy",
+  "UNDERGROUND_PATH_ROUTE_8": "UndergroundPathRoute8",
+  "VERMILION_CITY": "VermilionCity",
+  "VERMILION_DOCK": "VermilionDock",
+  "VERMILION_GYM": "VermilionGym",
+  "VERMILION_MART": "VermilionMart",
+  "VERMILION_OLD_ROD_HOUSE": "VermilionOldRodHouse",
+  "VERMILION_PIDGEY_HOUSE": "VermilionPidgeyHouse",
+  "VERMILION_POKECENTER": "VermilionPokecenter",
+  "VERMILION_TRADE_HOUSE": "VermilionTradeHouse",
+  "VIRIDIAN_CITY": "ViridianCity",
+  "VIRIDIAN_FOREST_NORTH_GATE": "ViridianForestNorthGate",
+  "VIRIDIAN_FOREST_SOUTH_GATE": "ViridianForestSouthGate",
+  "VIRIDIAN_GYM": "ViridianGym",
+  "VIRIDIAN_MART": "ViridianMart",
+  "VIRIDIAN_NICKNAME_HOUSE": "ViridianNicknameHouse",
+  "VIRIDIAN_POKECENTER": "ViridianPokecenter",
+  "VIRIDIAN_SCHOOL_HOUSE": "ViridianSchoolHouse",
+  "WARDENS_HOUSE": "WardensHouse"
+ },
+ "maps": {
+  "CeladonCity": {
+   "bgs": [
+    [27, 15, "TEXT_CELADONCITY_TRAINER_TIPS1"],
+    [19, 15, "TEXT_CELADONCITY_SIGN"],
+    [42, 9, "TEXT_CELADONCITY_POKECENTER_SIGN"],
+    [13, 29, "TEXT_CELADONCITY_GYM_SIGN"],
+    [21, 9, "TEXT_CELADONCITY_MANSION_SIGN"],
+    [12, 13, "TEXT_CELADONCITY_DEPTSTORE_SIGN"],
+    [39, 21, "TEXT_CELADONCITY_TRAINER_TIPS2"],
+    [33, 21, "TEXT_CELADONCITY_PRIZEEXCHANGE_SIGN"],
+    [27, 21, "TEXT_CELADONCITY_GAMECORNER_SIGN"]
+   ],
+   "border": 15,
+   "conns": [
+    ["west", "ROUTE_16", 4],
+    ["east", "ROUTE_7", 4]
+   ],
+   "const": "CELADON_CITY",
+   "h": 18,
+   "objs": [
+    ["8", "17", "SPRITE_LITTLE_GIRL", "WALK", "ANY_DIR", "TEXT_CELADONCITY_LITTLE_GIRL"],
+    ["11", "28", "SPRITE_GRAMPS", "STAY", "UP", "TEXT_CELADONCITY_GRAMPS1"],
+    ["14", "19", "SPRITE_GIRL", "WALK", "UP_DOWN", "TEXT_CELADONCITY_GIRL"],
+    ["25", "22", "SPRITE_GRAMPS", "STAY", "DOWN", "TEXT_CELADONCITY_GRAMPS2"],
+    ["22", "16", "SPRITE_GRAMPS", "STAY", "DOWN", "TEXT_CELADONCITY_GRAMPS3"],
+    ["32", "12", "SPRITE_FISHER", "STAY", "LEFT", "TEXT_CELADONCITY_FISHER"],
+    ["30", "12", "SPRITE_MONSTER", "STAY", "RIGHT", "TEXT_CELADONCITY_POLIWRATH"],
+    ["32", "29", "SPRITE_ROCKET", "WALK", "LEFT_RIGHT", "TEXT_CELADONCITY_ROCKET1"],
+    ["42", "14", "SPRITE_ROCKET", "WALK", "LEFT_RIGHT", "TEXT_CELADONCITY_ROCKET2"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 25,
+   "warps": [
+    [8, 13, "CELADON_MART_1F", 1],
+    [10, 13, "CELADON_MART_1F", 3],
+    [24, 9, "CELADON_MANSION_1F", 1],
+    [24, 3, "CELADON_MANSION_1F", 3],
+    [25, 3, "CELADON_MANSION_1F", 3],
+    [41, 9, "CELADON_POKECENTER", 1],
+    [12, 27, "CELADON_GYM", 1],
+    [28, 19, "GAME_CORNER", 1],
+    [39, 19, "CELADON_MART_5F", 1],
+    [33, 19, "GAME_CORNER_PRIZE_ROOM", 1],
+    [31, 27, "CELADON_DINER", 1],
+    [35, 27, "CELADON_CHIEF_HOUSE", 1],
+    [43, 27, "CELADON_HOTEL", 1]
+   ]
+  },
+  "CeladonGym": {
+   "bgs": [],
+   "border": 3,
+   "conns": [],
+   "const": "CELADON_GYM",
+   "h": 9,
+   "objs": [
+    ["4", "3", "SPRITE_SILPH_WORKER_F", "STAY", "DOWN", "TEXT_CELADONGYM_ERIKA", "OPP_ERIKA", "1"],
+    ["2", "11", "SPRITE_COOLTRAINER_F", "STAY", "RIGHT", "TEXT_CELADONGYM_COOLTRAINER_F1", "OPP_LASS", "17"],
+    ["7", "10", "SPRITE_BEAUTY", "STAY", "LEFT", "TEXT_CELADONGYM_BEAUTY1", "OPP_BEAUTY", "1"],
+    ["9", "5", "SPRITE_COOLTRAINER_F", "STAY", "DOWN", "TEXT_CELADONGYM_COOLTRAINER_F2", "OPP_JR_TRAINER_F", "11"],
+    ["1", "5", "SPRITE_BEAUTY", "STAY", "DOWN", "TEXT_CELADONGYM_BEAUTY2", "OPP_BEAUTY", "2"],
+    ["6", "3", "SPRITE_COOLTRAINER_F", "STAY", "DOWN", "TEXT_CELADONGYM_COOLTRAINER_F3", "OPP_LASS", "18"],
+    ["3", "3", "SPRITE_BEAUTY", "STAY", "DOWN", "TEXT_CELADONGYM_BEAUTY3", "OPP_BEAUTY", "3"],
+    ["5", "3", "SPRITE_COOLTRAINER_F", "STAY", "DOWN", "TEXT_CELADONGYM_COOLTRAINER_F4", "OPP_COOLTRAINER_F", "1"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GYM",
+   "w": 5,
+   "warps": [
+    [4, 17, "LAST_MAP", 7],
+    [5, 17, "LAST_MAP", 7]
+   ]
+  },
+  "CeruleanCity": {
+   "bgs": [
+    [23, 19, "TEXT_CERULEANCITY_SIGN"],
+    [17, 29, "TEXT_CERULEANCITY_TRAINER_TIPS"],
+    [26, 25, "TEXT_CERULEANCITY_MART_SIGN"],
+    [20, 17, "TEXT_CERULEANCITY_POKECENTER_SIGN"],
+    [11, 25, "TEXT_CERULEANCITY_BIKESHOP_SIGN"],
+    [27, 21, "TEXT_CERULEANCITY_GYM_SIGN"]
+   ],
+   "border": 15,
+   "conns": [
+    ["north", "ROUTE_24", 5],
+    ["south", "ROUTE_5", 5],
+    ["west", "ROUTE_4", 4],
+    ["east", "ROUTE_9", 4]
+   ],
+   "const": "CERULEAN_CITY",
+   "h": 18,
+   "objs": [
+    ["20", "2", "SPRITE_BLUE", "STAY", "DOWN", "TEXT_CERULEANCITY_RIVAL"],
+    ["30", "8", "SPRITE_ROCKET", "STAY", "NONE", "TEXT_CERULEANCITY_ROCKET", "OPP_ROCKET", "5"],
+    ["31", "20", "SPRITE_COOLTRAINER_M", "STAY", "DOWN", "TEXT_CERULEANCITY_COOLTRAINER_M"],
+    ["15", "18", "SPRITE_SUPER_NERD", "WALK", "UP_DOWN", "TEXT_CERULEANCITY_SUPER_NERD1"],
+    ["9", "21", "SPRITE_SUPER_NERD", "WALK", "LEFT_RIGHT", "TEXT_CERULEANCITY_SUPER_NERD2"],
+    ["28", "12", "SPRITE_GUARD", "STAY", "DOWN", "TEXT_CERULEANCITY_GUARD1"],
+    ["29", "26", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_CERULEANCITY_COOLTRAINER_F1"],
+    ["28", "26", "SPRITE_MONSTER", "STAY", "DOWN", "TEXT_CERULEANCITY_SLOWBRO"],
+    ["9", "27", "SPRITE_COOLTRAINER_F", "WALK", "LEFT_RIGHT", "TEXT_CERULEANCITY_COOLTRAINER_F2"],
+    ["4", "12", "SPRITE_SUPER_NERD", "STAY", "DOWN", "TEXT_CERULEANCITY_SUPER_NERD3"],
+    ["27", "12", "SPRITE_GUARD", "STAY", "DOWN", "TEXT_CERULEANCITY_GUARD2"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 20,
+   "warps": [
+    [27, 11, "CERULEAN_TRASHED_HOUSE", 1],
+    [13, 15, "CERULEAN_TRADE_HOUSE", 1],
+    [19, 17, "CERULEAN_POKECENTER", 1],
+    [30, 19, "CERULEAN_GYM", 1],
+    [13, 25, "BIKE_SHOP", 1],
+    [25, 25, "CERULEAN_MART", 1],
+    [4, 11, "CERULEAN_CAVE_1F", 1],
+    [27, 9, "CERULEAN_TRASHED_HOUSE", 3],
+    [9, 11, "CERULEAN_BADGE_HOUSE", 2],
+    [9, 9, "CERULEAN_BADGE_HOUSE", 1]
+   ]
+  },
+  "CeruleanGym": {
+   "bgs": [],
+   "border": 3,
+   "conns": [],
+   "const": "CERULEAN_GYM",
+   "h": 7,
+   "objs": [
+    ["4", "2", "SPRITE_BRUNETTE_GIRL", "STAY", "DOWN", "TEXT_CERULEANGYM_MISTY", "OPP_MISTY", "1"],
+    ["2", "3", "SPRITE_COOLTRAINER_F", "STAY", "RIGHT", "TEXT_CERULEANGYM_COOLTRAINER_F", "OPP_JR_TRAINER_F", "1"],
+    ["8", "7", "SPRITE_SWIMMER", "STAY", "LEFT", "TEXT_CERULEANGYM_SWIMMER", "OPP_SWIMMER", "1"],
+    ["7", "10", "SPRITE_GYM_GUIDE", "STAY", "DOWN", "TEXT_CERULEANGYM_GYM_GUIDE"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GYM",
+   "w": 5,
+   "warps": [
+    [4, 13, "LAST_MAP", 4],
+    [5, 13, "LAST_MAP", 4]
+   ]
+  },
+  "CinnabarGym": {
+   "bgs": [],
+   "border": 46,
+   "conns": [],
+   "const": "CINNABAR_GYM",
+   "h": 9,
+   "objs": [
+    ["3", "3", "SPRITE_MIDDLE_AGED_MAN", "STAY", "DOWN", "TEXT_CINNABARGYM_BLAINE", "OPP_BLAINE", "1"],
+    ["17", "2", "SPRITE_SUPER_NERD", "STAY", "DOWN", "TEXT_CINNABARGYM_SUPER_NERD1", "OPP_SUPER_NERD", "9"],
+    ["17", "8", "SPRITE_SUPER_NERD", "STAY", "DOWN", "TEXT_CINNABARGYM_SUPER_NERD2", "OPP_BURGLAR", "4"],
+    ["11", "4", "SPRITE_SUPER_NERD", "STAY", "DOWN", "TEXT_CINNABARGYM_SUPER_NERD3", "OPP_SUPER_NERD", "10"],
+    ["11", "8", "SPRITE_SUPER_NERD", "STAY", "DOWN", "TEXT_CINNABARGYM_SUPER_NERD4", "OPP_BURGLAR", "5"],
+    ["11", "14", "SPRITE_SUPER_NERD", "STAY", "DOWN", "TEXT_CINNABARGYM_SUPER_NERD5", "OPP_SUPER_NERD", "11"],
+    ["3", "14", "SPRITE_SUPER_NERD", "STAY", "DOWN", "TEXT_CINNABARGYM_SUPER_NERD6", "OPP_BURGLAR", "6"],
+    ["3", "8", "SPRITE_SUPER_NERD", "STAY", "DOWN", "TEXT_CINNABARGYM_SUPER_NERD7", "OPP_SUPER_NERD", "12"],
+    ["16", "13", "SPRITE_GYM_GUIDE", "STAY", "DOWN", "TEXT_CINNABARGYM_GYM_GUIDE"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "FACILITY",
+   "w": 10,
+   "warps": [
+    [16, 17, "LAST_MAP", 2],
+    [17, 17, "LAST_MAP", 2]
+   ]
+  },
+  "CinnabarIsland": {
+   "bgs": [
+    [9, 5, "TEXT_CINNABARISLAND_SIGN"],
+    [16, 11, "TEXT_CINNABARISLAND_MART_SIGN"],
+    [12, 11, "TEXT_CINNABARISLAND_POKECENTER_SIGN"],
+    [9, 11, "TEXT_CINNABARISLAND_POKEMONLAB_SIGN"],
+    [13, 3, "TEXT_CINNABARISLAND_GYM_SIGN"]
+   ],
+   "border": 67,
+   "conns": [
+    ["north", "ROUTE_21", 0],
+    ["east", "ROUTE_20", 0]
+   ],
+   "const": "CINNABAR_ISLAND",
+   "h": 9,
+   "objs": [
+    ["12", "5", "SPRITE_GIRL", "WALK", "LEFT_RIGHT", "TEXT_CINNABARISLAND_GIRL"],
+    ["14", "6", "SPRITE_GAMBLER", "STAY", "NONE", "TEXT_CINNABARISLAND_GAMBLER"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": [
+    [6, 3, "POKEMON_MANSION_1F", 2],
+    [18, 3, "CINNABAR_GYM", 1],
+    [6, 9, "CINNABAR_LAB", 1],
+    [11, 11, "CINNABAR_POKECENTER", 1],
+    [15, 11, "CINNABAR_MART", 1]
+   ]
+  },
+  "FuchsiaCity": {
+   "bgs": [
+    [15, 23, "TEXT_FUCHSIACITY_SIGN1"],
+    [25, 15, "TEXT_FUCHSIACITY_SIGN2"],
+    [17, 5, "TEXT_FUCHSIACITY_SAFARI_GAME_SIGN"],
+    [6, 13, "TEXT_FUCHSIACITY_MART_SIGN"],
+    [20, 27, "TEXT_FUCHSIACITY_POKECENTER_SIGN"],
+    [27, 29, "TEXT_FUCHSIACITY_WARDENS_HOME_SIGN"],
+    [21, 15, "TEXT_FUCHSIACITY_SAFARI_ZONE_SIGN"],
+    [5, 29, "TEXT_FUCHSIACITY_GYM_SIGN"],
+    [33, 7, "TEXT_FUCHSIACITY_CHANSEY_SIGN"],
+    [27, 7, "TEXT_FUCHSIACITY_VOLTORB_SIGN"],
+    [13, 7, "TEXT_FUCHSIACITY_KANGASKHAN_SIGN"],
+    [31, 13, "TEXT_FUCHSIACITY_SLOWPOKE_SIGN"],
+    [13, 15, "TEXT_FUCHSIACITY_LAPRAS_SIGN"],
+    [7, 7, "TEXT_FUCHSIACITY_FOSSIL_SIGN"]
+   ],
+   "border": 15,
+   "conns": [
+    ["south", "ROUTE_19", 5],
+    ["west", "ROUTE_18", 4],
+    ["east", "ROUTE_15", 4]
+   ],
+   "const": "FUCHSIA_CITY",
+   "h": 18,
+   "objs": [
+    ["10", "12", "SPRITE_YOUNGSTER", "WALK", "LEFT_RIGHT", "TEXT_FUCHSIACITY_YOUNGSTER1"],
+    ["28", "17", "SPRITE_GAMBLER", "WALK", "LEFT_RIGHT", "TEXT_FUCHSIACITY_GAMBLER"],
+    ["30", "14", "SPRITE_FISHER", "STAY", "DOWN", "TEXT_FUCHSIACITY_ERIK"],
+    ["24", "8", "SPRITE_YOUNGSTER", "STAY", "UP", "TEXT_FUCHSIACITY_YOUNGSTER2"],
+    ["31", "5", "SPRITE_FAIRY", "WALK", "ANY_DIR", "TEXT_FUCHSIACITY_CHANSEY"],
+    ["25", "6", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_FUCHSIACITY_VOLTORB"],
+    ["12", "6", "SPRITE_MONSTER", "WALK", "LEFT_RIGHT", "TEXT_FUCHSIACITY_KANGASKHAN"],
+    ["30", "12", "SPRITE_MONSTER", "WALK", "LEFT_RIGHT", "TEXT_FUCHSIACITY_SLOWPOKE"],
+    ["8", "17", "SPRITE_SEEL", "WALK", "ANY_DIR", "TEXT_FUCHSIACITY_LAPRAS"],
+    ["6", "5", "SPRITE_FOSSIL", "STAY", "NONE", "TEXT_FUCHSIACITY_FOSSIL"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 20,
+   "warps": [
+    [5, 13, "FUCHSIA_MART", 1],
+    [11, 27, "FUCHSIA_BILLS_GRANDPAS_HOUSE", 1],
+    [19, 27, "FUCHSIA_POKECENTER", 1],
+    [27, 27, "WARDENS_HOUSE", 1],
+    [18, 3, "SAFARI_ZONE_GATE", 1],
+    [5, 27, "FUCHSIA_GYM", 1],
+    [22, 13, "FUCHSIA_MEETING_ROOM", 1],
+    [31, 27, "FUCHSIA_GOOD_ROD_HOUSE", 2],
+    [31, 24, "FUCHSIA_GOOD_ROD_HOUSE", 1]
+   ]
+  },
+  "FuchsiaGym": {
+   "bgs": [],
+   "border": 3,
+   "conns": [],
+   "const": "FUCHSIA_GYM",
+   "h": 9,
+   "objs": [
+    ["4", "10", "SPRITE_KOGA", "STAY", "DOWN", "TEXT_FUCHSIAGYM_KOGA", "OPP_KOGA", "1"],
+    ["8", "13", "SPRITE_ROCKER", "STAY", "DOWN", "TEXT_FUCHSIAGYM_ROCKER1", "OPP_JUGGLER", "7"],
+    ["7", "8", "SPRITE_ROCKER", "STAY", "RIGHT", "TEXT_FUCHSIAGYM_ROCKER2", "OPP_JUGGLER", "3"],
+    ["1", "12", "SPRITE_ROCKER", "STAY", "DOWN", "TEXT_FUCHSIAGYM_ROCKER3", "OPP_JUGGLER", "8"],
+    ["3", "5", "SPRITE_ROCKER", "STAY", "UP", "TEXT_FUCHSIAGYM_ROCKER4", "OPP_TAMER", "1"],
+    ["8", "2", "SPRITE_ROCKER", "STAY", "DOWN", "TEXT_FUCHSIAGYM_ROCKER5", "OPP_TAMER", "2"],
+    ["2", "7", "SPRITE_ROCKER", "STAY", "LEFT", "TEXT_FUCHSIAGYM_ROCKER6", "OPP_JUGGLER", "4"],
+    ["7", "15", "SPRITE_GYM_GUIDE", "STAY", "DOWN", "TEXT_FUCHSIAGYM_GYM_GUIDE"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GYM",
+   "w": 5,
+   "warps": [
+    [4, 17, "LAST_MAP", 6],
+    [5, 17, "LAST_MAP", 6]
+   ]
+  },
+  "LavenderTown": {
+   "bgs": [
+    [11, 9, "TEXT_LAVENDERTOWN_SIGN"],
+    [9, 3, "TEXT_LAVENDERTOWN_SILPH_SCOPE_SIGN"],
+    [16, 13, "TEXT_LAVENDERTOWN_MART_SIGN"],
+    [4, 5, "TEXT_LAVENDERTOWN_POKECENTER_SIGN"],
+    [5, 9, "TEXT_LAVENDERTOWN_POKEMON_HOUSE_SIGN"],
+    [17, 7, "TEXT_LAVENDERTOWN_POKEMON_TOWER_SIGN"]
+   ],
+   "border": 44,
+   "conns": [
+    ["north", "ROUTE_10", 0],
+    ["south", "ROUTE_12", 0],
+    ["west", "ROUTE_8", 0]
+   ],
+   "const": "LAVENDER_TOWN",
+   "h": 9,
+   "objs": [
+    ["15", "9", "SPRITE_LITTLE_GIRL", "WALK", "ANY_DIR", "TEXT_LAVENDERTOWN_LITTLE_GIRL"],
+    ["9", "10", "SPRITE_COOLTRAINER_M", "STAY", "NONE", "TEXT_LAVENDERTOWN_COOLTRAINER_M"],
+    ["8", "7", "SPRITE_SUPER_NERD", "WALK", "LEFT_RIGHT", "TEXT_LAVENDERTOWN_SUPER_NERD"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": [
+    [3, 5, "LAVENDER_POKECENTER", 1],
+    [14, 5, "POKEMON_TOWER_1F", 1],
+    [7, 9, "MR_FUJIS_HOUSE", 1],
+    [15, 13, "LAVENDER_MART", 1],
+    [3, 13, "LAVENDER_CUBONE_HOUSE", 1],
+    [7, 13, "NAME_RATERS_HOUSE", 1]
+   ]
+  },
+  "LoreleisRoom": {
+   "bgs": [],
+   "border": 3,
+   "conns": [],
+   "const": "LORELEIS_ROOM",
+   "h": 6,
+   "objs": [
+    ["5", "2", "SPRITE_LORELEI", "STAY", "DOWN", "TEXT_LORELEISROOM_LORELEI", "OPP_LORELEI", "1"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_LORELEIS_ROOM_TRAINER_0", "0", "LoreleisRoomLoreleiBeforeBattleText", "LoreleisRoomLoreleiEndBattleText", "LoreleisRoomLoreleiAfterBattleText"]
+   ],
+   "ts": "GYM",
+   "w": 5,
+   "warps": [
+    [4, 11, "INDIGO_PLATEAU_LOBBY", 3],
+    [5, 11, "INDIGO_PLATEAU_LOBBY", 3],
+    [4, 0, "BRUNOS_ROOM", 1],
+    [5, 0, "BRUNOS_ROOM", 2]
+   ]
+  },
+  "OaksLab": {
+   "bgs": [],
+   "border": 3,
+   "conns": [],
+   "const": "OAKS_LAB",
+   "h": 6,
+   "objs": [
+    ["4", "3", "SPRITE_BLUE", "STAY", "NONE", "TEXT_OAKSLAB_RIVAL", "OPP_RIVAL1", "1"],
+    ["6", "3", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_OAKSLAB_CHARMANDER_POKE_BALL"],
+    ["7", "3", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_OAKSLAB_SQUIRTLE_POKE_BALL"],
+    ["8", "3", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_OAKSLAB_BULBASAUR_POKE_BALL"],
+    ["5", "2", "SPRITE_OAK", "STAY", "DOWN", "TEXT_OAKSLAB_OAK1"],
+    ["2", "1", "SPRITE_POKEDEX", "STAY", "NONE", "TEXT_OAKSLAB_POKEDEX1"],
+    ["3", "1", "SPRITE_POKEDEX", "STAY", "NONE", "TEXT_OAKSLAB_POKEDEX2"],
+    ["5", "10", "SPRITE_OAK", "STAY", "UP", "TEXT_OAKSLAB_OAK2"],
+    ["1", "9", "SPRITE_GIRL", "WALK", "UP_DOWN", "TEXT_OAKSLAB_GIRL"],
+    ["2", "10", "SPRITE_SCIENTIST", "STAY", "NONE", "TEXT_OAKSLAB_SCIENTIST1"],
+    ["8", "10", "SPRITE_SCIENTIST", "STAY", "NONE", "TEXT_OAKSLAB_SCIENTIST2"]
+   ],
+   "texts": {
+    "TEXT_OAKSLAB_BULBASAUR_POKE_BALL": null,
+    "TEXT_OAKSLAB_CHARMANDER_POKE_BALL": null,
+    "TEXT_OAKSLAB_OAK1": null,
+    "TEXT_OAKSLAB_RIVAL": null,
+    "TEXT_OAKSLAB_SQUIRTLE_POKE_BALL": null
+   },
+   "trainers": [],
+   "ts": "DOJO",
+   "w": 5,
+   "warps": [
+    [4, 11, "LAST_MAP", 3],
+    [5, 11, "LAST_MAP", 3]
+   ]
+  },
+  "PalletTown": {
+   "bgs": [
+    [13, 13, "TEXT_PALLETTOWN_OAKSLAB_SIGN"],
+    [7, 9, "TEXT_PALLETTOWN_SIGN"],
+    [3, 5, "TEXT_PALLETTOWN_PLAYERSHOUSE_SIGN"],
+    [11, 5, "TEXT_PALLETTOWN_RIVALSHOUSE_SIGN"]
+   ],
+   "border": 11,
+   "conns": [
+    ["north", "ROUTE_1", 0],
+    ["south", "ROUTE_21", 0]
+   ],
+   "const": "PALLET_TOWN",
+   "h": 9,
+   "objs": [
+    ["8", "5", "SPRITE_OAK", "STAY", "NONE", "TEXT_PALLETTOWN_OAK"],
+    ["3", "8", "SPRITE_GIRL", "WALK", "ANY_DIR", "TEXT_PALLETTOWN_GIRL"],
+    ["11", "14", "SPRITE_FISHER", "WALK", "ANY_DIR", "TEXT_PALLETTOWN_FISHER"]
+   ],
+   "texts": {
+    "TEXT_PALLETTOWN_FISHER": "_PalletTownFisherText",
+    "TEXT_PALLETTOWN_OAK": null
+   },
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": [
+    [5, 5, "REDS_HOUSE_1F", 1],
+    [13, 5, "BLUES_HOUSE", 1],
+    [12, 11, "OAKS_LAB", 2]
+   ]
+  },
+  "PewterCity": {
+   "bgs": [
+    [19, 29, "TEXT_PEWTERCITY_TRAINER_TIPS"],
+    [33, 19, "TEXT_PEWTERCITY_POLICE_NOTICE_SIGN"],
+    [24, 17, "TEXT_PEWTERCITY_MART_SIGN"],
+    [14, 25, "TEXT_PEWTERCITY_POKECENTER_SIGN"],
+    [15, 9, "TEXT_PEWTERCITY_MUSEUM_SIGN"],
+    [11, 17, "TEXT_PEWTERCITY_GYM_SIGN"],
+    [25, 23, "TEXT_PEWTERCITY_SIGN"]
+   ],
+   "border": 10,
+   "conns": [
+    ["south", "ROUTE_2", 5],
+    ["east", "ROUTE_3", 4]
+   ],
+   "const": "PEWTER_CITY",
+   "h": 18,
+   "objs": [
+    ["8", "15", "SPRITE_COOLTRAINER_F", "STAY", "NONE", "TEXT_PEWTERCITY_COOLTRAINER_F"],
+    ["17", "25", "SPRITE_COOLTRAINER_M", "STAY", "NONE", "TEXT_PEWTERCITY_COOLTRAINER_M"],
+    ["27", "17", "SPRITE_SUPER_NERD", "STAY", "NONE", "TEXT_PEWTERCITY_SUPER_NERD1"],
+    ["26", "25", "SPRITE_SUPER_NERD", "WALK", "LEFT_RIGHT", "TEXT_PEWTERCITY_SUPER_NERD2"],
+    ["35", "16", "SPRITE_YOUNGSTER", "STAY", "DOWN", "TEXT_PEWTERCITY_YOUNGSTER"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 20,
+   "warps": [
+    [14, 7, "MUSEUM_1F", 1],
+    [19, 5, "MUSEUM_1F", 3],
+    [16, 17, "PEWTER_GYM", 1],
+    [29, 13, "PEWTER_NIDORAN_HOUSE", 1],
+    [23, 17, "PEWTER_MART", 1],
+    [7, 29, "PEWTER_SPEECH_HOUSE", 1],
+    [13, 25, "PEWTER_POKECENTER", 1]
+   ]
+  },
+  "PewterGym": {
+   "bgs": [],
+   "border": 3,
+   "conns": [],
+   "const": "PEWTER_GYM",
+   "h": 7,
+   "objs": [
+    ["4", "1", "SPRITE_SUPER_NERD", "STAY", "DOWN", "TEXT_PEWTERGYM_BROCK", "OPP_BROCK", "1"],
+    ["3", "6", "SPRITE_COOLTRAINER_M", "STAY", "RIGHT", "TEXT_PEWTERGYM_COOLTRAINER_M", "OPP_JR_TRAINER_M", "1"],
+    ["7", "10", "SPRITE_GYM_GUIDE", "STAY", "DOWN", "TEXT_PEWTERGYM_GYM_GUIDE"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_PEWTER_GYM_TRAINER_0", "5", "PewterGymCooltrainerMBattleText", "PewterGymCooltrainerMEndBattleText", "PewterGymCooltrainerMAfterBattleText"]
+   ],
+   "ts": "GYM",
+   "w": 5,
+   "warps": [
+    [4, 13, "LAST_MAP", 3],
+    [5, 13, "LAST_MAP", 3]
+   ]
+  },
+  "RedsHouse2F": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "REDS_HOUSE_2F",
+   "h": 4,
+   "objs": [],
+   "texts": {},
+   "trainers": [],
+   "ts": "REDS_HOUSE_2",
+   "w": 4,
+   "warps": [
+    [7, 1, "REDS_HOUSE_1F", 3]
+   ]
+  },
+  "Route1": {
+   "bgs": [
+    [9, 27, "TEXT_ROUTE1_SIGN"]
+   ],
+   "border": 11,
+   "conns": [
+    ["north", "VIRIDIAN_CITY", -5],
+    ["south", "PALLET_TOWN", 0]
+   ],
+   "const": "ROUTE_1",
+   "h": 18,
+   "objs": [
+    ["5", "24", "SPRITE_YOUNGSTER", "WALK", "UP_DOWN", "TEXT_ROUTE1_YOUNGSTER1"],
+    ["15", "13", "SPRITE_YOUNGSTER", "WALK", "LEFT_RIGHT", "TEXT_ROUTE1_YOUNGSTER2"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": []
+  },
+  "Route10": {
+   "bgs": [
+    [7, 19, "TEXT_ROUTE10_ROCKTUNNEL_NORTH_SIGN"],
+    [12, 19, "TEXT_ROUTE10_POKECENTER_SIGN"],
+    [9, 55, "TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN"],
+    [5, 41, "TEXT_ROUTE10_POWERPLANT_SIGN"]
+   ],
+   "border": 44,
+   "conns": [
+    ["south", "LAVENDER_TOWN", 0],
+    ["west", "ROUTE_9", 0]
+   ],
+   "const": "ROUTE_10",
+   "h": 36,
+   "objs": [
+    ["10", "44", "SPRITE_SUPER_NERD", "STAY", "LEFT", "TEXT_ROUTE10_SUPER_NERD1", "OPP_POKEMANIAC", "1"],
+    ["3", "57", "SPRITE_HIKER", "STAY", "UP", "TEXT_ROUTE10_HIKER1", "OPP_HIKER", "7"],
+    ["14", "64", "SPRITE_SUPER_NERD", "STAY", "LEFT", "TEXT_ROUTE10_SUPER_NERD2", "OPP_POKEMANIAC", "2"],
+    ["7", "25", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_ROUTE10_COOLTRAINER_F1", "OPP_JR_TRAINER_F", "7"],
+    ["3", "61", "SPRITE_HIKER", "STAY", "DOWN", "TEXT_ROUTE10_HIKER2", "OPP_HIKER", "8"],
+    ["7", "54", "SPRITE_COOLTRAINER_F", "STAY", "DOWN", "TEXT_ROUTE10_COOLTRAINER_F2", "OPP_JR_TRAINER_F", "8"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_ROUTE_10_TRAINER_0", "4", "Route10SuperNerd1BattleText", "Route10SuperNerd1EndBattleText", "Route10SuperNerd1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_10_TRAINER_1", "3", "Route10Hiker1BattleText", "Route10Hiker1EndBattleText", "Route10Hiker1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_10_TRAINER_2", "4", "Route10SuperNerd2BattleText", "Route10SuperNerd2EndBattleText", "Route10SuperNerd2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_10_TRAINER_3", "3", "Route10CooltrainerF1BattleText", "Route10CooltrainerF1EndBattleText", "Route10CooltrainerF1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_10_TRAINER_4", "2", "Route10Hiker2BattleText", "Route10Hiker2EndBattleText", "Route10Hiker2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_10_TRAINER_5", "2", "Route10CooltrainerF2BattleText", "Route10CooltrainerF2EndBattleText", "Route10CooltrainerF2AfterBattleText"]
+   ],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": [
+    [11, 19, "ROCK_TUNNEL_POKECENTER", 1],
+    [8, 17, "ROCK_TUNNEL_1F", 1],
+    [8, 53, "ROCK_TUNNEL_1F", 3],
+    [6, 39, "POWER_PLANT", 1]
+   ]
+  },
+  "Route16": {
+   "bgs": [
+    [27, 11, "TEXT_ROUTE16_CYCLING_ROAD_SIGN"],
+    [5, 17, "TEXT_ROUTE16_SIGN"]
+   ],
+   "border": 15,
+   "conns": [
+    ["south", "ROUTE_17", 0],
+    ["east", "CELADON_CITY", -4]
+   ],
+   "const": "ROUTE_16",
+   "h": 9,
+   "objs": [
+    ["17", "12", "SPRITE_BIKER", "STAY", "LEFT", "TEXT_ROUTE16_BIKER1", "OPP_BIKER", "5"],
+    ["14", "13", "SPRITE_BIKER", "STAY", "RIGHT", "TEXT_ROUTE16_BIKER2", "OPP_CUE_BALL", "1"],
+    ["11", "12", "SPRITE_BIKER", "STAY", "UP", "TEXT_ROUTE16_BIKER3", "OPP_CUE_BALL", "2"],
+    ["9", "11", "SPRITE_BIKER", "STAY", "LEFT", "TEXT_ROUTE16_BIKER4", "OPP_BIKER", "6"],
+    ["6", "10", "SPRITE_BIKER", "STAY", "RIGHT", "TEXT_ROUTE16_BIKER5", "OPP_CUE_BALL", "3"],
+    ["3", "12", "SPRITE_BIKER", "STAY", "RIGHT", "TEXT_ROUTE16_BIKER6", "OPP_BIKER", "7"],
+    ["26", "10", "SPRITE_SNORLAX", "STAY", "DOWN", "TEXT_ROUTE16_SNORLAX"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_ROUTE_16_TRAINER_0", "3", "Route16Biker1BattleText", "Route16Biker1EndBattleText", "Route16Biker1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_16_TRAINER_1", "2", "Route16Biker2BattleText", "Route16Biker2EndBattleText", "Route16Biker2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_16_TRAINER_2", "2", "Route16Biker3BattleText", "Route16Biker3EndBattleText", "Route16Biker3AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_16_TRAINER_3", "2", "Route16biker4BattleText", "Route16Biker4EndBattleText", "Route16Biker4AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_16_TRAINER_4", "2", "Route16Biker5BattleText", "Route16Biker5EndBattleText", "Route16Biker5AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_16_TRAINER_5", "4", "Route16Biker6BattleText", "Route16Biker6EndBattleText", "Route16Biker6AfterBattleText"]
+   ],
+   "ts": "OVERWORLD",
+   "w": 20,
+   "warps": [
+    [17, 10, "ROUTE_16_GATE_1F", 1],
+    [17, 11, "ROUTE_16_GATE_1F", 2],
+    [24, 10, "ROUTE_16_GATE_1F", 3],
+    [24, 11, "ROUTE_16_GATE_1F", 4],
+    [17, 4, "ROUTE_16_GATE_1F", 5],
+    [17, 5, "ROUTE_16_GATE_1F", 6],
+    [24, 4, "ROUTE_16_GATE_1F", 7],
+    [24, 5, "ROUTE_16_GATE_1F", 8],
+    [7, 5, "ROUTE_16_FLY_HOUSE", 1]
+   ]
+  },
+  "Route16Gate1F": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "ROUTE_16_GATE_1F",
+   "h": 7,
+   "objs": [
+    ["4", "5", "SPRITE_GUARD", "STAY", "DOWN", "TEXT_ROUTE16GATE1F_GUARD"],
+    ["4", "3", "SPRITE_GAMBLER", "STAY", "NONE", "TEXT_ROUTE16GATE1F_GAMBLER"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GATE",
+   "w": 4,
+   "warps": [
+    [0, 8, "LAST_MAP", 1],
+    [0, 9, "LAST_MAP", 2],
+    [7, 8, "LAST_MAP", 3],
+    [7, 9, "LAST_MAP", 3],
+    [0, 2, "LAST_MAP", 5],
+    [0, 3, "LAST_MAP", 6],
+    [7, 2, "LAST_MAP", 7],
+    [7, 3, "LAST_MAP", 8],
+    [6, 12, "ROUTE_16_GATE_2F", 1]
+   ]
+  },
+  "Route17": {
+   "bgs": [
+    [9, 51, "TEXT_ROUTE17_NOTICE_SIGN1"],
+    [9, 63, "TEXT_ROUTE17_TRAINER_TIPS1"],
+    [9, 75, "TEXT_ROUTE17_TRAINER_TIPS2"],
+    [9, 87, "TEXT_ROUTE17_SIGN"],
+    [9, 111, "TEXT_ROUTE17_NOTICE_SIGN2"],
+    [9, 141, "TEXT_ROUTE17_CYCLING_ROAD_ENDS_SIGN"]
+   ],
+   "border": 67,
+   "conns": [
+    ["north", "ROUTE_16", 0],
+    ["south", "ROUTE_18", 0]
+   ],
+   "const": "ROUTE_17",
+   "h": 72,
+   "objs": [
+    ["12", "19", "SPRITE_BIKER", "STAY", "LEFT", "TEXT_ROUTE17_BIKER1", "OPP_CUE_BALL", "4"],
+    ["11", "16", "SPRITE_BIKER", "STAY", "RIGHT", "TEXT_ROUTE17_BIKER2", "OPP_CUE_BALL", "5"],
+    ["4", "18", "SPRITE_BIKER", "STAY", "UP", "TEXT_ROUTE17_BIKER3", "OPP_BIKER", "8"],
+    ["7", "32", "SPRITE_BIKER", "STAY", "LEFT", "TEXT_ROUTE17_BIKER4", "OPP_BIKER", "9"],
+    ["14", "34", "SPRITE_BIKER", "STAY", "RIGHT", "TEXT_ROUTE17_BIKER5", "OPP_BIKER", "10"],
+    ["17", "58", "SPRITE_BIKER", "STAY", "LEFT", "TEXT_ROUTE17_BIKER6", "OPP_CUE_BALL", "6"],
+    ["2", "68", "SPRITE_BIKER", "STAY", "RIGHT", "TEXT_ROUTE17_BIKER7", "OPP_CUE_BALL", "7"],
+    ["14", "98", "SPRITE_BIKER", "STAY", "RIGHT", "TEXT_ROUTE17_BIKER8", "OPP_CUE_BALL", "8"],
+    ["5", "98", "SPRITE_BIKER", "STAY", "LEFT", "TEXT_ROUTE17_BIKER9", "OPP_BIKER", "11"],
+    ["10", "118", "SPRITE_BIKER", "STAY", "DOWN", "TEXT_ROUTE17_BIKER10", "OPP_BIKER", "12"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_ROUTE_17_TRAINER_0", "3", "Route17Biker1BattleText", "Route17Biker1EndBattleText", "Route17Biker1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_17_TRAINER_1", "4", "Route17Biker2BattleText", "Route17Biker2EndBattleText", "Route17Biker2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_17_TRAINER_2", "4", "Route17Biker3BattleText", "Route17Biker3EndBattleText", "Route17Biker3AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_17_TRAINER_3", "4", "Route17Biker4BattleText", "Route17Biker4EndBattleText", "Route17Biker4AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_17_TRAINER_4", "3", "Route17Biker5BattleText", "Route17Biker5EndBattleText", "Route17Biker5AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_17_TRAINER_5", "2", "Route17Biker6BattleText", "Route17Biker6EndBattleText", "Route17Biker6AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_17_TRAINER_6", "4", "Route17Biker7BattleText", "Route17Biker7EndBattleText", "Route17Biker7AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_17_TRAINER_7", "2", "Route17Biker8BattleText", "Route17Biker8EndBattleText", "Route17Biker8AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_17_TRAINER_8", "3", "Route17Biker9BattleText", "Route17Biker9EndBattleText", "Route17Biker9AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_17_TRAINER_9", "4", "Route17Biker10BattleText", "Route17Biker10EndBattleText", "Route17Biker10AfterBattleText"]
+   ],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": []
+  },
+  "Route18": {
+   "bgs": [
+    [43, 7, "TEXT_ROUTE18_SIGN"],
+    [33, 5, "TEXT_ROUTE18_CYCLING_ROAD_SIGN"]
+   ],
+   "border": 67,
+   "conns": [
+    ["north", "ROUTE_17", 0],
+    ["east", "FUCHSIA_CITY", -4]
+   ],
+   "const": "ROUTE_18",
+   "h": 9,
+   "objs": [
+    ["36", "11", "SPRITE_COOLTRAINER_M", "STAY", "RIGHT", "TEXT_ROUTE18_COOLTRAINER_M1", "OPP_BIRD_KEEPER", "8"],
+    ["40", "15", "SPRITE_COOLTRAINER_M", "STAY", "LEFT", "TEXT_ROUTE18_COOLTRAINER_M2", "OPP_BIRD_KEEPER", "9"],
+    ["42", "13", "SPRITE_COOLTRAINER_M", "STAY", "LEFT", "TEXT_ROUTE18_COOLTRAINER_M3", "OPP_BIRD_KEEPER", "10"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_ROUTE_18_TRAINER_0", "3", "Route18CooltrainerM1BattleText", "Route18CooltrainerM1EndBattleText", "Route18CooltrainerM1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_18_TRAINER_1", "3", "Route18CooltrainerM2BattleText", "Route18CooltrainerM2EndBattleText", "Route18CooltrainerM2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_18_TRAINER_2", "4", "Route18CooltrainerM3BattleText", "Route18CooltrainerM3EndBattleText", "Route18CooltrainerM3AfterBattleText"]
+   ],
+   "ts": "OVERWORLD",
+   "w": 25,
+   "warps": [
+    [33, 8, "ROUTE_18_GATE_1F", 1],
+    [33, 9, "ROUTE_18_GATE_1F", 2],
+    [40, 8, "ROUTE_18_GATE_1F", 3],
+    [40, 9, "ROUTE_18_GATE_1F", 4]
+   ]
+  },
+  "Route18Gate1F": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "ROUTE_18_GATE_1F",
+   "h": 5,
+   "objs": [
+    ["4", "1", "SPRITE_GUARD", "STAY", "DOWN", "TEXT_ROUTE18GATE1F_GUARD"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GATE",
+   "w": 4,
+   "warps": [
+    [0, 4, "LAST_MAP", 1],
+    [0, 5, "LAST_MAP", 2],
+    [7, 4, "LAST_MAP", 3],
+    [7, 5, "LAST_MAP", 4],
+    [6, 8, "ROUTE_18_GATE_2F", 1]
+   ]
+  },
+  "Route2": {
+   "bgs": [
+    [5, 65, "TEXT_ROUTE2_SIGN"],
+    [11, 11, "TEXT_ROUTE2_DIGLETTS_CAVE_SIGN"]
+   ],
+   "border": 15,
+   "conns": [
+    ["north", "PEWTER_CITY", -5],
+    ["south", "VIRIDIAN_CITY", -5]
+   ],
+   "const": "ROUTE_2",
+   "h": 36,
+   "objs": [
+    ["13", "54", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_ROUTE2_MOON_STONE", "MOON_STONE"],
+    ["13", "45", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_ROUTE2_HP_UP", "HP_UP"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": [
+    [12, 9, "DIGLETTS_CAVE_ROUTE_2", 1],
+    [3, 11, "VIRIDIAN_FOREST_NORTH_GATE", 2],
+    [15, 19, "ROUTE_2_TRADE_HOUSE", 1],
+    [16, 35, "ROUTE_2_GATE", 2],
+    [15, 39, "ROUTE_2_GATE", 3],
+    [3, 43, "VIRIDIAN_FOREST_SOUTH_GATE", 3]
+   ]
+  },
+  "Route22": {
+   "bgs": [
+    [7, 11, "TEXT_ROUTE22_POKEMON_LEAGUE_SIGN"]
+   ],
+   "border": 44,
+   "conns": [
+    ["north", "ROUTE_23", 0],
+    ["east", "VIRIDIAN_CITY", -4]
+   ],
+   "const": "ROUTE_22",
+   "h": 9,
+   "objs": [
+    ["25", "5", "SPRITE_BLUE", "STAY", "NONE", "TEXT_ROUTE22_RIVAL1"],
+    ["25", "5", "SPRITE_BLUE", "STAY", "NONE", "TEXT_ROUTE22_RIVAL2"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 20,
+   "warps": [
+    [8, 5, "ROUTE_22_GATE", 1]
+   ]
+  },
+  "Route22Gate": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "ROUTE_22_GATE",
+   "h": 4,
+   "objs": [
+    ["6", "2", "SPRITE_GUARD", "STAY", "LEFT", "TEXT_ROUTE22GATE_GUARD"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GATE",
+   "w": 5,
+   "warps": [
+    [4, 7, "LAST_MAP", 1],
+    [5, 7, "LAST_MAP", 1],
+    [4, 0, "LAST_MAP", 1],
+    [5, 0, "LAST_MAP", 2]
+   ]
+  },
+  "Route2Gate": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "ROUTE_2_GATE",
+   "h": 4,
+   "objs": [
+    ["1", "4", "SPRITE_SCIENTIST", "STAY", "LEFT", "TEXT_ROUTE2GATE_OAKS_AIDE"],
+    ["5", "4", "SPRITE_YOUNGSTER", "WALK", "LEFT_RIGHT", "TEXT_ROUTE2GATE_YOUNGSTER"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GATE",
+   "w": 5,
+   "warps": [
+    [4, 0, "LAST_MAP", 4],
+    [5, 0, "LAST_MAP", 4],
+    [4, 7, "LAST_MAP", 5],
+    [5, 7, "LAST_MAP", 5]
+   ]
+  },
+  "Route3": {
+   "bgs": [
+    [59, 9, "TEXT_ROUTE3_SIGN"]
+   ],
+   "border": 44,
+   "conns": [
+    ["north", "ROUTE_4", 25],
+    ["west", "PEWTER_CITY", -4]
+   ],
+   "const": "ROUTE_3",
+   "h": 9,
+   "objs": [
+    ["57", "11", "SPRITE_SUPER_NERD", "STAY", "NONE", "TEXT_ROUTE3_SUPER_NERD"],
+    ["10", "6", "SPRITE_YOUNGSTER", "STAY", "RIGHT", "TEXT_ROUTE3_YOUNGSTER1", "OPP_BUG_CATCHER", "4"],
+    ["14", "4", "SPRITE_YOUNGSTER", "STAY", "DOWN", "TEXT_ROUTE3_YOUNGSTER2", "OPP_YOUNGSTER", "1"],
+    ["16", "9", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_ROUTE3_COOLTRAINER_F1", "OPP_LASS", "1"],
+    ["19", "5", "SPRITE_YOUNGSTER", "STAY", "DOWN", "TEXT_ROUTE3_YOUNGSTER3", "OPP_BUG_CATCHER", "5"],
+    ["23", "4", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_ROUTE3_COOLTRAINER_F2", "OPP_LASS", "2"],
+    ["22", "9", "SPRITE_YOUNGSTER", "STAY", "LEFT", "TEXT_ROUTE3_YOUNGSTER4", "OPP_YOUNGSTER", "2"],
+    ["24", "6", "SPRITE_YOUNGSTER", "STAY", "RIGHT", "TEXT_ROUTE3_YOUNGSTER5", "OPP_BUG_CATCHER", "6"],
+    ["33", "10", "SPRITE_COOLTRAINER_F", "STAY", "UP", "TEXT_ROUTE3_COOLTRAINER_F3", "OPP_LASS", "3"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_ROUTE_3_TRAINER_0", "2", "Route3Youngster1BattleText", "Route3Youngster1EndBattleText", "Route3Youngster1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_3_TRAINER_1", "3", "Route3Youngster2BattleText", "Route3Youngster2EndBattleText", "Route3Youngster2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_3_TRAINER_2", "2", "Route3CooltrainerF1BattleText", "Route3CooltrainerF1EndBattleText", "Route3CooltrainerF1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_3_TRAINER_3", "1", "Route3Youngster3BattleText", "Route3Youngster3EndBattleText", "Route3Youngster3AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_3_TRAINER_4", "4", "Route3CooltrainerF2BattleText", "Route3CooltrainerF2EndBattleText", "Route3CooltrainerF2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_3_TRAINER_5", "3", "Route3Youngster4BattleText", "Route3Youngster4EndBattleText", "Route3Youngster4AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_3_TRAINER_6", "3", "Route3Youngster5BattleText", "Route3Youngster5EndBattleText", "Route3Youngster5AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_3_TRAINER_7", "2", "Route3CooltrainerF3BattleText", "Route3CooltrainerF3EndBattleText", "Route3CooltrainerF3AfterBattleText"]
+   ],
+   "ts": "OVERWORLD",
+   "w": 35,
+   "warps": []
+  },
+  "Route4": {
+   "bgs": [
+    [12, 5, "TEXT_ROUTE4_POKECENTER_SIGN"],
+    [17, 7, "TEXT_ROUTE4_MT_MOON_SIGN"],
+    [27, 7, "TEXT_ROUTE4_SIGN"]
+   ],
+   "border": 44,
+   "conns": [
+    ["south", "ROUTE_3", -25],
+    ["east", "CERULEAN_CITY", -4]
+   ],
+   "const": "ROUTE_4",
+   "h": 9,
+   "objs": [
+    ["9", "8", "SPRITE_COOLTRAINER_F", "WALK", "ANY_DIR", "TEXT_ROUTE4_COOLTRAINER_F1"],
+    ["63", "3", "SPRITE_COOLTRAINER_F", "STAY", "RIGHT", "TEXT_ROUTE4_COOLTRAINER_F2", "OPP_LASS", "4"],
+    ["57", "3", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_ROUTE4_TM_WHIRLWIND", "TM_WHIRLWIND"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_ROUTE_4_TRAINER_0", "3", "Route4CooltrainerF2BattleText", "Route4CooltrainerF2EndBattleText", "Route4CooltrainerF2AfterBattleText"]
+   ],
+   "ts": "OVERWORLD",
+   "w": 45,
+   "warps": [
+    [11, 5, "MT_MOON_POKECENTER", 1],
+    [18, 5, "MT_MOON_1F", 1],
+    [24, 5, "MT_MOON_B1F", 8]
+   ]
+  },
+  "Route5": {
+   "bgs": [
+    [17, 29, "TEXT_ROUTE5_UNDERGROUND_PATH_SIGN"]
+   ],
+   "border": 10,
+   "conns": [
+    ["north", "CERULEAN_CITY", -5],
+    ["south", "SAFFRON_CITY", -5]
+   ],
+   "const": "ROUTE_5",
+   "h": 18,
+   "objs": [],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": [
+    [10, 29, "ROUTE_5_GATE", 4],
+    [9, 29, "ROUTE_5_GATE", 3],
+    [10, 33, "ROUTE_5_GATE", 1],
+    [17, 27, "UNDERGROUND_PATH_ROUTE_5", 1],
+    [10, 21, "DAYCARE", 1]
+   ]
+  },
+  "Route5Gate": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "ROUTE_5_GATE",
+   "h": 3,
+   "objs": [
+    ["1", "3", "SPRITE_GUARD", "STAY", "RIGHT", "TEXT_ROUTE5GATE_GUARD"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GATE",
+   "w": 4,
+   "warps": [
+    [3, 5, "LAST_MAP", 3],
+    [4, 5, "LAST_MAP", 3],
+    [3, 0, "LAST_MAP", 2],
+    [4, 0, "LAST_MAP", 1]
+   ]
+  },
+  "Route6": {
+   "bgs": [
+    [19, 15, "TEXT_ROUTE6_UNDERGROUND_PATH_SIGN"]
+   ],
+   "border": 15,
+   "conns": [
+    ["north", "SAFFRON_CITY", -5],
+    ["south", "VERMILION_CITY", -5]
+   ],
+   "const": "ROUTE_6",
+   "h": 18,
+   "objs": [
+    ["10", "21", "SPRITE_COOLTRAINER_M", "STAY", "RIGHT", "TEXT_ROUTE6_COOLTRAINER_M1", "OPP_JR_TRAINER_M", "4"],
+    ["11", "21", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_ROUTE6_COOLTRAINER_F1", "OPP_JR_TRAINER_F", "2"],
+    ["0", "15", "SPRITE_YOUNGSTER", "STAY", "RIGHT", "TEXT_ROUTE6_YOUNGSTER1", "OPP_BUG_CATCHER", "10"],
+    ["11", "31", "SPRITE_COOLTRAINER_M", "STAY", "LEFT", "TEXT_ROUTE6_COOLTRAINER_M2", "OPP_JR_TRAINER_M", "5"],
+    ["11", "30", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_ROUTE6_COOLTRAINER_F2", "OPP_JR_TRAINER_F", "3"],
+    ["19", "26", "SPRITE_YOUNGSTER", "STAY", "LEFT", "TEXT_ROUTE6_YOUNGSTER2", "OPP_BUG_CATCHER", "11"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_ROUTE_6_TRAINER_0", "0", "Route6CooltrainerM1BattleText", "Route6CooltrainerM1EndBattleText", "Route6CooltrainerAfterBattleText"],
+    ["EVENT_BEAT_ROUTE_6_TRAINER_1", "0", "Route6CooltrainerF1BattleText", "Route6CooltrainerF1EndBattleText", "Route6CooltrainerAfterBattleText"],
+    ["EVENT_BEAT_ROUTE_6_TRAINER_2", "4", "Route6Youngster1BattleText", "Route6Youngster1EndBattleText", "Route6Youngster1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_6_TRAINER_3", "3", "Route6CooltrainerM2BattleText", "Route6CooltrainerM2EndBattleText", "Route6CooltrainerM2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_6_TRAINER_4", "3", "Route6CooltrainerF2BattleText", "Route6CooltrainerF2EndBattleText", "Route6CooltrainerF2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_6_TRAINER_5", "3", "Route6Youngster2BattleText", "Route6Youngster2EndBattleText", "Route6Youngster2AfterBattleText"]
+   ],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": [
+    [9, 1, "ROUTE_6_GATE", 3],
+    [10, 1, "ROUTE_6_GATE", 3],
+    [10, 7, "ROUTE_6_GATE", 1],
+    [17, 13, "UNDERGROUND_PATH_ROUTE_6", 1]
+   ]
+  },
+  "Route6Gate": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "ROUTE_6_GATE",
+   "h": 3,
+   "objs": [
+    ["6", "2", "SPRITE_GUARD", "STAY", "LEFT", "TEXT_ROUTE6GATE_GUARD"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GATE",
+   "w": 4,
+   "warps": [
+    [3, 5, "LAST_MAP", 3],
+    [4, 5, "LAST_MAP", 3],
+    [3, 0, "LAST_MAP", 2],
+    [4, 0, "LAST_MAP", 2]
+   ]
+  },
+  "Route7": {
+   "bgs": [
+    [3, 13, "TEXT_ROUTE7_UNDERGROUND_PATH_SIGN"]
+   ],
+   "border": 15,
+   "conns": [
+    ["west", "CELADON_CITY", -4],
+    ["east", "SAFFRON_CITY", -4]
+   ],
+   "const": "ROUTE_7",
+   "h": 9,
+   "objs": [],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 10,
+   "warps": [
+    [18, 9, "ROUTE_7_GATE", 3],
+    [18, 10, "ROUTE_7_GATE", 4],
+    [11, 9, "ROUTE_7_GATE", 1],
+    [11, 10, "ROUTE_7_GATE", 2],
+    [5, 13, "UNDERGROUND_PATH_ROUTE_7", 1]
+   ]
+  },
+  "Route7Gate": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "ROUTE_7_GATE",
+   "h": 4,
+   "objs": [
+    ["3", "1", "SPRITE_GUARD", "STAY", "DOWN", "TEXT_ROUTE7GATE_GUARD"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GATE",
+   "w": 3,
+   "warps": [
+    [0, 3, "LAST_MAP", 4],
+    [0, 4, "LAST_MAP", 4],
+    [5, 3, "LAST_MAP", 1],
+    [5, 4, "LAST_MAP", 2]
+   ]
+  },
+  "Route8": {
+   "bgs": [
+    [17, 3, "TEXT_ROUTE8_UNDERGROUND_SIGN"]
+   ],
+   "border": 44,
+   "conns": [
+    ["west", "SAFFRON_CITY", -4],
+    ["east", "LAVENDER_TOWN", 0]
+   ],
+   "const": "ROUTE_8",
+   "h": 9,
+   "objs": [
+    ["8", "5", "SPRITE_SUPER_NERD", "STAY", "RIGHT", "TEXT_ROUTE8_SUPER_NERD1", "OPP_SUPER_NERD", "3"],
+    ["13", "9", "SPRITE_GAMBLER", "STAY", "UP", "TEXT_ROUTE8_GAMBLER1", "OPP_GAMBLER", "5"],
+    ["42", "6", "SPRITE_SUPER_NERD", "STAY", "UP", "TEXT_ROUTE8_SUPER_NERD2", "OPP_SUPER_NERD", "4"],
+    ["26", "3", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_ROUTE8_COOLTRAINER_F1", "OPP_LASS", "13"],
+    ["26", "4", "SPRITE_SUPER_NERD", "STAY", "RIGHT", "TEXT_ROUTE8_SUPER_NERD3", "OPP_SUPER_NERD", "5"],
+    ["26", "5", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_ROUTE8_COOLTRAINER_F2", "OPP_LASS", "14"],
+    ["26", "6", "SPRITE_COOLTRAINER_F", "STAY", "RIGHT", "TEXT_ROUTE8_COOLTRAINER_F3", "OPP_LASS", "15"],
+    ["46", "13", "SPRITE_GAMBLER", "STAY", "DOWN", "TEXT_ROUTE8_GAMBLER2", "OPP_GAMBLER", "7"],
+    ["51", "12", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_ROUTE8_COOLTRAINER_F4", "OPP_LASS", "16"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_ROUTE_8_TRAINER_0", "4", "Route8SuperNerd1BattleText", "Route8SuperNerd1EndBattleText", "Route8SuperNerd1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_8_TRAINER_1", "4", "Route8Gambler1BattleText", "Route8Gambler1EndBattleText", "Route8Gambler1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_8_TRAINER_2", "4", "Route8SuperNerd2BattleText", "Route8SuperNerd2EndBattleText", "Route8SuperNerd2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_8_TRAINER_3", "2", "Route8CooltrainerF1BattleText", "Route8CooltrainerF1EndBattleText", "Route8CooltrainerF1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_8_TRAINER_4", "3", "Route8SuperNerd3BattleText", "Route8SuperNerd3EndBattleText", "Route8SuperNerd3AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_8_TRAINER_5", "3", "Route8CooltrainerF2BattleText", "Route8CooltrainerF2EndBattleText", "Route8CooltrainerF2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_8_TRAINER_6", "2", "Route8CooltrainerF3BattleText", "Route8CooltrainerF3EndBattleText", "Route8CooltrainerF3AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_8_TRAINER_7", "2", "Route8Gambler2BattleText", "Route8Gambler2EndBattleText", "Route8Gambler2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_8_TRAINER_8", "4", "Route8CooltrainerF4BattleText", "Route8CooltrainerF4EndBattleText", "Route8CooltrainerF4AfterBattleText"]
+   ],
+   "ts": "OVERWORLD",
+   "w": 30,
+   "warps": [
+    [1, 9, "ROUTE_8_GATE", 1],
+    [1, 10, "ROUTE_8_GATE", 2],
+    [8, 9, "ROUTE_8_GATE", 3],
+    [8, 10, "ROUTE_8_GATE", 4],
+    [13, 3, "UNDERGROUND_PATH_ROUTE_8", 1]
+   ]
+  },
+  "Route8Gate": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "ROUTE_8_GATE",
+   "h": 4,
+   "objs": [
+    ["2", "1", "SPRITE_GUARD", "STAY", "DOWN", "TEXT_ROUTE8GATE_GUARD"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GATE",
+   "w": 3,
+   "warps": [
+    [0, 3, "LAST_MAP", 1],
+    [0, 4, "LAST_MAP", 2],
+    [5, 3, "LAST_MAP", 3],
+    [5, 4, "LAST_MAP", 4]
+   ]
+  },
+  "Route9": {
+   "bgs": [
+    [25, 7, "TEXT_ROUTE9_SIGN"]
+   ],
+   "border": 44,
+   "conns": [
+    ["west", "CERULEAN_CITY", -4],
+    ["east", "ROUTE_10", 0]
+   ],
+   "const": "ROUTE_9",
+   "h": 9,
+   "objs": [
+    ["13", "10", "SPRITE_COOLTRAINER_F", "STAY", "LEFT", "TEXT_ROUTE9_COOLTRAINER_F1", "OPP_JR_TRAINER_F", "5"],
+    ["24", "7", "SPRITE_COOLTRAINER_M", "STAY", "LEFT", "TEXT_ROUTE9_COOLTRAINER_M1", "OPP_JR_TRAINER_M", "7"],
+    ["31", "7", "SPRITE_COOLTRAINER_M", "STAY", "RIGHT", "TEXT_ROUTE9_COOLTRAINER_M2", "OPP_JR_TRAINER_M", "8"],
+    ["48", "8", "SPRITE_COOLTRAINER_F", "STAY", "RIGHT", "TEXT_ROUTE9_COOLTRAINER_F2", "OPP_JR_TRAINER_F", "6"],
+    ["16", "15", "SPRITE_HIKER", "STAY", "LEFT", "TEXT_ROUTE9_HIKER1", "OPP_HIKER", "11"],
+    ["43", "3", "SPRITE_HIKER", "STAY", "LEFT", "TEXT_ROUTE9_HIKER2", "OPP_HIKER", "6"],
+    ["22", "2", "SPRITE_YOUNGSTER", "STAY", "DOWN", "TEXT_ROUTE9_YOUNGSTER1", "OPP_BUG_CATCHER", "13"],
+    ["45", "15", "SPRITE_HIKER", "STAY", "RIGHT", "TEXT_ROUTE9_HIKER3", "OPP_HIKER", "5"],
+    ["40", "8", "SPRITE_YOUNGSTER", "STAY", "RIGHT", "TEXT_ROUTE9_YOUNGSTER2", "OPP_BUG_CATCHER", "14"],
+    ["10", "15", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_ROUTE9_TM_TELEPORT", "TM_TELEPORT"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_ROUTE_9_TRAINER_0", "3", "Route9CooltrainerF1BattleText", "Route9CooltrainerF1EndBattleText", "Route9CooltrainerF1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_9_TRAINER_1", "2", "Route9CooltrainerM1BattleText", "Route9CooltrainerM1EndBattleText", "Route9CooltrainerM1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_9_TRAINER_2", "4", "Route9CooltrainerM2BattleText", "Route9CooltrainerM2EndBattleText", "Route9CooltrainerM2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_9_TRAINER_3", "2", "Route9CooltrainerF2BattleText", "Route9CooltrainerF2EndBattleText", "Route9CooltrainerF2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_9_TRAINER_4", "2", "Route9Hiker1BattleText", "Route9Hiker1EndBattleText", "Route9Hiker1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_9_TRAINER_5", "3", "Route9Hiker2BattleText", "Route9Hiker2EndBattleText", "Route9Hiker2AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_9_TRAINER_6", "4", "Route9Youngster1BattleText", "Route9Youngster1EndBattleText", "Route9Youngster1AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_9_TRAINER_7", "2", "Route9Hiker3BattleText", "Route9Hiker3EndBattleText", "Route9Hiker3AfterBattleText"],
+    ["EVENT_BEAT_ROUTE_9_TRAINER_8", "2", "Route9Youngster2BattleText", "Route9Youngster2EndBattleText", "Route9Youngster2AfterBattleText"]
+   ],
+   "ts": "OVERWORLD",
+   "w": 30,
+   "warps": []
+  },
+  "SafariZoneGate": {
+   "bgs": [],
+   "border": 10,
+   "conns": [],
+   "const": "SAFARI_ZONE_GATE",
+   "h": 3,
+   "objs": [
+    ["6", "2", "SPRITE_SAFARI_ZONE_WORKER", "STAY", "LEFT", "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER1"],
+    ["1", "4", "SPRITE_SAFARI_ZONE_WORKER", "STAY", "RIGHT", "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER2"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GATE",
+   "w": 4,
+   "warps": [
+    [3, 5, "LAST_MAP", 5],
+    [4, 5, "LAST_MAP", 5],
+    [3, 0, "SAFARI_ZONE_CENTER", 1],
+    [4, 0, "SAFARI_ZONE_CENTER", 2]
+   ]
+  },
+  "SaffronCity": {
+   "bgs": [
+    [17, 5, "TEXT_SAFFRONCITY_SIGN"],
+    [27, 5, "TEXT_SAFFRONCITY_FIGHTING_DOJO_SIGN"],
+    [35, 5, "TEXT_SAFFRONCITY_GYM_SIGN"],
+    [26, 11, "TEXT_SAFFRONCITY_MART_SIGN"],
+    [39, 19, "TEXT_SAFFRONCITY_TRAINER_TIPS1"],
+    [5, 21, "TEXT_SAFFRONCITY_TRAINER_TIPS2"],
+    [15, 21, "TEXT_SAFFRONCITY_SILPH_CO_SIGN"],
+    [10, 29, "TEXT_SAFFRONCITY_POKECENTER_SIGN"],
+    [27, 29, "TEXT_SAFFRONCITY_MR_PSYCHICS_HOUSE_SIGN"],
+    [1, 19, "TEXT_SAFFRONCITY_SILPH_CO_LATEST_PRODUCT_SIGN"]
+   ],
+   "border": 15,
+   "conns": [
+    ["north", "ROUTE_5", 5],
+    ["south", "ROUTE_6", 5],
+    ["west", "ROUTE_7", 4],
+    ["east", "ROUTE_8", 4]
+   ],
+   "const": "SAFFRON_CITY",
+   "h": 18,
+   "objs": [
+    ["7", "6", "SPRITE_ROCKET", "STAY", "NONE", "TEXT_SAFFRONCITY_ROCKET1"],
+    ["20", "8", "SPRITE_ROCKET", "WALK", "LEFT_RIGHT", "TEXT_SAFFRONCITY_ROCKET2"],
+    ["34", "4", "SPRITE_ROCKET", "STAY", "NONE", "TEXT_SAFFRONCITY_ROCKET3"],
+    ["13", "12", "SPRITE_ROCKET", "STAY", "NONE", "TEXT_SAFFRONCITY_ROCKET4"],
+    ["11", "25", "SPRITE_ROCKET", "WALK", "LEFT_RIGHT", "TEXT_SAFFRONCITY_ROCKET5"],
+    ["32", "13", "SPRITE_ROCKET", "WALK", "LEFT_RIGHT", "TEXT_SAFFRONCITY_ROCKET6"],
+    ["18", "30", "SPRITE_ROCKET", "WALK", "LEFT_RIGHT", "TEXT_SAFFRONCITY_ROCKET7"],
+    ["8", "14", "SPRITE_SCIENTIST", "WALK", "ANY_DIR", "TEXT_SAFFRONCITY_SCIENTIST"],
+    ["23", "23", "SPRITE_SILPH_WORKER_M", "STAY", "NONE", "TEXT_SAFFRONCITY_SILPH_WORKER_M"],
+    ["17", "30", "SPRITE_SILPH_WORKER_F", "WALK", "LEFT_RIGHT", "TEXT_SAFFRONCITY_SILPH_WORKER_F"],
+    ["30", "12", "SPRITE_GENTLEMAN", "STAY", "DOWN", "TEXT_SAFFRONCITY_GENTLEMAN"],
+    ["31", "12", "SPRITE_BIRD", "STAY", "DOWN", "TEXT_SAFFRONCITY_PIDGEOT"],
+    ["18", "8", "SPRITE_ROCKER", "STAY", "UP", "TEXT_SAFFRONCITY_ROCKER"],
+    ["18", "22", "SPRITE_ROCKET", "STAY", "DOWN", "TEXT_SAFFRONCITY_ROCKET8"],
+    ["19", "22", "SPRITE_ROCKET", "STAY", "DOWN", "TEXT_SAFFRONCITY_ROCKET9"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 20,
+   "warps": [
+    [7, 5, "COPYCATS_HOUSE_1F", 1],
+    [26, 3, "FIGHTING_DOJO", 1],
+    [34, 3, "SAFFRON_GYM", 1],
+    [13, 11, "SAFFRON_PIDGEY_HOUSE", 1],
+    [25, 11, "SAFFRON_MART", 1],
+    [18, 21, "SILPH_CO_1F", 1],
+    [9, 29, "SAFFRON_POKECENTER", 1],
+    [29, 29, "MR_PSYCHICS_HOUSE", 1]
+   ]
+  },
+  "SaffronGym": {
+   "bgs": [],
+   "border": 46,
+   "conns": [],
+   "const": "SAFFRON_GYM",
+   "h": 9,
+   "objs": [
+    ["9", "8", "SPRITE_GIRL", "STAY", "DOWN", "TEXT_SAFFRONGYM_SABRINA", "OPP_SABRINA", "1"],
+    ["10", "1", "SPRITE_CHANNELER", "STAY", "DOWN", "TEXT_SAFFRONGYM_CHANNELER1", "OPP_CHANNELER", "22"],
+    ["17", "1", "SPRITE_YOUNGSTER", "STAY", "DOWN", "TEXT_SAFFRONGYM_YOUNGSTER1", "OPP_PSYCHIC_TR", "1"],
+    ["3", "7", "SPRITE_CHANNELER", "STAY", "DOWN", "TEXT_SAFFRONGYM_CHANNELER2", "OPP_CHANNELER", "23"],
+    ["17", "7", "SPRITE_YOUNGSTER", "STAY", "DOWN", "TEXT_SAFFRONGYM_YOUNGSTER2", "OPP_PSYCHIC_TR", "2"],
+    ["3", "13", "SPRITE_CHANNELER", "STAY", "DOWN", "TEXT_SAFFRONGYM_CHANNELER3", "OPP_CHANNELER", "24"],
+    ["17", "13", "SPRITE_YOUNGSTER", "STAY", "DOWN", "TEXT_SAFFRONGYM_YOUNGSTER3", "OPP_PSYCHIC_TR", "3"],
+    ["3", "1", "SPRITE_YOUNGSTER", "STAY", "DOWN", "TEXT_SAFFRONGYM_YOUNGSTER4", "OPP_PSYCHIC_TR", "4"],
+    ["10", "15", "SPRITE_GYM_GUIDE", "STAY", "DOWN", "TEXT_SAFFRONGYM_GYM_GUIDE"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "FACILITY",
+   "w": 10,
+   "warps": [
+    [8, 17, "LAST_MAP", 3],
+    [9, 17, "LAST_MAP", 3],
+    [1, 3, "SAFFRON_GYM", 23],
+    [5, 3, "SAFFRON_GYM", 16],
+    [1, 5, "SAFFRON_GYM", 19],
+    [5, 5, "SAFFRON_GYM", 9],
+    [1, 9, "SAFFRON_GYM", 28],
+    [5, 9, "SAFFRON_GYM", 17],
+    [1, 11, "SAFFRON_GYM", 6],
+    [5, 11, "SAFFRON_GYM", 14],
+    [1, 15, "SAFFRON_GYM", 24],
+    [5, 15, "SAFFRON_GYM", 31],
+    [1, 17, "SAFFRON_GYM", 18],
+    [5, 17, "SAFFRON_GYM", 10],
+    [9, 3, "SAFFRON_GYM", 27],
+    [11, 3, "SAFFRON_GYM", 4],
+    [9, 5, "SAFFRON_GYM", 8],
+    [11, 5, "SAFFRON_GYM", 13],
+    [11, 11, "SAFFRON_GYM", 5],
+    [11, 15, "SAFFRON_GYM", 32],
+    [15, 3, "SAFFRON_GYM", 25],
+    [19, 3, "SAFFRON_GYM", 29],
+    [15, 5, "SAFFRON_GYM", 3],
+    [19, 5, "SAFFRON_GYM", 11],
+    [15, 9, "SAFFRON_GYM", 21],
+    [19, 9, "SAFFRON_GYM", 30],
+    [15, 11, "SAFFRON_GYM", 15],
+    [19, 11, "SAFFRON_GYM", 7],
+    [15, 15, "SAFFRON_GYM", 22],
+    [19, 15, "SAFFRON_GYM", 26],
+    [15, 17, "SAFFRON_GYM", 12],
+    [19, 17, "SAFFRON_GYM", 20]
+   ]
+  },
+  "VermilionCity": {
+   "bgs": [
+    [27, 3, "TEXT_VERMILIONCITY_SIGN"],
+    [37, 13, "TEXT_VERMILIONCITY_NOTICE_SIGN"],
+    [24, 13, "TEXT_VERMILIONCITY_MART_SIGN"],
+    [12, 3, "TEXT_VERMILIONCITY_POKECENTER_SIGN"],
+    [7, 13, "TEXT_VERMILIONCITY_POKEMON_FAN_CLUB_SIGN"],
+    [7, 19, "TEXT_VERMILIONCITY_GYM_SIGN"],
+    [29, 15, "TEXT_VERMILIONCITY_HARBOR_SIGN"]
+   ],
+   "border": 67,
+   "conns": [
+    ["north", "ROUTE_6", 5],
+    ["east", "ROUTE_11", 4]
+   ],
+   "const": "VERMILION_CITY",
+   "h": 18,
+   "objs": [
+    ["19", "7", "SPRITE_BEAUTY", "WALK", "LEFT_RIGHT", "TEXT_VERMILIONCITY_BEAUTY"],
+    ["14", "6", "SPRITE_GAMBLER", "STAY", "NONE", "TEXT_VERMILIONCITY_GAMBLER1"],
+    ["19", "30", "SPRITE_SAILOR", "STAY", "UP", "TEXT_VERMILIONCITY_SAILOR1"],
+    ["30", "7", "SPRITE_GAMBLER", "STAY", "NONE", "TEXT_VERMILIONCITY_GAMBLER2"],
+    ["29", "9", "SPRITE_MONSTER", "WALK", "UP_DOWN", "TEXT_VERMILIONCITY_MACHOP"],
+    ["25", "27", "SPRITE_SAILOR", "WALK", "LEFT_RIGHT", "TEXT_VERMILIONCITY_SAILOR2"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 20,
+   "warps": [
+    [11, 3, "VERMILION_POKECENTER", 1],
+    [9, 13, "POKEMON_FAN_CLUB", 1],
+    [23, 13, "VERMILION_MART", 1],
+    [12, 19, "VERMILION_GYM", 1],
+    [23, 19, "VERMILION_PIDGEY_HOUSE", 1],
+    [18, 31, "VERMILION_DOCK", 1],
+    [19, 31, "VERMILION_DOCK", 1],
+    [15, 13, "VERMILION_TRADE_HOUSE", 1],
+    [7, 3, "VERMILION_OLD_ROD_HOUSE", 1]
+   ]
+  },
+  "VermilionGym": {
+   "bgs": [],
+   "border": 3,
+   "conns": [],
+   "const": "VERMILION_GYM",
+   "h": 9,
+   "objs": [
+    ["5", "1", "SPRITE_ROCKER", "STAY", "DOWN", "TEXT_VERMILIONGYM_LT_SURGE", "OPP_LT_SURGE", "1"],
+    ["9", "6", "SPRITE_GENTLEMAN", "STAY", "LEFT", "TEXT_VERMILIONGYM_GENTLEMAN", "OPP_GENTLEMAN", "3"],
+    ["3", "8", "SPRITE_SUPER_NERD", "STAY", "LEFT", "TEXT_VERMILIONGYM_SUPER_NERD", "OPP_ROCKER", "1"],
+    ["0", "10", "SPRITE_SAILOR", "STAY", "RIGHT", "TEXT_VERMILIONGYM_SAILOR", "OPP_SAILOR", "8"],
+    ["4", "14", "SPRITE_GYM_GUIDE", "STAY", "DOWN", "TEXT_VERMILIONGYM_GYM_GUIDE"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GYM",
+   "w": 5,
+   "warps": [
+    [4, 17, "LAST_MAP", 4],
+    [5, 17, "LAST_MAP", 4]
+   ]
+  },
+  "ViridianCity": {
+   "bgs": [
+    [17, 17, "TEXT_VIRIDIANCITY_SIGN"],
+    [19, 1, "TEXT_VIRIDIANCITY_TRAINER_TIPS1"],
+    [21, 29, "TEXT_VIRIDIANCITY_TRAINER_TIPS2"],
+    [30, 19, "TEXT_VIRIDIANCITY_MART_SIGN"],
+    [24, 25, "TEXT_VIRIDIANCITY_POKECENTER_SIGN"],
+    [27, 7, "TEXT_VIRIDIANCITY_GYM_SIGN"]
+   ],
+   "border": 15,
+   "conns": [
+    ["north", "ROUTE_2", 5],
+    ["south", "ROUTE_1", 5],
+    ["west", "ROUTE_22", 4]
+   ],
+   "const": "VIRIDIAN_CITY",
+   "h": 18,
+   "objs": [
+    ["13", "20", "SPRITE_YOUNGSTER", "WALK", "ANY_DIR", "TEXT_VIRIDIANCITY_YOUNGSTER1"],
+    ["30", "8", "SPRITE_GAMBLER", "STAY", "NONE", "TEXT_VIRIDIANCITY_GAMBLER1"],
+    ["30", "25", "SPRITE_YOUNGSTER", "WALK", "ANY_DIR", "TEXT_VIRIDIANCITY_YOUNGSTER2"],
+    ["17", "9", "SPRITE_GIRL", "STAY", "RIGHT", "TEXT_VIRIDIANCITY_GIRL"],
+    ["18", "9", "SPRITE_GAMBLER_ASLEEP", "STAY", "NONE", "TEXT_VIRIDIANCITY_OLD_MAN_SLEEPY"],
+    ["6", "23", "SPRITE_FISHER", "STAY", "DOWN", "TEXT_VIRIDIANCITY_FISHER"],
+    ["17", "5", "SPRITE_GAMBLER", "WALK", "LEFT_RIGHT", "TEXT_VIRIDIANCITY_OLD_MAN"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "OVERWORLD",
+   "w": 20,
+   "warps": [
+    [23, 25, "VIRIDIAN_POKECENTER", 1],
+    [29, 19, "VIRIDIAN_MART", 1],
+    [21, 15, "VIRIDIAN_SCHOOL_HOUSE", 1],
+    [21, 9, "VIRIDIAN_NICKNAME_HOUSE", 1],
+    [32, 7, "VIRIDIAN_GYM", 1]
+   ]
+  },
+  "ViridianForest": {
+   "bgs": [
+    [24, 40, "TEXT_VIRIDIANFOREST_TRAINER_TIPS1"],
+    [16, 32, "TEXT_VIRIDIANFOREST_USE_ANTIDOTE_SIGN"],
+    [26, 17, "TEXT_VIRIDIANFOREST_TRAINER_TIPS2"],
+    [4, 24, "TEXT_VIRIDIANFOREST_TRAINER_TIPS3"],
+    [18, 45, "TEXT_VIRIDIANFOREST_TRAINER_TIPS4"],
+    [2, 1, "TEXT_VIRIDIANFOREST_LEAVING_SIGN"]
+   ],
+   "border": 3,
+   "conns": [],
+   "const": "VIRIDIAN_FOREST",
+   "h": 24,
+   "objs": [
+    ["16", "43", "SPRITE_YOUNGSTER", "STAY", "NONE", "TEXT_VIRIDIANFOREST_YOUNGSTER1"],
+    ["30", "33", "SPRITE_YOUNGSTER", "STAY", "LEFT", "TEXT_VIRIDIANFOREST_YOUNGSTER2", "OPP_BUG_CATCHER", "1"],
+    ["30", "19", "SPRITE_YOUNGSTER", "STAY", "LEFT", "TEXT_VIRIDIANFOREST_YOUNGSTER3", "OPP_BUG_CATCHER", "2"],
+    ["2", "18", "SPRITE_YOUNGSTER", "STAY", "LEFT", "TEXT_VIRIDIANFOREST_YOUNGSTER4", "OPP_BUG_CATCHER", "3"],
+    ["25", "11", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_VIRIDIANFOREST_ANTIDOTE", "ANTIDOTE"],
+    ["12", "29", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_VIRIDIANFOREST_POTION", "POTION"],
+    ["1", "31", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_VIRIDIANFOREST_POKE_BALL", "POKE_BALL"],
+    ["27", "40", "SPRITE_YOUNGSTER", "STAY", "NONE", "TEXT_VIRIDIANFOREST_YOUNGSTER5"]
+   ],
+   "texts": {},
+   "trainers": [
+    ["EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0", "4", "ViridianForestYoungster2BattleText", "ViridianForestYoungster2EndBattleText", "ViridianForestYoungster2AfterBattleText"],
+    ["EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1", "4", "ViridianForestYoungster3BattleText", "ViridianForestYoungster3EndBattleText", "ViridianForestYoungster3AfterBattleText"],
+    ["EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2", "1", "ViridianForestYoungster4BattleText", "ViridianForestYoungster4EndBattleText", "ViridianForestYoungster4AfterBattleText"]
+   ],
+   "ts": "FOREST",
+   "w": 17,
+   "warps": [
+    [1, 0, "VIRIDIAN_FOREST_NORTH_GATE", 3],
+    [2, 0, "VIRIDIAN_FOREST_NORTH_GATE", 4],
+    [15, 47, "VIRIDIAN_FOREST_SOUTH_GATE", 2],
+    [16, 47, "VIRIDIAN_FOREST_SOUTH_GATE", 2],
+    [17, 47, "VIRIDIAN_FOREST_SOUTH_GATE", 2],
+    [18, 47, "VIRIDIAN_FOREST_SOUTH_GATE", 2]
+   ]
+  },
+  "ViridianGym": {
+   "bgs": [],
+   "border": 3,
+   "conns": [],
+   "const": "VIRIDIAN_GYM",
+   "h": 9,
+   "objs": [
+    ["2", "1", "SPRITE_GIOVANNI", "STAY", "DOWN", "TEXT_VIRIDIANGYM_GIOVANNI", "OPP_GIOVANNI", "3"],
+    ["12", "7", "SPRITE_COOLTRAINER_M", "STAY", "DOWN", "TEXT_VIRIDIANGYM_COOLTRAINER_M1", "OPP_COOLTRAINER_M", "9"],
+    ["11", "11", "SPRITE_HIKER", "STAY", "UP", "TEXT_VIRIDIANGYM_HIKER1", "OPP_BLACKBELT", "6"],
+    ["10", "7", "SPRITE_ROCKER", "STAY", "DOWN", "TEXT_VIRIDIANGYM_ROCKER1", "OPP_TAMER", "3"],
+    ["3", "7", "SPRITE_HIKER", "STAY", "LEFT", "TEXT_VIRIDIANGYM_HIKER2", "OPP_BLACKBELT", "7"],
+    ["13", "5", "SPRITE_COOLTRAINER_M", "STAY", "RIGHT", "TEXT_VIRIDIANGYM_COOLTRAINER_M2", "OPP_COOLTRAINER_M", "10"],
+    ["10", "1", "SPRITE_HIKER", "STAY", "DOWN", "TEXT_VIRIDIANGYM_HIKER3", "OPP_BLACKBELT", "8"],
+    ["2", "16", "SPRITE_ROCKER", "STAY", "RIGHT", "TEXT_VIRIDIANGYM_ROCKER2", "OPP_TAMER", "4"],
+    ["6", "5", "SPRITE_COOLTRAINER_M", "STAY", "DOWN", "TEXT_VIRIDIANGYM_COOLTRAINER_M3", "OPP_COOLTRAINER_M", "1"],
+    ["16", "15", "SPRITE_GYM_GUIDE", "STAY", "DOWN", "TEXT_VIRIDIANGYM_GYM_GUIDE"],
+    ["16", "9", "SPRITE_POKE_BALL", "STAY", "NONE", "TEXT_VIRIDIANGYM_REVIVE", "REVIVE"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "GYM",
+   "w": 10,
+   "warps": [
+    [16, 17, "LAST_MAP", 5],
+    [17, 17, "LAST_MAP", 5]
+   ]
+  },
+  "ViridianPokecenter": {
+   "bgs": [],
+   "border": 0,
+   "conns": [],
+   "const": "VIRIDIAN_POKECENTER",
+   "h": 4,
+   "objs": [
+    ["3", "1", "SPRITE_NURSE", "STAY", "DOWN", "TEXT_VIRIDIANPOKECENTER_NURSE"],
+    ["10", "5", "SPRITE_GENTLEMAN", "WALK", "UP_DOWN", "TEXT_VIRIDIANPOKECENTER_GENTLEMAN"],
+    ["4", "3", "SPRITE_COOLTRAINER_M", "STAY", "NONE", "TEXT_VIRIDIANPOKECENTER_COOLTRAINER_M"],
+    ["11", "2", "SPRITE_LINK_RECEPTIONIST", "STAY", "DOWN", "TEXT_VIRIDIANPOKECENTER_LINK_RECEPTIONIST"]
+   ],
+   "texts": {},
+   "trainers": [],
+   "ts": "POKECENTER",
+   "w": 7,
+   "warps": [
+    [3, 7, "LAST_MAP", 1],
+    [4, 7, "LAST_MAP", 1]
+   ]
+  }
+ }
+}

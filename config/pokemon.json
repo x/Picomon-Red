@@ -1,0 +1,145 @@
+{
+ "BULBASAUR": {
+  "evolves": ["IVYSAUR", 16],
+  "learnset": [[1, "GROWL"], [1, "TACKLE"], [7, "LEECH_SEED"], [9, "VINE_WHIP"], [15, "MUD_SLAP"], [19, "RAZOR_LEAF"], [31, "ROCK_SLIDE"], [43, "SLUDGE_WAVE"]]
+ },
+ "IVYSAUR": {
+  "evolves": ["VENUSAUR", 32],
+  "learnset": [[1, "GROWL"], [1, "TACKLE"], [7, "LEECH_SEED"], [9, "VINE_WHIP"], [15, "MUD_SLAP"], [20, "RAZOR_LEAF"], [36, "ROCK_SLIDE"], [50, "SLUDGE_WAVE"]]
+ },
+ "VENUSAUR": {
+  "learnset": [[1, "GROWL"], [1, "TACKLE"], [7, "LEECH_SEED"], [9, "VINE_WHIP"], [15, "MUD_SLAP"], [20, "RAZOR_LEAF"], [39, "ROCK_SLIDE"], [53, "SLUDGE_WAVE"]]
+ },
+ "CHARMANDER": {
+  "evolves": ["CHARMELEON", 16],
+  "learnset": [[1, "GROWL"], [1, "SCRATCH"], [7, "EMBER"], [10, "MUD_SLAP"], [25, "FIRE_FANG"], [37, "FLAMETHROWER"], [46, "CRUNCH"], [50, "FIRE_BLAST"]]
+ },
+ "CHARMELEON": {
+  "evolves": ["CHARIZARD", 36],
+  "learnset": [[1, "GROWL"], [1, "SCRATCH"], [7, "EMBER"], [10, "MUD_SLAP"], [28, "FIRE_FANG"], [43, "FLAMETHROWER"], [54, "CRUNCH"], [60, "FIRE_BLAST"]]
+ },
+ "CHARIZARD": {
+  "learnset": [[1, "GROWL"], [1, "SCRATCH"], [7, "EMBER"], [10, "MUD_SLAP"], [13, "IRON_TAIL"], [28, "FIRE_FANG"], [41, "SLASH"], [47, "FLAMETHROWER"]]
+ },
+ "SQUIRTLE": {
+  "evolves": ["WARTORTLE", 16],
+  "learnset": [[1, "TAIL_WHIP"], [1, "TACKLE"], [7, "WATER_GUN"], [10, "HARDEN"], [13, "BUBBLE"], [19, "WATER_PULSE"], [28, "AQUA_TAIL"], [40, "HYDRO_PUMP"]]
+ },
+ "WARTORTLE": {
+  "evolves": ["BLASTOISE", 36],
+  "learnset": [[1, "TAIL_WHIP"], [1, "TACKLE"], [7, "WATER_GUN"], [10, "HARDEN"], [13, "BUBBLE"], [20, "WATER_PULSE"], [32, "AQUA_TAIL"], [48, "HYDRO_PUMP"]]
+ },
+ "BLASTOISE": {
+  "learnset": [[1, "TAIL_WHIP"], [1, "TACKLE"], [7, "WATER_GUN"], [10, "HARDEN"], [13, "BUBBLE"], [20, "WATER_PULSE"], [32, "AQUA_TAIL"], [60, "HYDRO_PUMP"]]
+ },
+ "PIDGEY": {
+  "evolves": ["PIDGEOTTO", 18],
+  "learnset": [[1, "TACKLE"], [5, "MUD_SLAP"], [9, "GUST"], [13, "QUICK_ATTACK"], [25, "SWIFT"], [33, "WING_ATTACK"], [41, "DRILL_PECK"], [53, "HURRICANE"]]
+ },
+ "PIDGEOTTO": {
+  "evolves": ["PIDGEOT", 36],
+  "learnset": [[1, "TACKLE"], [5, "MUD_SLAP"], [9, "GUST"], [13, "QUICK_ATTACK"], [27, "SWIFT"], [32, "AGILITY"], [37, "WING_ATTACK"], [47, "DRILL_PECK"]]
+ },
+ "PIDGEOT": {
+  "learnset": [[1, "TACKLE"], [5, "MUD_SLAP"], [9, "GUST"], [13, "QUICK_ATTACK"], [27, "SWIFT"], [32, "AGILITY"], [38, "WING_ATTACK"], [50, "DRILL_PECK"]]
+ },
+ "RATTATA": {
+  "evolves": ["RATICATE", 20],
+  "learnset": [[1, "TAIL_WHIP"], [1, "TACKLE"], [4, "QUICK_ATTACK"], [10, "BITE"], [13, "IRON_TAIL"], [16, "HYPER_FANG"], [22, "CRUNCH"], [31, "DOUBLE_EDGE"]]
+ },
+ "RATICATE": {
+  "learnset": [[1, "TAIL_WHIP"], [1, "TACKLE"], [4, "QUICK_ATTACK"], [10, "BITE"], [16, "HYPER_FANG"], [20, "LEER"], [24, "CRUNCH"], [39, "DOUBLE_EDGE"]]
+ },
+ "PIKACHU": {
+  "evolves": ["RAICHU", 30],
+  "learnset": [[1, "TAIL_WHIP"], [1, "THUNDERSHOCK"], [5, "GROWL"], [18, "THUNDER_WAVE"], [29, "IRON_TAIL"], [34, "THUNDERBOLT"], [45, "AGILITY"], [53, "THUNDER"]]
+ },
+ "RAICHU": {
+  "learnset": [[1, "TAIL_WHIP"], [1, "THUNDERSHOCK"], [5, "GROWL"], [18, "THUNDER_WAVE"], [29, "IRON_TAIL"], [34, "THUNDERBOLT"], [45, "AGILITY"], [53, "THUNDER"]]
+ },
+ "NIDORAN_M": {
+  "evolves": ["NIDORINO", 16],
+  "learnset": [[1, "LEER"], [1, "GUST"], [9, "DOUBLE_KICK"], [19, "TACKLE"], [21, "BODY_SLAM"], [31, "POISONPOWDER"], [37, "SLUDGE"], [45, "DOUBLE_EDGE"]]
+ },
+ "NIDORINO": {
+  "evolves": ["NIDOKING", 34],
+  "learnset": [[1, "LEER"], [1, "GUST"], [9, "DOUBLE_KICK"], [20, "TACKLE"], [23, "BODY_SLAM"], [35, "POISONPOWDER"], [43, "SLUDGE"], [58, "DOUBLE_EDGE"]]
+ },
+ "NIDOKING": {
+  "learnset": [[1, "DOUBLE_KICK"], [1, "GUST"], [23, "OUTRAGE"], [43, "EARTHQUAKE"]]
+ },
+ "GEODUDE": {
+  "evolves": ["GRAVELER", 25],
+  "learnset": [[1, "HARDEN"], [1, "TACKLE"], [4, "MUD_SLAP"], [6, "AGILITY"], [16, "ROCK_THROW"], [18, "ROCK_SLIDE"], [34, "EARTHQUAKE"], [40, "DOUBLE_EDGE"]]
+ },
+ "GRAVELER": {
+  "learnset": [[1, "HARDEN"], [1, "TACKLE"], [4, "MUD_SLAP"], [6, "AGILITY"], [16, "ROCK_THROW"], [18, "ROCK_SLIDE"], [40, "EARTHQUAKE"], [50, "DOUBLE_EDGE"]]
+ },
+ "ABRA": {
+  "evolves": ["KADABRA", 16],
+  "learnset": [[1, "CONFUSION"]]
+ },
+ "KADABRA": {
+  "evolves": ["ALAKAZAM", 38],
+  "learnset": [[1, "CONFUSION"], [21, "PSYBEAM"], [36, "SHADOW_BALL"], [38, "PSYCHIC_M"], [43, "CONFUSE_RAY"]]
+ },
+ "ALAKAZAM": {
+  "learnset": [[1, "CONFUSION"], [1, "BODY_SLAM"], [21, "PSYBEAM"], [36, "SHADOW_BALL"], [38, "PSYCHIC_M"], [43, "CONFUSE_RAY"]]
+ },
+ "ODDISH": {
+  "evolves": ["GLOOM", 21],
+  "learnset": [[5, "LEECH_SEED"], [9, "SMOG"], [14, "STUN_SPORE"], [15, "SLEEP_POWDER"], [19, "GIGA_DRAIN"], [23, "GROWL"], [43, "MOONBLAST"], [51, "PETAL_DANCE"]]
+ },
+ "GLOOM": {
+  "evolves": ["VILEPLUME", 32],
+  "learnset": [[5, "LEECH_SEED"], [9, "SMOG"], [14, "STUN_SPORE"], [15, "SLEEP_POWDER"], [19, "GIGA_DRAIN"], [24, "GROWL"], [49, "MOONBLAST"], [59, "PETAL_DANCE"]]
+ },
+ "VILEPLUME": {
+  "learnset": [[1, "POISONPOWDER"], [1, "STUN_SPORE"], [24, "GROWL"], [44, "DOUBLE_EDGE"], [49, "MOONBLAST"]]
+ },
+ "GROWLITHE": {
+  "evolves": ["ARCANINE", 34],
+  "learnset": [[1, "GROWL"], [1, "BITE"], [6, "EMBER"], [8, "LEER"], [17, "FIRE_FANG"], [34, "FLAMETHROWER"], [39, "CRUNCH"], [41, "FIRE_BLAST"]]
+ },
+ "ARCANINE": {
+  "learnset": [[1, "QUICK_ATTACK"], [1, "BITE"], [6, "EMBER"], [8, "LEER"], [19, "DOUBLE_KICK"], [34, "FLAMETHROWER"], [39, "CRUNCH"], [41, "FIRE_BLAST"]]
+ },
+ "PRIMEAPE": {
+  "learnset": [[1, "LEER"], [1, "SCRATCH"], [12, "MUD_SLAP"], [19, "BODY_SLAM"], [22, "CROSS_CHOP"], [30, "BITE"], [44, "SCREECH"], [48, "SLUDGE_WAVE"]]
+ },
+ "RAPIDASH": {
+  "learnset": [[1, "GROWL"], [1, "TAIL_WHIP"], [13, "FIRE_FANG"], [17, "BODY_SLAM"], [21, "KARATE_CHOP"], [33, "DOUBLE_KICK"], [37, "AGILITY"], [41, "FIRE_BLAST"]]
+ },
+ "CATERPIE": {
+  "evolves": ["METAPOD", 7],
+  "learnset": [[1, "STRING_SHOT"], [1, "TACKLE"], [9, "BITE"]]
+ },
+ "METAPOD": {
+  "evolves": ["BUTTERFREE", 10],
+  "learnset": [[1, "STRING_SHOT"], [1, "HARDEN"]]
+ },
+ "BUTTERFREE": {
+  "learnset": [[1, "STRING_SHOT"], [1, "TACKLE"], [13, "POISONPOWDER"], [13, "STUN_SPORE"], [19, "BUG_BUZZ"], [25, "HYPNOSIS"], [43, "WING_ATTACK"], [47, "PSYCHIC_M"]]
+ },
+ "ONIX": {
+  "learnset": [[1, "HARDEN"], [1, "TACKLE"], [4, "LEER"], [7, "ROCK_THROW"], [22, "ROCK_SLIDE"], [31, "SCREECH"], [43, "EARTHQUAKE"], [49, "DOUBLE_EDGE"]]
+ },
+ "STARMIE": {
+  "learnset": [[1, "HARDEN"], [1, "TACKLE"], [4, "WATER_GUN"], [13, "CONFUSION"], [18, "WATER_PULSE"], [28, "AQUA_TAIL"], [42, "PSYCHIC_M"], [53, "HYDRO_PUMP"]]
+ },
+ "GYARADOS": {
+  "learnset": [[1, "LEER"], [1, "BITE"], [24, "GUST"], [27, "ICE_FANG"], [39, "CRUNCH"], [42, "HYDRO_PUMP"], [48, "HURRICANE"], [54, "HYPER_BEAM"]]
+ },
+ "WEEZING": {
+  "learnset": [[1, "SMOG"], [1, "TACKLE"], [7, "MUD_SLAP"], [18, "SLUDGE"], [23, "POISONPOWDER"], [34, "SLUDGE_WAVE"], [40, "SHADOW_BALL"], [46, "TAKE_DOWN"]]
+ },
+ "RHYDON": {
+  "learnset": [[1, "TAIL_WHIP"], [1, "BODY_SLAM"], [6, "TACKLE"], [13, "MUD_SLAP"], [21, "ROCK_SLIDE"], [29, "ROCK_THROW"], [37, "TAKE_DOWN"], [48, "EARTHQUAKE"]]
+ },
+ "GENGAR": {
+  "learnset": [[1, "HYPNOSIS"], [1, "LICK"], [8, "MOONBLAST"], [12, "CONFUSION"], [19, "CONFUSE_RAY"], [39, "PSYCHIC_M"], [44, "CRUNCH"], [50, "THUNDER_WAVE"]]
+ },
+ "DRAGONITE": {
+  "learnset": [[1, "LEER"], [1, "WING_ATTACK"], [5, "THUNDER_WAVE"], [11, "GUST"], [15, "DRAGONBREATH"], [21, "BODY_SLAM"], [25, "AGILITY"], [39, "AQUA_TAIL"]]
+ }
+}

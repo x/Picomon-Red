@@ -1,0 +1,62 @@
+{
+ "Route1": {
+  "rate": 25,
+  "mons": [[3, "PIDGEY"], [3, "RATTATA"], [3, "RATTATA"], [2, "RATTATA"], [2, "RATTATA"], [3, "PIDGEY"], [3, "PIDGEY"], [4, "RATTATA"], [4, "PIDGEY"], [5, "RATTATA"]]
+ },
+ "Route2": {
+  "rate": 25,
+  "mons": [[3, "RATTATA"], [3, "PIDGEY"], [4, "PIDGEY"], [4, "RATTATA"], [5, "NIDORAN_M"], [5, "NIDORAN_M"], [3, "RATTATA"], [3, "RATTATA"], [5, "CATERPIE"], [5, "CATERPIE"]]
+ },
+ "Route3": {
+  "rate": 20,
+  "mons": [[6, "PIDGEY"], [7, "NIDORAN_M"], [7, "NIDORAN_M"], [6, "RATTATA"], [7, "GEODUDE"], [8, "NIDORAN_M"], [8, "RATTATA"], [9, "PRIMEAPE"], [5, "RATTATA"], [7, "RATTATA"]]
+ },
+ "Route4": {
+  "rate": 20,
+  "mons": [[10, "PIDGEY"], [10, "PIDGEY"], [8, "RATTATA"], [6, "NIDORAN_M"], [8, "NIDORAN_M"], [10, "PRIMEAPE"], [12, "GEODUDE"], [12, "GEODUDE"], [12, "PIDGEY"], [12, "RATTATA"]]
+ },
+ "Route5": {
+  "rate": 15,
+  "mons": [[12, "PIDGEY"], [13, "ODDISH"], [13, "ODDISH"], [15, "PIDGEY"], [10, "RATTATA"], [12, "RATTATA"], [15, "PRIMEAPE"], [15, "ABRA"], [15, "BUTTERFREE"], [15, "BUTTERFREE"]]
+ },
+ "Route6": {
+  "rate": 15,
+  "mons": [[13, "ODDISH"], [13, "ODDISH"], [10, "PIDGEY"], [15, "PIDGEY"], [12, "RATTATA"], [14, "RATTATA"], [16, "PRIMEAPE"], [12, "PRIMEAPE"], [14, "ABRA"], [16, "ABRA"]]
+ },
+ "Route7": {
+  "rate": 15,
+  "mons": [[19, "PRIMEAPE"], [19, "ABRA"], [18, "RATTATA"], [20, "RATTATA"], [18, "GROWLITHE"], [18, "GROWLITHE"], [20, "GROWLITHE"], [20, "GROWLITHE"], [19, "GROWLITHE"], [20, "PIDGEY"]]
+ },
+ "Route16": {
+  "rate": 25,
+  "mons": [[22, "PIDGEY"], [22, "PIDGEY"], [23, "RATTATA"], [24, "PIDGEY"], [24, "ODDISH"], [26, "PIDGEY"], [23, "PIDGEY"], [24, "PIDGEY"], [25, "RAPIDASH"], [26, "RAPIDASH"]]
+ },
+ "Route17": {
+  "rate": 25,
+  "mons": [[26, "PIDGEY"], [27, "PIDGEOT"], [27, "PIDGEY"], [28, "ODDISH"], [28, "RAPIDASH"], [30, "RAPIDASH"], [29, "RAPIDASH"], [28, "RAPIDASH"], [32, "VILEPLUME"], [32, "PIDGEOT"]]
+ },
+ "Route18": {
+  "rate": 25,
+  "mons": [[25, "PIDGEY"], [27, "PIDGEOT"], [25, "PIDGEY"], [24, "PIDGEY"], [26, "RATTATA"], [26, "RAPIDASH"], [28, "RAPIDASH"], [29, "RATTATA"], [27, "PIDGEY"], [29, "PIDGEY"]]
+ },
+ "ViridianForest": {
+  "rate": 25,
+  "mons": [[4, "CATERPIE"], [4, "CATERPIE"], [3, "CATERPIE"], [3, "CATERPIE"], [6, "METAPOD"], [6, "METAPOD"], [5, "RATTATA"], [6, "RATTATA"], [3, "PIKACHU"], [5, "PIKACHU"]]
+ },
+ "Route8": {
+  "rate": 15,
+  "mons": [[18, "ABRA"], [18, "ABRA"], [17, "PIDGEY"], [16, "PRIMEAPE"], [20, "RATTATA"], [20, "RATTATA"], [17, "GROWLITHE"], [17, "GROWLITHE"], [17, "GROWLITHE"], [18, "RATTATA"]]
+ },
+ "Route9": {
+  "rate": 15,
+  "mons": [[16, "NIDORAN_M"], [16, "GEODUDE"], [14, "NIDORAN_M"], [14, "NIDORAN_M"], [15, "PIDGEY"], [17, "PIDGEOT"], [14, "GEODUDE"], [13, "CATERPIE"], [18, "NIDOKING"], [17, "BUTTERFREE"]]
+ },
+ "Route10": {
+  "rate": 15,
+  "mons": [[16, "PIKACHU"], [16, "PIKACHU"], [17, "NIDORAN_M"], [17, "GEODUDE"], [18, "PRIMEAPE"], [18, "PRIMEAPE"], [22, "ODDISH"], [22, "RATTATA"], [16, "RATTATA"], [18, "RATTATA"]]
+ },
+ "Route22": {
+  "rate": 25,
+  "mons": [[2, "NIDORAN_M"], [2, "NIDORAN_M"], [3, "PRIMEAPE"], [3, "RATTATA"], [4, "NIDORAN_M"], [4, "NIDORAN_M"], [5, "PRIMEAPE"], [2, "RATTATA"], [4, "PIDGEY"], [6, "PIDGEY"]]
+ }
+}

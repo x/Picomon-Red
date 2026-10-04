@@ -1,0 +1,12 @@
+[project]
+name = "picomon-red"
+version = "0.1.0"
+description = "Builds the Picomon Red PICO-8 cart from a Pokemon Red ROM"
+requires-python = ">=3.10"
+dependencies = [
+    "pillow",
+    "shrinko @ git+https://github.com/thisismypassport/shrinko8@15eb9ce5134ff1e915fedc237cb426e73ff80b9e",
+]
+
+[tool.uv]
+package = false
