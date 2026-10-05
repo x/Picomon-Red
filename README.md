@@ -1,10 +1,10 @@
-# Picomon Red
-
 ![title](docs/title.png) 
 
-PICO-8 demake of Pokémon Red. This repo is an experiment in "How much game can fit into a PICO-8 32KB cart?" (as it turns out, a lot)
+# Picomon Red
 
 > **AI Disclaimer:** Coding agents were used extensively in this project.
+
+PICO-8 demake of Pokémon Red. This repo is an experiment in "How much game can fit into a PICO-8 32KB cart?" (as it turns out, a lot)
 
 ![gameplay](docs/gameplay.gif)
 
